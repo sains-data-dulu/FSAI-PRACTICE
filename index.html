@@ -76,8 +76,8 @@ a{color:inherit}
 .sec-head h2{margin:0;font-size:clamp(26px,3.4vw,36px);line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .sec-head p{margin:0;max-width:46ch;color:var(--muted)}
 
-/* Modules */
-.modules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;counter-reset:mod}
+/* Fasees */
+.Fasees{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;counter-reset:mod}
 .card{--c:var(--c2);position:relative;display:flex;flex-direction:column;gap:14px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease,border-color .2s}
 .card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--c) 45%,var(--line));box-shadow:0 1px 2px rgba(11,31,75,.05),0 18px 40px rgba(11,31,75,.12)}
 .card::before{content:"";position:absolute;left:26px;right:26px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--c)}
@@ -122,7 +122,7 @@ footer strong{color:var(--ink)}
 }
 @media (max-width:720px){
   .nav a:not(.nav-cta){display:none}
-  .modules{grid-template-columns:1fr}
+  .Fasees{grid-template-columns:1fr}
   .card{padding:22px}
   .card::before{left:22px;right:22px}
   .section{padding-top:52px}
@@ -139,9 +139,9 @@ footer strong{color:var(--ink)}
   <div class="wrap">
     <span class="logo" role="img" aria-label="datAIsolv"></span>
     <nav class="nav" aria-label="Navigasi">
-      <a href="#modul">Modul</a>
+      <a href="#Fase">Fase</a>
       <a href="#alur">Alur Belajar</a>
-      <a class="nav-cta" href="#modul">Mulai Belajar</a>
+      <a class="nav-cta" href="#Fase">Mulai Belajar</a>
     </nav>
   </div>
 </header>
@@ -153,7 +153,7 @@ footer strong{color:var(--ink)}
       <h1>Clustering, PCA &amp; MCA untuk <span>Data Asuransi</span></h1>
       <p class="lead">Pahami konsepnya lewat materi, praktikkan langkah demi langkah di R, lalu uji pemahamanmu dengan latihan soal dan simulasi berformat ujian Analitika Data.</p>
       <div class="cta">
-        <a class="btn btn-light" href="#modul">Lihat Semua Modul
+        <a class="btn btn-light" href="#Fase">Lihat Semua Fase
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="https://sains-data-dulu.github.io/latihan-fsai/">Langsung ke Latihan Soal</a>
       </div>
@@ -161,7 +161,7 @@ footer strong{color:var(--ink)}
     <aside class="hero-panel" aria-label="Ringkasan program">
       <h3>Isi program</h3>
       <div class="stats">
-        <div class="stat"><b>4</b><span>modul belajar</span></div>
+        <div class="stat"><b>4</b><span>phase belajar</span></div>
         <div class="stat"><b>7</b><span>metode clustering &amp; reduksi dimensi</span></div>
         <div class="stat"><b>40</b><span>soal latihan pilihan ganda</span></div>
         <div class="stat"><b>4</b><span>studi kasus simulasi ujian</span></div>
@@ -174,19 +174,19 @@ footer strong{color:var(--ink)}
 </section>
 
 <main>
-  <section class="section" id="modul">
+  <section class="section" id="Fase">
     <div class="wrap">
       <div class="sec-head">
-        <div><p class="eyebrow">Modul</p><h2>Semua yang kamu butuhkan, dalam satu tempat</h2></div>
+        <div><p class="eyebrow">Fase</p><h2>Materi Advanced Clustering, PCA & MCA</h2></div>
         <p>Ikuti urutan 1 sampai 4 agar pemahaman terbangun bertahap: dari konsep, praktik, sampai latihan berformat ujian.</p>
       </div>
 
-      <div class="modules">
+      <div class="Fasees">
         <!-- 1. MATERI -->
         <article class="card m1">
           <div class="card-top">
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></span>
-            <span class="step">Modul <b>01</b> · Pahami</span>
+            <span class="step">Fase <b>01</b> · Pahami</span>
             <span class="badge" data-badge="materi">Segera tersedia</span>
           </div>
           <h3>Materi</h3>
@@ -203,7 +203,7 @@ footer strong{color:var(--ink)}
         <article class="card m2">
           <div class="card-top">
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></span>
-            <span class="step">Modul <b>02</b> · Praktik</span>
+            <span class="step">Fase <b>02</b> · Praktik</span>
             <span class="badge live">Tersedia</span>
           </div>
           <h3>Hands-On Clustering</h3>
@@ -220,7 +220,7 @@ footer strong{color:var(--ink)}
         <article class="card m3">
           <div class="card-top">
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
-            <span class="step">Modul <b>03</b> · Uji</span>
+            <span class="step">Fase <b>03</b> · Uji</span>
             <span class="badge live">Tersedia</span>
           </div>
           <h3>Latihan Soal</h3>
@@ -237,7 +237,7 @@ footer strong{color:var(--ink)}
         <article class="card m4">
           <div class="card-top">
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
-            <span class="step">Modul <b>04</b> · Simulasi</span>
+            <span class="step">Fase <b>04</b> · Simulasi</span>
             <span class="badge live">Tersedia</span>
           </div>
           <h3>Simulasi Soal</h3>
@@ -278,7 +278,7 @@ footer strong{color:var(--ink)}
 
 <script>
 /* ============================================================
-   DAFTAR LINK MODUL — ubah di sini.
+   DAFTAR LINK Fase — ubah di sini.
    Isi link materi di "materi" bila sudah tersedia; selama kosong,
    tombol Materi tampil sebagai "Segera tersedia".
    ============================================================ */

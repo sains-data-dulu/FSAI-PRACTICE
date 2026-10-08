@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pretest & Post-test · Interpretasi Visualisasi &amp; Pengantar Clustering · BPJS Data Analytics Training</title>
+<style>
+/* Tema biru, sama dengan halaman Pretest/Post-test Pekan 3 Day 2. --g = warna aksen utama. */
+:root{--bg:#F4F6FA;--card:#fff;--ink:#1B2430;--mute:#5F6E84;--line:#DCE3EE;--g:#2158A6;--gd:#17437F;--sel:#EAF1FB;--navy:#0B1E3C;--ok:#1E8E5A;--oksel:#E6F4EC;--err:#C0392B;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1424;--card:#101E35;--ink:#E6EDF8;--mute:#9DB0CC;--line:#223756;--g:#7FA4FF;--gd:#9DB9FF;--sel:#14284A;--navy:#0B1E3C;--ok:#43CFA6;--oksel:#12302A;--err:#ff8a80;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font:16px/1.55 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.hero{background:linear-gradient(135deg,#0B1E3C 0%,#132B63 50%,#2158A6 100%);color:#fff;padding:22px 16px 64px}
+.hero .in{max-width:760px;margin:0 auto}
+.home{display:inline-flex;align-items:center;gap:6px;color:#C9D6EA;text-decoration:none;font-size:.9rem;font-weight:600;margin-bottom:14px}
+.home:hover{color:#fff}
+.home svg{width:16px;height:16px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9FC3F5;font-weight:600}
+.hero h1{color:#fff;margin:6px 0 4px;font-size:1.9rem}
+.hero p{margin:0;color:#C9D6EA}
+main{max-width:760px;margin:-40px auto 0;padding:0 16px 64px}
+h1{font-weight:700;font-size:1.6rem;line-height:1.2;margin:0 0 6px}
+h2{font-weight:700;font-size:1.2rem;margin:0 0 4px;color:var(--navy)}
+@media(prefers-color-scheme:dark){h2{color:var(--ink)}}
+.sub{color:var(--mute);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 1px 2px rgba(11,30,60,.06),0 6px 24px rgba(11,30,60,.06)}
+label{display:block;font-weight:600;margin:0 0 4px}
+input[type=text],input[type=email],input[type=password]{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+input:focus-visible,button:focus-visible,.opt:focus-within{outline:3px solid var(--g);outline-offset:2px}
+.row{margin-bottom:14px}
+.hint{font-size:.88rem;color:var(--mute);margin:6px 0 0}
+button{font:600 1rem inherit;font-family:inherit;background:var(--g);color:#fff;border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
+@media(prefers-color-scheme:dark){button{color:#0A1424}}
+button:hover{background:var(--gd)}
+button:disabled{opacity:.6;cursor:wait}
+.err{color:var(--err);margin:8px 0 0;min-height:1.2em}
+.q{scroll-margin-top:56px}
+.q p{margin:0 0 10px}
+.num{font-weight:700;color:var(--g)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;font:.85rem/1.45 Consolas,Menlo,monospace;margin:0 0 12px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;font-weight:400}
+.opt:hover{border-color:var(--g)}
+.opt.on{background:var(--sel);border-color:var(--g)}
+.opt input{margin-top:5px;accent-color:var(--g)}
+.opt span{min-width:0}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;font-weight:600;margin-bottom:8px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.95rem}
+.prog{height:6px;background:var(--line);border-radius:3px;flex:1;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--g);transition:width .2s}
+.hide{display:none}
+.big{font-weight:800;font-size:2.6rem;color:var(--g);margin:6px 0}
+.rv{border-left:5px solid var(--line)}
+.rv.ok{border-left-color:var(--ok)}
+.rv.no{border-left-color:var(--err)}
+.tag{font-weight:700}
+.ok .tag{color:var(--ok)}.no .tag{color:var(--err)}
+.rv .opt{cursor:default}
+.rv .opt:not(.k):not(.w):hover{border-color:var(--line)}
+.rv .opt.k{background:var(--oksel);border-color:var(--ok)}
+.rv .opt.w{border-color:var(--err)}
+.pb{margin:8px 0 0;color:var(--mute);font-size:.95rem}
+.pb p{margin:6px 0 0}
+.pb p.ox b{display:inline-block;min-width:1.2em;color:var(--ink)}
+.pb pre{margin:8px 0 0}
+code{font:.9em Consolas,Menlo,monospace;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px;overflow-wrap:anywhere}
+pre.r{border-left:4px solid var(--g)}
+.sec{font-weight:700;font-size:1.1rem;color:var(--ink);margin:26px 0 10px;padding:8px 12px;border-left:5px solid var(--g);background:var(--sel);border-radius:6px}
+.qt{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-left:6px}
+p.fig{text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:8px;background:#fff;border:1px solid var(--line)}
+.tw{overflow-x:auto;margin:0 0 12px}
+table.dt{border-collapse:collapse;font-size:.92rem;min-width:60%}
+table.dt th,table.dt td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+table.dt th{background:var(--sel);font-weight:700}
+.pb table.dt{margin-top:8px}
+.pet ul{margin:6px 0 0;padding-left:20px}.pet li{margin:4px 0}.pet p{margin:0 0 6px}
+.warn{border-left:5px solid var(--err)}
+.note{border-left:5px solid var(--g)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+  <a class="home" href="../../index.html#pekan2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Beranda pelatihan</a>
+  <div class="eyebrow">BPJS Data Analytics Training · Pekan 2 · Day 2 · Interpretasi Visualisasi &amp; Pengantar Clustering</div>
+  <h1 id="ttitle">Pretest &amp; Post-test</h1>
+  <p>15 soal pilihan ganda (A–D) · 15 menit · interpretasi grafik dan dasar clustering</p>
+</div></header>
+<main>
+
+<section id="gate">
+  <div class="card">
+    <form id="gform" autocomplete="off">
+      <div class="row">
+        <label for="pw">Kode akses</label>
+        <input type="password" id="pw" placeholder="Masukkan kode akses dari trainer" required>
+        <p class="hint">Kode akses pretest dan post-test berbeda. Soalnya sama.</p>
+      </div>
+      <button type="submit">Buka tes</button>
+      <p class="err" id="gerr" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<section id="test" class="hide">
+  <div class="card pet" id="pet"></div>
+  <div class="card">
+    <div class="row"><label for="nama">Nama</label><input type="text" id="nama" required></div>
+    <div class="row" style="margin:0"><label for="email">Email</label><input type="email" id="email" required>
+      <p class="hint">Gunakan email yang sama untuk pretest dan post-test agar nilainya tersambung di rekap.</p></div>
+  </div>
+  <div class="bar"><span id="count">0 / 15 terjawab</span><div class="prog"><i id="pbar"></i></div></div>
+  <div id="qs"></div>
+  <button id="send" type="button">Kumpulkan jawaban</button>
+  <p class="err" id="terr" role="alert"></p>
+</section>
+
+<section id="done" class="hide">
+  <div class="card" id="dcard">
+    <h2>Jawaban terkirim</h2>
+    <p id="dmsg" class="sub" style="margin:0"></p>
+    <div class="big" id="dscore"></div>
+    <p class="sub" id="dnote" style="margin:0"></p>
+  </div>
+  <div id="review"></div>
+</section>
+
+</main>
+<script>
+// === PENGATURAN ===
+// Tempel URL Web App Google Apps Script (lihat PETUNJUK_REKAP.md), misal "https://script.google.com/macros/s/XXXX/exec"
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw-oH0z6gslGfvMthCsAY8wG7vrVXByAN8lI07sldlQCLJwYJi7rTeAUzJMg4J404MR-Q/exec";
+
+// Kode akses disimpan tidak terbaca langsung (dibalik + base64). Ini penghalang ringan, bukan keamanan kuat.
+const PW = {
+  "dHNldGVycDJ5YWQybmFrZXBnbmluaWFydHNqcGI=": "pretest",
+  "dHNldHRzb3AyeWFkMm5ha2VwZ25pbmlhcnRzanBi": "posttest"
+};
+const enc = s => btoa(s.split("").reverse().join(""));
+
+const TITLES = {pretest: "Pretest", posttest: "Post-test"};
+const TOPIC = "Interpretasi Visualisasi &amp; Pengantar Clustering";
+const VER = "p2d2-1";
+const N = 15;
+
+// Soal (stem & opsi berupa HTML dari dokumen soal). Pretest dan post-test memakai soal yang sama.
+// Kunci dan pembahasan TIDAK ada di sini; dikirim server hanya setelah peserta mengumpulkan post-test.
+const T = {"petunjuk": "<p><strong>Petunjuk<\/strong><\/p><ul><li>{MODE}<\/li><li>Waktu <strong>15 menit<\/strong>, 15 soal pilihan ganda. Pilih <strong>satu<\/strong> jawaban yang paling tepat (A–D).<\/li><li>Isi nama dan email, lalu klik <strong>Kumpulkan jawaban<\/strong> setelah semua soal terjawab.<\/li><li>Soal 1–5 berisi kode R pembuat grafik. Bayangkan grafik yang dihasilkan, lalu pilih interpretasi yang paling tepat.<\/li><\/ul>", "items": [{"t": "q", "no": 1, "tag": "", "h": "<p>Perhatikan kode berikut:<\/p><pre class=\"r\">claims &lt;- data.frame(\n  claim_type = c(\"Health\",\"Health\",\"Health\",\"Health\",\n    \"Auto\",\"Auto\",\"Auto\",\"Auto\",\n    \"Property\",\"Property\",\"Property\",\"Property\"),\n  fraud_flag = c(\"Non-Fraud\",\"Non-Fraud\",\"Fraud\",\"Fraud\",\n    \"Non-Fraud\",\"Non-Fraud\",\"Fraud\",\"Fraud\",\n    \"Non-Fraud\",\"Non-Fraud\",\"Fraud\",\"Fraud\"),\n  claim_amount = c(2500, 3200, 7500, 9000, 4000, 5500,\n    11000, 13500, 3000, 4500, 10000, 15000)\n)\n\nggplot(claims, aes(x = claim_type, y = claim_amount, fill = fraud_flag)) +\n  geom_boxplot() +\n  labs(x = \"Claim Type\", y = \"Claim Amount\", fill = \"Fraud Status\")<\/pre><p>Berdasarkan visualisasi tersebut, interpretasi yang paling tepat adalah ...<\/p>", "o": ["Klaim yang terindikasi fraud cenderung memiliki nilai klaim lebih tinggi dibandingkan klaim non-fraud, sehingga seluruh klaim dengan nominal tinggi dapat dikategorikan sebagai fraud dan langsung ditindaklanjuti.", "Terdapat perbedaan distribusi nilai klaim antara fraud dan non-fraud, dengan klaim fraud cenderung memiliki nilai lebih tinggi, sehingga claim amount dapat dipertimbangkan sebagai salah satu fitur dalam fraud detection.", "Klaim fraud memiliki nilai yang lebih tinggi pada seluruh jenis klaim, sehingga claim type tidak lagi diperlukan dalam analisis dan model fraud cukup menggunakan nilai klaim sebagai indikator utama.", "Perbedaan nilai klaim antara fraud dan non-fraud menunjukkan bahwa nominal klaim merupakan penyebab terjadinya fraud, sehingga peningkatan claim amount dapat digunakan untuk menentukan status fraud."]}, {"t": "q", "no": 2, "tag": "", "h": "<p>Perhatikan kode berikut:<\/p><pre class=\"r\">customer &lt;- data.frame(\n  customer_id = 1:12,\n  life_insurance = c(\"Yes\",\"Yes\",\"Yes\",\"Yes\",\"Yes\",\"Yes\",\n    \"No\",\"No\",\"No\",\"No\",\"No\",\"No\"),\n  health_insurance = c(\"Yes\",\"Yes\",\"Yes\",\"No\",\"No\",\"No\",\n    \"Yes\",\"No\",\"No\",\"No\",\"No\",\"No\")\n)\n\nggplot(customer, aes(x = life_insurance, fill = health_insurance)) +\n  geom_bar(position = \"fill\") +\n  scale_y_continuous(labels = scales::percent) +\n  labs(x = \"Life Insurance\", y = \"Proportion\", fill = \"Health Insurance\")<\/pre><p>Berdasarkan visualisasi tersebut, interpretasi yang paling tepat adalah ...<\/p>", "o": ["Pelanggan yang memiliki Life Insurance menunjukkan proporsi kepemilikan Health Insurance yang lebih tinggi dibandingkan pelanggan tanpa Life Insurance, sehingga kelompok tersebut dapat menjadi salah satu target cross-selling.", "Pelanggan yang memiliki Life Insurance pasti membutuhkan Health Insurance karena proporsi kepemilikannya lebih tinggi, sehingga perusahaan sebaiknya menawarkan produk Health Insurance kepada seluruh pelanggan tersebut.", "Kepemilikan Life Insurance menyebabkan pelanggan membeli Health Insurance karena proporsi pelanggan Health Insurance lebih tinggi, sehingga cross-selling dapat dipastikan meningkatkan penjualan.", "Pelanggan tanpa Life Insurance memiliki peluang cross-selling yang lebih rendah karena proporsi Health Insurance lebih kecil, sehingga kelompok tersebut tidak perlu dipertimbangkan dalam strategi pemasaran."]}, {"t": "q", "no": 3, "tag": "", "h": "<p>Perhatikan kode berikut:<\/p><pre class=\"r\">risk &lt;- data.frame(\n  customer_id = 1:12,\n  risk_score = c(20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75),\n  claim_count = c(1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 7, 8)\n)\n\nggplot(risk, aes(x = risk_score, y = claim_count)) +\n  geom_point(size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(x = \"Risk Score\", y = \"Number of Claims\")<\/pre><p>Berdasarkan visualisasi tersebut, interpretasi yang paling tepat adalah ...<\/p>", "o": ["Hubungan positif antara risk score dan jumlah klaim menunjukkan bahwa seluruh nasabah dengan skor tinggi memiliki risiko yang sama, sehingga karakteristik nasabah lainnya tidak perlu dipertimbangkan.", "Nasabah dengan risk score tinggi pasti akan menghasilkan lebih banyak klaim karena garis regresi menunjukkan hubungan positif, sehingga risk score dapat digunakan sebagai satu-satunya dasar keputusan risiko.", "Setiap peningkatan risk score menyebabkan peningkatan jumlah klaim dengan pola yang sama, sehingga jumlah klaim setiap nasabah dapat diprediksi secara pasti hanya berdasarkan risk score.", "Nasabah dengan risk score yang lebih tinggi cenderung memiliki jumlah klaim lebih banyak, sehingga risk score dapat menjadi salah satu variabel yang dipertimbangkan dalam segmentasi atau pemodelan risiko."]}, {"t": "q", "no": 4, "tag": "", "h": "<p>Perhatikan kode berikut:<\/p><pre class=\"r\">premium &lt;- data.frame(\n  age = c(22, 25, 28, 31, 34, 37, 40, 43, 46, 49, 52, 55, 58, 61, 64),\n  annual_premium = c(2.1, 2.2, 2.4, 2.5, 2.7, 2.9, 3.1, 3.4,\n    3.7, 4.0, 4.4, 4.8, 5.3, 5.8, 6.4)\n)\n\nggplot(premium, aes(x = age, y = annual_premium)) +\n  geom_point(size = 3) +\n  geom_smooth(se = FALSE) +\n  labs(x = \"Age\", y = \"Annual Premium (Million IDR)\")<\/pre><p>Berdasarkan visualisasi tersebut, interpretasi yang paling tepat adalah ...<\/p>", "o": ["Annual premium meningkat karena usia merupakan faktor utama dalam risiko, sehingga perusahaan dapat menetapkan premium hanya berdasarkan usia tanpa mempertimbangkan karakteristik nasabah lainnya.", "Hubungan usia dan premium menunjukkan bahwa setiap tambahan usia menghasilkan kenaikan premium dengan jumlah yang sama, sehingga model linear selalu menjadi pendekatan pricing yang paling tepat.", "Annual premium cenderung meningkat seiring bertambahnya usia dan kenaikannya tampak semakin besar pada usia yang lebih tinggi, sehingga usia dapat menjadi salah satu faktor yang dipertimbangkan dalam pricing.", "Nasabah yang lebih tua membayar premium lebih tinggi sehingga seluruh nasabah pada usia yang sama seharusnya dikenakan premium yang identik, terlepas dari faktor risiko lainnya."]}, {"t": "q", "no": 5, "tag": "", "h": "<p>Perhatikan kode berikut:<\/p><pre class=\"r\">portfolio &lt;- data.frame(\n  customer_id = 1:15,\n  risk_segment = c(\"Low\",\"Low\",\"Low\",\"Low\",\"Low\",\n    \"Medium\",\"Medium\",\"Medium\",\"Medium\",\"Medium\",\n    \"High\",\"High\",\"High\",\"High\",\"High\"),\n  claim_amount = c(1000, 1200, 1500, 1800, 2000,\n    2500, 2800, 3000, 3500, 4000,\n    6500, 7500, 9000, 11000, 13000)\n)\n\nlibrary(dplyr)\n\nportfolio %&gt;%\n  group_by(risk_segment) %&gt;%\n  summarise(avg_claim = mean(claim_amount)) %&gt;%\n  ggplot(aes(x = risk_segment, y = avg_claim)) +\n  geom_col() +\n  labs(x = \"Risk Segment\", y = \"Average Claim Amount\")<\/pre><p>Berdasarkan visualisasi tersebut, interpretasi yang paling tepat adalah ...<\/p>", "o": ["Rata-rata claim amount meningkat dari segment Low ke High, sehingga risk segment dapat membantu memahami karakteristik portofolio dan mendukung strategi pengelolaan risiko.", "Nasabah pada segment High pasti memiliki claim amount lebih tinggi daripada seluruh nasabah pada segment Low, sehingga seluruh nasabah High sebaiknya langsung dikenakan premium maksimum.", "Peningkatan rata-rata claim amount membuktikan bahwa risk segment menyebabkan terjadinya klaim, sehingga segment risiko dapat digunakan sebagai satu-satunya dasar untuk menentukan risiko nasabah.", "Segment Low memiliki rata-rata claim amount paling rendah, sehingga nasabah dalam segment tersebut memiliki risiko yang sangat kecil dan tidak memerlukan monitoring lebih lanjut."]}, {"t": "q", "no": 6, "tag": "", "h": "<p>Sebuah perusahaan asuransi memiliki data pemegang polis yang terdiri atas usia, pendapatan, jumlah klaim, frekuensi klaim, jenis pekerjaan, dan wilayah tempat tinggal. Tidak tersedia label Low Risk, Medium Risk, atau High Risk. Tujuan awal analisis adalah menemukan kelompok pemegang polis yang memiliki karakteristik relatif serupa. Pernyataan yang paling tepat adalah ...<\/p>", "o": ["Clustering digunakan untuk memprediksi label risiko setiap nasabah berdasarkan target yang sudah tersedia.", "Clustering digunakan untuk menemukan struktur kelompok dalam data tanpa membutuhkan variabel target.", "Clustering digunakan untuk menentukan variabel mana yang memiliki hubungan kausal dengan risiko.", "Clustering digunakan untuk menghitung probabilitas setiap nasabah mengalami klaim pada periode berikutnya."]}, {"t": "q", "no": 7, "tag": "", "h": "<p>Suatu dataset memiliki dua variabel: Usia (25, 27, 55, 57) dan Pendapatan Tahunan (Rp100.000.000, Rp110.000.000, Rp105.000.000, Rp115.000.000). Seorang analis langsung menjalankan K-Means tanpa melakukan scaling. Risiko utama dari keputusan tersebut adalah ...<\/p>", "o": ["Variabel usia dapat menjadi dominan karena memiliki satuan tahun.", "Variabel pendapatan dapat memberikan kontribusi sangat besar terhadap perhitungan jarak karena memiliki skala numerik yang jauh lebih besar.", "K-Means tidak dapat digunakan jika terdapat lebih dari satu variabel numerik.", "Scaling akan menyebabkan seluruh observasi otomatis masuk ke cluster yang sama."]}, {"t": "q", "no": 8, "tag": "", "h": "<p>Sebuah perusahaan ingin melakukan segmentasi pelanggan menggunakan variabel usia, pendapatan, jenis kelamin, wilayah, dan status pernikahan. Data mengandung kombinasi numerik dan kategorik. Selain itu, terdapat beberapa outlier pada pendapatan. Metode yang paling sesuai untuk dipertimbangkan adalah ...<\/p>", "o": ["K-Means dengan Euclidean distance dengan preprocessing.", "K-Medoids dengan distance metric Gower distance.", "K-Medoids karena data dapat diubah ke skala numerik.", "GMM karena seluruh variabel diasumsikan mengikuti distribusi Gaussian."]}, {"t": "q", "no": 9, "tag": "", "h": "<p>Hasil perhitungan WCSS: K=1 → 1; K=2 → 620; K=3 → 410; K=4 → 350; K=5 → 320; K=6 → 300. Berdasarkan prinsip Elbow Method, pilihan yang paling masuk akal adalah ...<\/p>", "o": ["K = 2 karena WCSS pertama kali turun secara signifikan.", "K = 3 karena setelah K = 3 penurunan WCSS mulai jauh lebih kecil.", "K = 5 karena semakin besar K selalu semakin baik.", "K = 6 karena memiliki WCSS paling kecil."]}, {"t": "q", "no": 10, "tag": "", "h": "<p>Setelah K-Means dijalankan, diperoleh profil: Cluster 1 = rata-rata usia 29, pendapatan 6 juta, klaim 1,2; Cluster 2 = usia 43, pendapatan 12 juta, klaim 2,8; Cluster 3 = usia 58, pendapatan 18 juta, klaim 5,1. Interpretasi yang paling tepat adalah ...<\/p>", "o": ["Cluster 3 pasti merupakan nasabah yang menyebabkan kerugian terbesar.", "Cluster 3 memiliki profil relatif lebih tua, berpendapatan lebih tinggi, dan memiliki rata-rata klaim lebih tinggi dibandingkan cluster lain.", "Semua nasabah Cluster 3 pasti memiliki risiko tinggi.", "Usia merupakan penyebab meningkatnya jumlah klaim pada Cluster 3."]}, {"t": "q", "no": 11, "tag": "", "h": "<p>Seorang analis melakukan clustering terhadap data numerik yang memiliki beberapa outlier ekstrem. Ia mempertimbangkan dua distance metric: Euclidean dan Manhattan. Pernyataan yang paling tepat adalah ...<\/p>", "o": ["Euclidean selalu lebih baik karena menghitung jarak garis lurus.", "Manhattan dapat menjadi alternatif karena relatif lebih tahan terhadap pengaruh outlier.", "Manhattan hanya dapat digunakan untuk data kategorik.", "Euclidean tidak dapat digunakan pada data numerik."]}, {"t": "q", "no": 12, "tag": "", "h": "<p>Sebuah dataset pelanggan memiliki satu pelanggan dengan nilai total_claim yang sangat jauh lebih besar dibandingkan seluruh pelanggan lainnya. Analis menggunakan K-Means dan menemukan bahwa centroid salah satu cluster tertarik cukup jauh ke arah pelanggan tersebut. Apa penjelasan yang paling tepat?<\/p>", "o": ["K-Means menggunakan rata-rata sebagai pusat cluster sehingga outlier memiliki pengaruh tinggi.", "K-Means selalu menganggap outlier sebagai cluster tersendiri.", "K-Means secara otomatis menghapus outlier sebelum menghitung centroid.", "Outlier tidak dapat memengaruhi K-Means selama jumlah observasi cukup besar."]}, {"t": "q", "no": 13, "tag": "", "h": "<p>Seorang analis belum mengetahui berapa banyak segmentasi pelanggan yang diperlukan. Ia ingin terlebih dahulu melihat struktur hubungan pelanggan secara bertingkat, kemudian menentukan jumlah cluster dengan memotong dendrogram pada tingkat tertentu. Metode yang paling sesuai adalah ...<\/p>", "o": ["K-Means, karena jumlah cluster tidak perlu ditentukan sejak awal.", "DBSCAN, karena menghasilkan dendrogram yang menunjukkan struktur hierarki.", "Hierarchical clustering, karena paling sesuai.", "GMM, karena setiap cluster secara otomatis membentuk struktur bertingkat."]}, {"t": "q", "no": 14, "tag": "", "h": "<p>Perhatikan karakteristik beberapa observasi berikut: A memiliki banyak titik lain dalam radius ε. B tidak cukup padat untuk menjadi core point, tetapi berada di sekitar A. C berada jauh dari seluruh kelompok titik lainnya. Jika menggunakan DBSCAN, klasifikasi yang paling tepat adalah ...<\/p>", "o": ["A = border, B = core, C = cluster.", "A = core, B = border, C = noise.", "A = noise, B = border, C = core.", "A = cluster, B = noise, C = core."]}, {"t": "q", "no": 15, "tag": "", "h": "<p>Hasil analisis terhadap dua variabel menunjukkan dua kelompok yang saling overlap. Beberapa pelanggan berada pada area perbatasan sehingga sulit mengatakan bahwa pelanggan tersebut sepenuhnya termasuk kelompok A atau B. Tim bisnis ingin mengetahui probabilitas keanggotaan setiap pelanggan terhadap masing-masing kelompok. Metode yang paling sesuai adalah ...<\/p>", "o": ["K-Means, karena setiap observasi akan memperoleh probabilitas keanggotaan terhadap semua cluster.", "Hierarchical clustering, karena dendrogram memberikan probabilitas keanggotaan setiap observasi.", "DBSCAN, karena border point secara otomatis memiliki probabilitas keanggotaan.", "GMM, karena memberikan soft assignment berupa probabilitas keanggotaan terhadap setiap cluster."]}]};
+
+const $ = id => document.getElementById(id);
+// Pemanasan server Apps Script saat halaman dibuka, agar pengiriman jawaban lebih cepat.
+try { if (/^https?:/.test(SCRIPT_URL)) fetch(SCRIPT_URL, {method: "GET", mode: "no-cors", cache: "no-store"}).catch(() => {}); } catch (e) {}
+let cur = null, ans = [];
+
+$("gform").addEventListener("submit", e => {
+  e.preventDefault();
+  const t = PW[enc($("pw").value.trim().toLowerCase())];
+  if (!t) { $("gerr").textContent = "Kode akses salah. Periksa kembali kode dari trainer."; return; }
+  cur = t; ans = Array(N).fill("");
+  render();
+  $("gate").classList.add("hide"); $("test").classList.remove("hide");
+  window.scrollTo(0, 0);
+});
+
+const L = o => "ABCDE".slice(0, o.length).split("");
+
+function stem(it, i) {
+  return `<p><span class="num">${i+1}.</span>${it.tag ? `<span class="qt">${it.tag}</span>` : ""}</p>${it.h}`;
+}
+function layout(card) {
+  let n = -1;
+  return T.items.map(it => {
+    if (it.t === "sec") return `<h2 class="sec">${it.h}</h2>`;
+    n++; return card(it, n);
+  }).join("");
+}
+
+function render() {
+  $("ttitle").textContent = TITLES[cur];
+  document.title = TITLES[cur] + " · " + TOPIC + " · BPJS Data Analytics Training";
+  $("pet").innerHTML = T.petunjuk.replace("{MODE}", cur === "pretest"
+    ? "Ini adalah <strong>pretest</strong>, dikerjakan sebelum materi untuk mengukur pemahaman awal. Tidak memengaruhi penilaian."
+    : "Ini adalah <strong>post-test</strong>, dikerjakan di akhir hari. Soalnya sama dengan pretest. Kunci dan pembahasan muncul setelah jawaban dikumpulkan.");
+  $("qs").innerHTML = layout((it, i) => `
+    <div class="card q" id="q${i}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        return `<label class="opt"><input type="radio" name="q${i}" value="${X}"><span><b>${X}.</b> ${o}</span></label>`; }).join("")}
+    </div>`);
+  $("qs").querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+    const i = +inp.name.slice(1);
+    ans[i] = inp.value;
+    document.querySelectorAll(`#q${i} .opt`).forEach(l => l.classList.toggle("on", l.querySelector("input").checked));
+    progress();
+  }));
+}
+
+function progress() {
+  const n = ans.filter(Boolean).length;
+  $("count").textContent = n + " / " + N + " terjawab";
+  $("pbar").style.width = (n / N * 100) + "%";
+}
+
+function showReview(d) {
+  $("review").innerHTML = layout((it, i) => {
+    const ok = ans[i] === d.key[i];
+    return `<div class="card rv ${ok ? "ok" : "no"}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        const c = X === d.key[i] ? "k" : (X === ans[i] ? "w" : "");
+        const m = X === d.key[i] ? " ✓ kunci" : (X === ans[i] ? " ✗ jawaban Anda" : "");
+        return `<div class="opt ${c}"><span><b>${X}.</b> ${o}<i>${m}</i></span></div>`; }).join("")}
+      <div class="pb"><span class="tag">${ok ? "Benar" : "Salah"}</span> · Jawaban Anda: ${ans[i]}, kunci: ${d.key[i]}.${d.expl[i] || ""}</div>
+    </div>`;
+  });
+}
+
+$("send").addEventListener("click", async () => {
+  const nama = $("nama").value.trim(), email = $("email").value.trim();
+  const err = $("terr"); err.textContent = "";
+  if (!nama) { err.textContent = "Isi nama terlebih dahulu."; $("nama").focus(); return; }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = "Isi email dengan format yang benar."; $("email").focus(); return; }
+  const k = ans.findIndex(a => !a);
+  if (k >= 0) { err.textContent = `Soal nomor ${k+1} belum dijawab.`; $("q"+k).scrollIntoView({behavior:"smooth"}); return; }
+  if (SCRIPT_URL.startsWith("PASTE_")) { err.textContent = "SCRIPT_URL belum diisi di file HTML (lihat PETUNJUK_REKAP.md)."; return; }
+
+  const btn = $("send"); btn.disabled = true; btn.textContent = "Mengirim…";
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: "POST",
+      headers: {"Content-Type": "text/plain;charset=utf-8"},
+      body: JSON.stringify({test: cur, nama, email, answers: ans, ver: VER})
+    });
+    const d = await res.json();
+    if (!d.ok) throw new Error(d.error || "Gagal menyimpan");
+    $("test").classList.add("hide"); $("done").classList.remove("hide");
+    if (d.ver !== VER) {
+      // Code.gs yang terpasang bukan untuk tes ini (URL tertukar atau belum diperbarui): skor tidak ditampilkan.
+      $("dmsg").textContent = `Jawaban ${TITLES[cur]} atas nama ${nama} sudah terkirim, tetapi skor belum bisa ditampilkan karena server penilaian belum sesuai. Mohon sampaikan ke trainer.`;
+      $("dscore").textContent = ""; $("dcard").classList.add("warn"); $("dnote").textContent = "Terima kasih sudah mengisi.";
+      window.scrollTo(0, 0); return;
+    }
+    $("dmsg").textContent = `${TITLES[cur]} atas nama ${nama} sudah tercatat. Jawaban benar:`;
+    $("dscore").textContent = `${d.correct} / ${d.total}  (skor ${d.score})`;
+    if (cur === "posttest" && d.key) {
+      $("dnote").textContent = "Pembahasan di bawah ini bisa dipakai untuk belajar. Terima kasih sudah mengisi.";
+      showReview(d);
+    } else {
+      $("dnote").textContent = "Kunci dan pembahasan akan muncul setelah kamu mengerjakan post-test di akhir hari. Terima kasih sudah mengisi.";
+    }
+    window.scrollTo(0, 0);
+  } catch (x) {
+    err.textContent = "Pengiriman gagal. Periksa koneksi lalu coba lagi. Jawaban Anda masih tersimpan di halaman ini.";
+    btn.disabled = false; btn.textContent = "Kumpulkan jawaban";
+  }
+});
+</script>
+</body>
+</html>

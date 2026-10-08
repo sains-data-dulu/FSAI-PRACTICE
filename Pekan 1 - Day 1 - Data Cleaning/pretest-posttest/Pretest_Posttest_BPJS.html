@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pretest & Post-test · Data Cleaning · BPJS Data Analytics Training</title>
+<style>
+/* Tema biru, sama dengan halaman Pretest/Post-test Pekan 3 Day 2. --g = warna aksen utama. */
+:root{--bg:#F4F6FA;--card:#fff;--ink:#1B2430;--mute:#5F6E84;--line:#DCE3EE;--g:#2158A6;--gd:#17437F;--sel:#EAF1FB;--navy:#0B1E3C;--ok:#1E8E5A;--oksel:#E6F4EC;--err:#C0392B;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1424;--card:#101E35;--ink:#E6EDF8;--mute:#9DB0CC;--line:#223756;--g:#7FA4FF;--gd:#9DB9FF;--sel:#14284A;--navy:#0B1E3C;--ok:#43CFA6;--oksel:#12302A;--err:#ff8a80;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font:16px/1.55 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.hero{background:linear-gradient(135deg,#0B1E3C 0%,#132B63 50%,#2158A6 100%);color:#fff;padding:22px 16px 64px}
+.hero .in{max-width:760px;margin:0 auto}
+.home{display:inline-flex;align-items:center;gap:6px;color:#C9D6EA;text-decoration:none;font-size:.9rem;font-weight:600;margin-bottom:14px}
+.home:hover{color:#fff}
+.home svg{width:16px;height:16px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9FC3F5;font-weight:600}
+.hero h1{color:#fff;margin:6px 0 4px;font-size:1.9rem}
+.hero p{margin:0;color:#C9D6EA}
+main{max-width:760px;margin:-40px auto 0;padding:0 16px 64px}
+h1{font-weight:700;font-size:1.6rem;line-height:1.2;margin:0 0 6px}
+h2{font-weight:700;font-size:1.2rem;margin:0 0 4px;color:var(--navy)}
+@media(prefers-color-scheme:dark){h2{color:var(--ink)}}
+.sub{color:var(--mute);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 1px 2px rgba(11,30,60,.06),0 6px 24px rgba(11,30,60,.06)}
+label{display:block;font-weight:600;margin:0 0 4px}
+input[type=text],input[type=email],input[type=password]{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+input:focus-visible,button:focus-visible,.opt:focus-within{outline:3px solid var(--g);outline-offset:2px}
+.row{margin-bottom:14px}
+.hint{font-size:.88rem;color:var(--mute);margin:6px 0 0}
+button{font:600 1rem inherit;font-family:inherit;background:var(--g);color:#fff;border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
+@media(prefers-color-scheme:dark){button{color:#0A1424}}
+button:hover{background:var(--gd)}
+button:disabled{opacity:.6;cursor:wait}
+.err{color:var(--err);margin:8px 0 0;min-height:1.2em}
+.q{scroll-margin-top:56px}
+.q p{margin:0 0 10px}
+.num{font-weight:700;color:var(--g)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;font:.85rem/1.45 Consolas,Menlo,monospace;margin:0 0 12px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;font-weight:400}
+.opt:hover{border-color:var(--g)}
+.opt.on{background:var(--sel);border-color:var(--g)}
+.opt input{margin-top:5px;accent-color:var(--g)}
+.opt span{min-width:0}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;font-weight:600;margin-bottom:8px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.95rem}
+.prog{height:6px;background:var(--line);border-radius:3px;flex:1;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--g);transition:width .2s}
+.hide{display:none}
+.big{font-weight:800;font-size:2.6rem;color:var(--g);margin:6px 0}
+.rv{border-left:5px solid var(--line)}
+.rv.ok{border-left-color:var(--ok)}
+.rv.no{border-left-color:var(--err)}
+.tag{font-weight:700}
+.ok .tag{color:var(--ok)}.no .tag{color:var(--err)}
+.rv .opt{cursor:default}
+.rv .opt:not(.k):not(.w):hover{border-color:var(--line)}
+.rv .opt.k{background:var(--oksel);border-color:var(--ok)}
+.rv .opt.w{border-color:var(--err)}
+.pb{margin:8px 0 0;color:var(--mute);font-size:.95rem}
+.pb p{margin:6px 0 0}
+.pb p.ox b{display:inline-block;min-width:1.2em;color:var(--ink)}
+.pb pre{margin:8px 0 0}
+code{font:.9em Consolas,Menlo,monospace;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px;overflow-wrap:anywhere}
+pre.r{border-left:4px solid var(--g)}
+.sec{font-weight:700;font-size:1.1rem;color:var(--ink);margin:26px 0 10px;padding:8px 12px;border-left:5px solid var(--g);background:var(--sel);border-radius:6px}
+.qt{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-left:6px}
+p.fig{text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:8px;background:#fff;border:1px solid var(--line)}
+.tw{overflow-x:auto;margin:0 0 12px}
+table.dt{border-collapse:collapse;font-size:.92rem;min-width:60%}
+table.dt th,table.dt td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+table.dt th{background:var(--sel);font-weight:700}
+.pb table.dt{margin-top:8px}
+.pet ul{margin:6px 0 0;padding-left:20px}.pet li{margin:4px 0}.pet p{margin:0 0 6px}
+.warn{border-left:5px solid var(--err)}
+.note{border-left:5px solid var(--g)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+  <a class="home" href="../../index.html#pekan1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Beranda pelatihan</a>
+  <div class="eyebrow">BPJS Data Analytics Training · Pekan 1 · Day 1 · Data Cleaning</div>
+  <h1 id="ttitle">Pretest &amp; Post-test</h1>
+  <p>15 soal pilihan ganda (A–D) · 15 menit · data cleaning di R</p>
+</div></header>
+<main>
+
+<section id="gate">
+  <div class="card">
+    <form id="gform" autocomplete="off">
+      <div class="row">
+        <label for="pw">Kode akses</label>
+        <input type="password" id="pw" placeholder="Masukkan kode akses dari trainer" required>
+        <p class="hint">Kode akses pretest dan post-test berbeda. Soalnya sama.</p>
+      </div>
+      <button type="submit">Buka tes</button>
+      <p class="err" id="gerr" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<section id="test" class="hide">
+  <div class="card pet" id="pet"></div>
+  <div class="card">
+    <div class="row"><label for="nama">Nama</label><input type="text" id="nama" required></div>
+    <div class="row" style="margin:0"><label for="email">Email</label><input type="email" id="email" required>
+      <p class="hint">Gunakan email yang sama untuk pretest dan post-test agar nilainya tersambung di rekap.</p></div>
+  </div>
+  <div class="bar"><span id="count">0 / 15 terjawab</span><div class="prog"><i id="pbar"></i></div></div>
+  <div id="qs"></div>
+  <button id="send" type="button">Kumpulkan jawaban</button>
+  <p class="err" id="terr" role="alert"></p>
+</section>
+
+<section id="done" class="hide">
+  <div class="card" id="dcard">
+    <h2>Jawaban terkirim</h2>
+    <p id="dmsg" class="sub" style="margin:0"></p>
+    <div class="big" id="dscore"></div>
+    <p class="sub" id="dnote" style="margin:0"></p>
+  </div>
+  <div id="review"></div>
+</section>
+
+</main>
+<script>
+// === PENGATURAN ===
+// Tempel URL Web App Google Apps Script (lihat PETUNJUK_REKAP.md), misal "https://script.google.com/macros/s/XXXX/exec"
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxUcBCMrlJIjhSBee0AEMl485DbuONwR2Km_cmd3S04E3Lgebg7uXWXYKU7xhzbv0oIIg/exec";
+
+// Kode akses disimpan tidak terbaca langsung (dibalik + base64). Ini penghalang ringan, bukan keamanan kuat.
+const PW = {
+  "dHNldGVycDF5YWQxbmFrZXBnbmluaWFydHNqcGI=": "pretest",
+  "dHNldHRzb3AxeWFkMW5ha2VwZ25pbmlhcnRzanBi": "posttest"
+};
+const enc = s => btoa(s.split("").reverse().join(""));
+
+const TITLES = {pretest: "Pretest", posttest: "Post-test"};
+const TOPIC = "Data Cleaning";
+const VER = "p1d1-1";
+const N = 15;
+
+// Soal (stem & opsi berupa HTML dari dokumen soal). Pretest dan post-test memakai soal yang sama.
+// Kunci dan pembahasan TIDAK ada di sini; dikirim server hanya setelah peserta mengumpulkan post-test.
+const T = {"petunjuk": "<p><strong>Petunjuk<\/strong><\/p><ul><li>{MODE}<\/li><li>Waktu <strong>15 menit<\/strong>, 15 soal pilihan ganda. Pilih <strong>satu<\/strong> jawaban yang paling tepat (A–D).<\/li><li>Isi nama dan email, lalu klik <strong>Kumpulkan jawaban<\/strong> setelah semua soal terjawab.<\/li><li>Konteks soal: data peserta dan klaim BPJS dengan variabel seperti <code>id_peserta<\/code>, <code>usia<\/code>, <code>jumlah_klaim<\/code>, dan <code>biaya_klaim<\/code>.<\/li><\/ul>", "items": [{"t": "q", "no": 1, "tag": "", "h": "<p>Sebuah dataset BPJS memiliki satu baris untuk setiap peserta. Variabel yang tersedia antara lain id_peserta, usia, jumlah_klaim, dan biaya_klaim.<\/p><p>Sebelum melakukan cleaning, informasi yang paling penting untuk dipastikan terlebih dahulu adalah...<\/p>", "o": ["Apakah rata-rata biaya_klaim lebih besar daripada median", "Apakah setiap baris benar-benar merepresentasikan satu peserta", "Apakah biaya_klaim memiliki outlier", "Apakah distribusi usia berbentuk normal"]}, {"t": "q", "no": 2, "tag": "", "h": "<p>Seorang peserta ingin mengetahui jumlah observasi dan jumlah variabel pada dataset data.<\/p><p>Kode R yang paling tepat adalah...<\/p>", "o": ["<code>summary(data)<\/code>", "<code>head(data)<\/code>", "<code>dim(data)<\/code>", "<code>table(data)<\/code>"]}, {"t": "q", "no": 3, "tag": "", "h": "<p>Hasil str(data) menunjukkan:<\/p><pre class=\"r\">$ biaya_klaim : chr \"850000\" \"400000\" \"1200000\" ...<\/pre><p>Padahal variabel tersebut seharusnya digunakan untuk menghitung statistik numerik. Masalah utama yang perlu diperiksa adalah...<\/p>", "o": ["Variabel mengalami missing value", "Variabel terbaca sebagai character, bukan numeric", "Variabel memiliki duplicate", "Variabel merupakan outlier"]}, {"t": "q", "no": 4, "tag": "", "h": "<p>Ditemukan data berikut. Kesimpulan yang paling tepat adalah...<\/p><div class=\"tw\"><table class=\"dt\"><tr><th>id<\/th><th>usia<\/th><th>jumlah_klaim<\/th><th>biaya_klaim<\/th><\/tr><tr><td>P001<\/td><td>35<\/td><td>2<\/td><td>1.500.000<\/td><\/tr><tr><td>P002<\/td><td>-7<\/td><td>3<\/td><td>400<\/td><\/tr><tr><td>P003<\/td><td>42<\/td><td>-2<\/td><td>300<\/td><\/tr><tr><td>P004<\/td><td>29<\/td><td>4<\/td><td>-500<\/td><\/tr><\/table><\/div>", "o": ["Semua data valid karena nilainya berbentuk numeric", "Hanya usia = -7 yang invalid", "usia = -7, jumlah_klaim = -2, dan biaya_klaim bernilai negatif perlu ditandai sebagai invalid", "Semua baris harus langsung dihapus"]}, {"t": "q", "no": 5, "tag": "", "h": "<p>Untuk mencari observasi dengan usia di luar range 0-120, kode yang paling tepat adalah...<\/p>", "o": ["<code>data %&gt;% filter(usia &gt; 0 &amp; usia &lt; 120)<\/code>", "<code>data %&gt;% filter(usia &lt; 0 | usia &gt; 120)<\/code>", "<code>data %&gt;% filter(is.na(usia))<\/code>", "<code>data %&gt;% count(usia)<\/code>"]}, {"t": "q", "no": 6, "tag": "", "h": "<p>Ditemukan seorang peserta dengan usia 90 tahun, sementara sebagian besar peserta berusia 20-60 tahun. Bagaimana sebaiknya data tersebut diperlakukan?<\/p>", "o": ["Langsung dihapus karena jauh dari mayoritas data", "Diubah menjadi 60 karena merupakan nilai yang lebih umum", "Dianggap invalid karena usia 90 terlalu ekstrem", "Diinvestigasi terlebih dahulu karena ekstrem tidak selalu berarti salah"]}, {"t": "q", "no": 7, "tag": "", "h": "<p>Kode berikut digunakan:<\/p><pre class=\"r\">sum(duplicated(data))<\/pre><p>Informasi yang diperoleh dari kode tersebut adalah...<\/p>", "o": ["Jumlah ID yang muncul lebih dari satu kali", "Jumlah seluruh baris yang merupakan exact duplicate berdasarkan seluruh kolom", "Jumlah missing value", "Jumlah kategori yang memiliki frekuensi lebih dari satu"]}, {"t": "q", "no": 8, "tag": "", "h": "<p>Ditemukan bahwa id_peserta = P001 muncul sebanyak tiga kali. Tindakan yang paling tepat adalah...<\/p>", "o": ["Langsung menghapus dua baris", "Menghapus seluruh baris P001", "Memeriksa unit observasi terlebih dahulu untuk menentukan apakah repeated record memang diperbolehkan", "Mengubah ID P001 menjadi P002 dan P003"]}, {"t": "q", "no": 9, "tag": "", "h": "<p>Dalam variabel jumlah_klaim, ditemukan nilai: 0, NA, 999, -99. Pernyataan yang paling tepat berdasarkan prinsip data cleaning adalah...<\/p>", "o": ["Semua nilai tersebut harus diperlakukan sebagai missing", "0 selalu berarti missing", "NA, 999, dan -99 dapat memiliki arti berbeda sehingga perlu diperiksa sebelum treatment", "Semua nilai selain angka positif harus langsung dihapus"]}, {"t": "q", "no": 10, "tag": "", "h": "<p>Variabel biaya_klaim memiliki distribusi yang sangat right-skewed dan mengandung beberapa klaim bernilai sangat besar. Jika diperlukan imputasi sederhana terhadap missing value, pertimbangan yang paling tepat adalah...<\/p>", "o": ["Mean karena selalu lebih representatif", "Median karena lebih robust terhadap extreme values", "Mode karena biaya_klaim merupakan variabel numeric", "Mengganti semua missing dengan 0 tanpa melihat konteks"]}, {"t": "q", "no": 11, "tag": "", "h": "<p>Perhatikan observasi berikut. Kedua nilai tersebut secara individual merupakan angka yang valid. Namun berdasarkan business rule sebagai pegawai BPJS, masalah yang mungkin terjadi adalah...<\/p><div class=\"tw\"><table class=\"dt\"><tr><th>id<\/th><th>jumlah_klaim<\/th><th>biaya_klaim<\/th><\/tr><tr><td>P001<\/td><td>0<\/td><td>2.000.000<\/td><\/tr><\/table><\/div>", "o": ["Invalid value", "Duplicate", "Inconsistency antarvariabel", "Outlier"]}, {"t": "q", "no": 12, "tag": "", "h": "<p>Untuk mencari observasi yang memiliki jumlah_klaim = 0, tetapi biaya_klaim > 0, kode yang tepat adalah...<\/p>", "o": ["<code>data %&gt;% filter(jumlah_klaim == 0 &amp; biaya_klaim &gt; 0)<\/code>", "<code>data %&gt;% filter(jumlah_klaim &gt; 0 | biaya_klaim == 0)<\/code>", "<code>data %&gt;% filter(jumlah_klaim == 0 | biaya_klaim &gt; 0)<\/code>", "<code>data %&gt;% filter(jumlah_klaim != 0 &amp; biaya_klaim &lt; 0)<\/code>"]}, {"t": "q", "no": 13, "tag": "", "h": "<p>Ditemukan: jumlah_klaim = 0 dan biaya_klaim = 2.500.000. Apa tindakan yang paling sesuai?<\/p>", "o": ["Langsung mengubah biaya_klaim menjadi 0", "Langsung menghapus observasi", "Membuat flag untuk menandai masalah dan melakukan investigasi sebelum menentukan treatment", "Menganggap jumlah_klaim pasti salah dan menggantinya menjadi 1"]}, {"t": "q", "no": 14, "tag": "", "h": "<p>Hasil boxplot biaya_klaim menunjukkan satu observasi sebesar Rp100 juta, sementara sebagian besar observasi berada di bawah Rp5 juta. Langkah berikutnya yang paling tepat adalah...<\/p>", "o": ["Langsung menghapus observasi Rp100 juta", "Mengganti Rp100 juta dengan median", "Melihat baris data tersebut dan mengecek apakah nilai tersebut masuk akal secara domain", "Menganggap model analisis pasti gagal jika observasi dipertahankan"]}, {"t": "q", "no": 15, "tag": "", "h": "<p>Seorang peserta menyelesaikan proses cleaning dengan mengubah beberapa nilai invalid, menghapus exact duplicate, menangani missing, dan membuat flag inconsistency. Sebelum dataset digunakan untuk EDA, tindakan yang paling tepat adalah...<\/p>", "o": ["Langsung melakukan clustering", "Langsung membuat model regresi", "Melakukan validasi ulang terhadap kualitas dataset yang sudah dibersihkan", "Menghapus semua observasi yang masih memiliki karakteristik ekstrem"]}]};
+
+const $ = id => document.getElementById(id);
+// Pemanasan server Apps Script saat halaman dibuka, agar pengiriman jawaban lebih cepat.
+try { if (/^https?:/.test(SCRIPT_URL)) fetch(SCRIPT_URL, {method: "GET", mode: "no-cors", cache: "no-store"}).catch(() => {}); } catch (e) {}
+let cur = null, ans = [];
+
+$("gform").addEventListener("submit", e => {
+  e.preventDefault();
+  const t = PW[enc($("pw").value.trim().toLowerCase())];
+  if (!t) { $("gerr").textContent = "Kode akses salah. Periksa kembali kode dari trainer."; return; }
+  cur = t; ans = Array(N).fill("");
+  render();
+  $("gate").classList.add("hide"); $("test").classList.remove("hide");
+  window.scrollTo(0, 0);
+});
+
+const L = o => "ABCDE".slice(0, o.length).split("");
+
+function stem(it, i) {
+  return `<p><span class="num">${i+1}.</span>${it.tag ? `<span class="qt">${it.tag}</span>` : ""}</p>${it.h}`;
+}
+function layout(card) {
+  let n = -1;
+  return T.items.map(it => {
+    if (it.t === "sec") return `<h2 class="sec">${it.h}</h2>`;
+    n++; return card(it, n);
+  }).join("");
+}
+
+function render() {
+  $("ttitle").textContent = TITLES[cur];
+  document.title = TITLES[cur] + " · " + TOPIC + " · BPJS Data Analytics Training";
+  $("pet").innerHTML = T.petunjuk.replace("{MODE}", cur === "pretest"
+    ? "Ini adalah <strong>pretest</strong>, dikerjakan sebelum materi untuk mengukur pemahaman awal. Tidak memengaruhi penilaian."
+    : "Ini adalah <strong>post-test</strong>, dikerjakan di akhir hari. Soalnya sama dengan pretest. Kunci dan pembahasan muncul setelah jawaban dikumpulkan.");
+  $("qs").innerHTML = layout((it, i) => `
+    <div class="card q" id="q${i}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        return `<label class="opt"><input type="radio" name="q${i}" value="${X}"><span><b>${X}.</b> ${o}</span></label>`; }).join("")}
+    </div>`);
+  $("qs").querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+    const i = +inp.name.slice(1);
+    ans[i] = inp.value;
+    document.querySelectorAll(`#q${i} .opt`).forEach(l => l.classList.toggle("on", l.querySelector("input").checked));
+    progress();
+  }));
+}
+
+function progress() {
+  const n = ans.filter(Boolean).length;
+  $("count").textContent = n + " / " + N + " terjawab";
+  $("pbar").style.width = (n / N * 100) + "%";
+}
+
+function showReview(d) {
+  $("review").innerHTML = layout((it, i) => {
+    const ok = ans[i] === d.key[i];
+    return `<div class="card rv ${ok ? "ok" : "no"}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        const c = X === d.key[i] ? "k" : (X === ans[i] ? "w" : "");
+        const m = X === d.key[i] ? " ✓ kunci" : (X === ans[i] ? " ✗ jawaban Anda" : "");
+        return `<div class="opt ${c}"><span><b>${X}.</b> ${o}<i>${m}</i></span></div>`; }).join("")}
+      <div class="pb"><span class="tag">${ok ? "Benar" : "Salah"}</span> · Jawaban Anda: ${ans[i]}, kunci: ${d.key[i]}.${d.expl[i] || ""}</div>
+    </div>`;
+  });
+}
+
+$("send").addEventListener("click", async () => {
+  const nama = $("nama").value.trim(), email = $("email").value.trim();
+  const err = $("terr"); err.textContent = "";
+  if (!nama) { err.textContent = "Isi nama terlebih dahulu."; $("nama").focus(); return; }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = "Isi email dengan format yang benar."; $("email").focus(); return; }
+  const k = ans.findIndex(a => !a);
+  if (k >= 0) { err.textContent = `Soal nomor ${k+1} belum dijawab.`; $("q"+k).scrollIntoView({behavior:"smooth"}); return; }
+  if (SCRIPT_URL.startsWith("PASTE_")) { err.textContent = "SCRIPT_URL belum diisi di file HTML (lihat PETUNJUK_REKAP.md)."; return; }
+
+  const btn = $("send"); btn.disabled = true; btn.textContent = "Mengirim…";
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: "POST",
+      headers: {"Content-Type": "text/plain;charset=utf-8"},
+      body: JSON.stringify({test: cur, nama, email, answers: ans, ver: VER})
+    });
+    const d = await res.json();
+    if (!d.ok) throw new Error(d.error || "Gagal menyimpan");
+    $("test").classList.add("hide"); $("done").classList.remove("hide");
+    if (d.ver !== VER) {
+      // Code.gs yang terpasang bukan untuk tes ini (URL tertukar atau belum diperbarui): skor tidak ditampilkan.
+      $("dmsg").textContent = `Jawaban ${TITLES[cur]} atas nama ${nama} sudah terkirim, tetapi skor belum bisa ditampilkan karena server penilaian belum sesuai. Mohon sampaikan ke trainer.`;
+      $("dscore").textContent = ""; $("dcard").classList.add("warn"); $("dnote").textContent = "Terima kasih sudah mengisi.";
+      window.scrollTo(0, 0); return;
+    }
+    $("dmsg").textContent = `${TITLES[cur]} atas nama ${nama} sudah tercatat. Jawaban benar:`;
+    $("dscore").textContent = `${d.correct} / ${d.total}  (skor ${d.score})`;
+    if (cur === "posttest" && d.key) {
+      $("dnote").textContent = "Pembahasan di bawah ini bisa dipakai untuk belajar. Terima kasih sudah mengisi.";
+      showReview(d);
+    } else {
+      $("dnote").textContent = "Kunci dan pembahasan akan muncul setelah kamu mengerjakan post-test di akhir hari. Terima kasih sudah mengisi.";
+    }
+    window.scrollTo(0, 0);
+  } catch (x) {
+    err.textContent = "Pengiriman gagal. Periksa koneksi lalu coba lagi. Jawaban Anda masih tersimpan di halaman ini.";
+    btn.disabled = false; btn.textContent = "Kumpulkan jawaban";
+  }
+});
+</script>
+</body>
+</html>

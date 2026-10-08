@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pretest & Post-test · Visualisasi Data · BPJS Data Analytics Training</title>
+<style>
+/* Tema biru, sama dengan halaman Pretest/Post-test Pekan 3 Day 2. --g = warna aksen utama. */
+:root{--bg:#F4F6FA;--card:#fff;--ink:#1B2430;--mute:#5F6E84;--line:#DCE3EE;--g:#2158A6;--gd:#17437F;--sel:#EAF1FB;--navy:#0B1E3C;--ok:#1E8E5A;--oksel:#E6F4EC;--err:#C0392B;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1424;--card:#101E35;--ink:#E6EDF8;--mute:#9DB0CC;--line:#223756;--g:#7FA4FF;--gd:#9DB9FF;--sel:#14284A;--navy:#0B1E3C;--ok:#43CFA6;--oksel:#12302A;--err:#ff8a80;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font:16px/1.55 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.hero{background:linear-gradient(135deg,#0B1E3C 0%,#132B63 50%,#2158A6 100%);color:#fff;padding:22px 16px 64px}
+.hero .in{max-width:760px;margin:0 auto}
+.home{display:inline-flex;align-items:center;gap:6px;color:#C9D6EA;text-decoration:none;font-size:.9rem;font-weight:600;margin-bottom:14px}
+.home:hover{color:#fff}
+.home svg{width:16px;height:16px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9FC3F5;font-weight:600}
+.hero h1{color:#fff;margin:6px 0 4px;font-size:1.9rem}
+.hero p{margin:0;color:#C9D6EA}
+main{max-width:760px;margin:-40px auto 0;padding:0 16px 64px}
+h1{font-weight:700;font-size:1.6rem;line-height:1.2;margin:0 0 6px}
+h2{font-weight:700;font-size:1.2rem;margin:0 0 4px;color:var(--navy)}
+@media(prefers-color-scheme:dark){h2{color:var(--ink)}}
+.sub{color:var(--mute);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 1px 2px rgba(11,30,60,.06),0 6px 24px rgba(11,30,60,.06)}
+label{display:block;font-weight:600;margin:0 0 4px}
+input[type=text],input[type=email],input[type=password]{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+input:focus-visible,button:focus-visible,.opt:focus-within{outline:3px solid var(--g);outline-offset:2px}
+.row{margin-bottom:14px}
+.hint{font-size:.88rem;color:var(--mute);margin:6px 0 0}
+button{font:600 1rem inherit;font-family:inherit;background:var(--g);color:#fff;border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
+@media(prefers-color-scheme:dark){button{color:#0A1424}}
+button:hover{background:var(--gd)}
+button:disabled{opacity:.6;cursor:wait}
+.err{color:var(--err);margin:8px 0 0;min-height:1.2em}
+.q{scroll-margin-top:56px}
+.q p{margin:0 0 10px}
+.num{font-weight:700;color:var(--g)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;font:.85rem/1.45 Consolas,Menlo,monospace;margin:0 0 12px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;font-weight:400}
+.opt:hover{border-color:var(--g)}
+.opt.on{background:var(--sel);border-color:var(--g)}
+.opt input{margin-top:5px;accent-color:var(--g)}
+.opt span{min-width:0}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;font-weight:600;margin-bottom:8px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.95rem}
+.prog{height:6px;background:var(--line);border-radius:3px;flex:1;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--g);transition:width .2s}
+.hide{display:none}
+.big{font-weight:800;font-size:2.6rem;color:var(--g);margin:6px 0}
+.rv{border-left:5px solid var(--line)}
+.rv.ok{border-left-color:var(--ok)}
+.rv.no{border-left-color:var(--err)}
+.tag{font-weight:700}
+.ok .tag{color:var(--ok)}.no .tag{color:var(--err)}
+.rv .opt{cursor:default}
+.rv .opt:not(.k):not(.w):hover{border-color:var(--line)}
+.rv .opt.k{background:var(--oksel);border-color:var(--ok)}
+.rv .opt.w{border-color:var(--err)}
+.pb{margin:8px 0 0;color:var(--mute);font-size:.95rem}
+.pb p{margin:6px 0 0}
+.pb p.ox b{display:inline-block;min-width:1.2em;color:var(--ink)}
+.pb pre{margin:8px 0 0}
+code{font:.9em Consolas,Menlo,monospace;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px;overflow-wrap:anywhere}
+pre.r{border-left:4px solid var(--g)}
+.sec{font-weight:700;font-size:1.1rem;color:var(--ink);margin:26px 0 10px;padding:8px 12px;border-left:5px solid var(--g);background:var(--sel);border-radius:6px}
+.qt{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-left:6px}
+p.fig{text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:8px;background:#fff;border:1px solid var(--line)}
+.tw{overflow-x:auto;margin:0 0 12px}
+table.dt{border-collapse:collapse;font-size:.92rem;min-width:60%}
+table.dt th,table.dt td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+table.dt th{background:var(--sel);font-weight:700}
+.pb table.dt{margin-top:8px}
+.pet ul{margin:6px 0 0;padding-left:20px}.pet li{margin:4px 0}.pet p{margin:0 0 6px}
+.warn{border-left:5px solid var(--err)}
+.note{border-left:5px solid var(--g)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+  <a class="home" href="../../index.html#pekan2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Beranda pelatihan</a>
+  <div class="eyebrow">BPJS Data Analytics Training · Pekan 2 · Day 1 · Visualisasi Data</div>
+  <h1 id="ttitle">Pretest &amp; Post-test</h1>
+  <p>15 soal pilihan ganda (A–D) · 15 menit · memilih dan membaca grafik</p>
+</div></header>
+<main>
+
+<section id="gate">
+  <div class="card">
+    <form id="gform" autocomplete="off">
+      <div class="row">
+        <label for="pw">Kode akses</label>
+        <input type="password" id="pw" placeholder="Masukkan kode akses dari trainer" required>
+        <p class="hint">Kode akses pretest dan post-test berbeda. Soalnya sama.</p>
+      </div>
+      <button type="submit">Buka tes</button>
+      <p class="err" id="gerr" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<section id="test" class="hide">
+  <div class="card pet" id="pet"></div>
+  <div class="card">
+    <div class="row"><label for="nama">Nama</label><input type="text" id="nama" required></div>
+    <div class="row" style="margin:0"><label for="email">Email</label><input type="email" id="email" required>
+      <p class="hint">Gunakan email yang sama untuk pretest dan post-test agar nilainya tersambung di rekap.</p></div>
+  </div>
+  <div class="bar"><span id="count">0 / 15 terjawab</span><div class="prog"><i id="pbar"></i></div></div>
+  <div id="qs"></div>
+  <button id="send" type="button">Kumpulkan jawaban</button>
+  <p class="err" id="terr" role="alert"></p>
+</section>
+
+<section id="done" class="hide">
+  <div class="card" id="dcard">
+    <h2>Jawaban terkirim</h2>
+    <p id="dmsg" class="sub" style="margin:0"></p>
+    <div class="big" id="dscore"></div>
+    <p class="sub" id="dnote" style="margin:0"></p>
+  </div>
+  <div id="review"></div>
+</section>
+
+</main>
+<script>
+// === PENGATURAN ===
+// Tempel URL Web App Google Apps Script (lihat PETUNJUK_REKAP.md), misal "https://script.google.com/macros/s/XXXX/exec"
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxMygcJ-y9ZShOVN84aD1QxOKugNF6ybcSQkZenijtVqHE8y10Sd_RNEjTuMlepMaSbJQ/exec";
+
+// Kode akses disimpan tidak terbaca langsung (dibalik + base64). Ini penghalang ringan, bukan keamanan kuat.
+const PW = {
+  "dHNldGVycDF5YWQybmFrZXBnbmluaWFydHNqcGI=": "pretest",
+  "dHNldHRzb3AxeWFkMm5ha2VwZ25pbmlhcnRzanBi": "posttest"
+};
+const enc = s => btoa(s.split("").reverse().join(""));
+
+const TITLES = {pretest: "Pretest", posttest: "Post-test"};
+const TOPIC = "Visualisasi Data";
+const VER = "p2d1-1";
+const N = 15;
+
+// Soal (stem & opsi berupa HTML dari dokumen soal). Pretest dan post-test memakai soal yang sama.
+// Kunci dan pembahasan TIDAK ada di sini; dikirim server hanya setelah peserta mengumpulkan post-test.
+const T = {"petunjuk": "<p><strong>Petunjuk<\/strong><\/p><ul><li>{MODE}<\/li><li>Waktu <strong>15 menit<\/strong>, 15 soal pilihan ganda. Pilih <strong>satu<\/strong> jawaban yang paling tepat (A–D).<\/li><li>Isi nama dan email, lalu klik <strong>Kumpulkan jawaban<\/strong> setelah semua soal terjawab.<\/li><li>Konteks soal: data klaim dan polis asuransi; kode grafik memakai <code>ggplot2<\/code> dan <code>dplyr<\/code>.<\/li><\/ul>", "items": [{"t": "q", "no": 1, "tag": "", "h": "<p>Tim aktuaria menerima data klaim kendaraan selama 5 tahun. Sebelum membuat model pricing, analis ingin memahami distribusi severity claim, mencari outlier, dan melihat apakah terdapat pola ekstrem. Visualisasi yang paling sesuai untuk tahap awal adalah:<\/p>", "o": ["Dashboard dengan KPI utama", "Boxplot dan histogram severity claim", "Pie chart komposisi klaim", "Stacked bar chart antar produk"]}, {"t": "q", "no": 2, "tag": "", "h": "<p>Seorang analis membuat bar chart rata-rata biaya klaim berdasarkan provinsi. Namun sumbu Y dimulai dari angka Rp90 juta, bukan Rp0. Risiko terbesar dari visualisasi tersebut adalah:<\/p>", "o": ["Variasi data menjadi tidak terlihat", "Perbedaan antar provinsi terlihat lebih besar dari kondisi sebenarnya", "Jumlah klaim otomatis berubah", "Median biaya klaim menjadi bias"]}, {"t": "q", "no": 3, "tag": "", "h": "<p>Perusahaan asuransi ingin mengetahui apakah terdapat perbedaan distribusi biaya klaim antara nasabah individu dan corporate. Grafik yang paling tepat adalah:<\/p>", "o": ["Boxplot biaya klaim berdasarkan tipe nasabah", "Line chart biaya klaim bulanan", "Pie chart tipe nasabah", "Histogram jumlah polis"]}, {"t": "q", "no": 4, "tag": "", "h": "<p>Analis ingin mengetahui apakah usia pengemudi berhubungan dengan besarnya severity klaim kendaraan. Variabel usia pengemudi numerik dan severity klaim numerik. Visualisasi yang tepat adalah:<\/p>", "o": ["Scatter plot", "Bar chart", "Stacked bar chart", "Boxplot kategori"]}, {"t": "q", "no": 5, "tag": "", "h": "<p>Sebuah perusahaan ingin membandingkan proporsi klaim fraud dan non-fraud pada setiap wilayah. Visualisasi terbaik adalah:<\/p>", "o": ["Histogram", "100% stacked bar chart", "Scatter plot", "Density plot"]}, {"t": "q", "no": 6, "tag": "", "h": "<p>Sebuah perusahaan ingin membandingkan proporsi klaim fraud dan non-fraud pada setiap wilayah. Visualisasi terbaik adalah:<\/p>", "o": ["Histogram", "100% stacked bar chart", "Scatter plot", "Density plot"]}, {"t": "q", "no": 7, "tag": "", "h": "<p>Dalam analisis klaim kesehatan, ditemukan beberapa peserta dengan biaya klaim 20 kali lebih tinggi dibanding mayoritas peserta. Interpretasi awal yang paling tepat adalah:<\/p>", "o": ["Peserta tersebut pasti melakukan fraud", "Peserta tersebut harus langsung dihapus dari data", "Peserta tersebut merupakan outlier yang perlu diperiksa penyebabnya", "Data tersebut pasti salah input"]}, {"t": "q", "no": 8, "tag": "", "h": "<p>Seorang analis membuat visualisasi untuk manajemen mengenai faktor utama peningkatan loss ratio. Jenis visualisasi tersebut termasuk:<\/p>", "o": ["Exploration", "Communication", "Data cleaning", "Feature engineering"]}, {"t": "q", "no": 9, "tag": "", "h": "<p>Dataset polis memiliki kolom Policy_ID, Region, Premium, Claim_Amount. Analis ingin membuat grafik total premium per region. Langkah data preparation yang benar adalah:<\/p>", "o": ["filter() kemudian geom_point()", "select() kemudian pie chart", "mutate(region) kemudian histogram", "group_by(region) kemudian summarise(total premium)"]}, {"t": "q", "no": 10, "tag": "", "h": "<p>Perusahaan ingin melihat apakah jumlah kunjungan rumah sakit meningkat dari Januari hingga Desember. Grafik paling sesuai:<\/p>", "o": ["Line chart", "Boxplot", "Scatter plot", "Pie chart"]}, {"t": "q", "no": 11, "tag": "", "h": "<p>Sebuah bar chart menunjukkan bahwa Produk A memiliki jumlah klaim terbesar. Namun setelah dicek, Produk A juga memiliki jumlah polis 10 kali lebih banyak dibanding produk lain. Interpretasi yang lebih tepat adalah:<\/p>", "o": ["Produk A pasti memiliki risiko tertinggi", "Jumlah klaim absolut perlu dibandingkan dengan exposure polis", "Produk lain dapat dihapus", "Bar chart tidak boleh digunakan untuk klaim"]}, {"t": "q", "no": 12, "tag": "", "h": "<p>Dalam ggplot2, seorang analis menulis: <code>ggplot(data, aes(x = age, y = claim_cost)) + geom_point()<\/code>. Grafik tersebut digunakan untuk melihat:<\/p>", "o": ["Distribusi satu variabel kategori", "Hubungan antara dua variabel numerik, yaitu usia (age) dan biaya klaim (claim_cost)", "Komposisi kategori", "Perbandingan jumlah observasi"]}, {"t": "q", "no": 13, "tag": "", "h": "<p>Sebuah perusahaan asuransi ingin membuat grafik jumlah klaim berdasarkan jenis produk (product_type). Data masih berupa transaksi individu. Kode yang paling tepat adalah:<\/p>", "o": ["<code>ggplot(claim, aes(x = product_type)) + geom_col()<\/code>", "<code>ggplot(claim, aes(x = product_type)) + geom_bar()<\/code>", "<code>ggplot(claim, aes(x = claim_amount)) + geom_bar()<\/code>", "<code>ggplot(claim, aes(y = product_type)) + geom_histogram()<\/code>"]}, {"t": "q", "no": 14, "tag": "", "h": "<p>Seorang analis membuat visualisasi dengan kode: ggplot(claim_data, aes(x = product_type)) + geom_bar(). Grafik yang dihasilkan paling tepat digunakan untuk menjawab pertanyaan:<\/p>", "o": ["Bagaimana distribusi jumlah klaim pada setiap jenis produk asuransi?", "Bagaimana hubungan antara premi dan nilai klaim?", "Bagaimana perubahan jumlah klaim setiap bulan?", "Bagaimana penyebaran severity klaim dalam setiap produk?"]}, {"t": "q", "no": 15, "tag": "", "h": "<p>Perhatikan kode berikut: claim_data %>% group_by(region) %>% summarise(avg_claim = mean(claim_amount)). Tujuan utama dari proses tersebut adalah:<\/p>", "o": ["Mengubah data klaim menjadi distribusi frekuensi", "Menghapus data klaim yang ekstrem", "Menghasilkan nilai rata-rata klaim untuk setiap kelompok wilayah", "Mengubah variabel numerik menjadi kategori"]}]};
+
+const $ = id => document.getElementById(id);
+// Pemanasan server Apps Script saat halaman dibuka, agar pengiriman jawaban lebih cepat.
+try { if (/^https?:/.test(SCRIPT_URL)) fetch(SCRIPT_URL, {method: "GET", mode: "no-cors", cache: "no-store"}).catch(() => {}); } catch (e) {}
+let cur = null, ans = [];
+
+$("gform").addEventListener("submit", e => {
+  e.preventDefault();
+  const t = PW[enc($("pw").value.trim().toLowerCase())];
+  if (!t) { $("gerr").textContent = "Kode akses salah. Periksa kembali kode dari trainer."; return; }
+  cur = t; ans = Array(N).fill("");
+  render();
+  $("gate").classList.add("hide"); $("test").classList.remove("hide");
+  window.scrollTo(0, 0);
+});
+
+const L = o => "ABCDE".slice(0, o.length).split("");
+
+function stem(it, i) {
+  return `<p><span class="num">${i+1}.</span>${it.tag ? `<span class="qt">${it.tag}</span>` : ""}</p>${it.h}`;
+}
+function layout(card) {
+  let n = -1;
+  return T.items.map(it => {
+    if (it.t === "sec") return `<h2 class="sec">${it.h}</h2>`;
+    n++; return card(it, n);
+  }).join("");
+}
+
+function render() {
+  $("ttitle").textContent = TITLES[cur];
+  document.title = TITLES[cur] + " · " + TOPIC + " · BPJS Data Analytics Training";
+  $("pet").innerHTML = T.petunjuk.replace("{MODE}", cur === "pretest"
+    ? "Ini adalah <strong>pretest</strong>, dikerjakan sebelum materi untuk mengukur pemahaman awal. Tidak memengaruhi penilaian."
+    : "Ini adalah <strong>post-test</strong>, dikerjakan di akhir hari. Soalnya sama dengan pretest. Kunci dan pembahasan muncul setelah jawaban dikumpulkan.");
+  $("qs").innerHTML = layout((it, i) => `
+    <div class="card q" id="q${i}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        return `<label class="opt"><input type="radio" name="q${i}" value="${X}"><span><b>${X}.</b> ${o}</span></label>`; }).join("")}
+    </div>`);
+  $("qs").querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+    const i = +inp.name.slice(1);
+    ans[i] = inp.value;
+    document.querySelectorAll(`#q${i} .opt`).forEach(l => l.classList.toggle("on", l.querySelector("input").checked));
+    progress();
+  }));
+}
+
+function progress() {
+  const n = ans.filter(Boolean).length;
+  $("count").textContent = n + " / " + N + " terjawab";
+  $("pbar").style.width = (n / N * 100) + "%";
+}
+
+function showReview(d) {
+  $("review").innerHTML = layout((it, i) => {
+    const ok = ans[i] === d.key[i];
+    return `<div class="card rv ${ok ? "ok" : "no"}">
+      ${stem(it, i)}
+      ${it.o.map((o, j) => { const X = L(it.o)[j];
+        const c = X === d.key[i] ? "k" : (X === ans[i] ? "w" : "");
+        const m = X === d.key[i] ? " ✓ kunci" : (X === ans[i] ? " ✗ jawaban Anda" : "");
+        return `<div class="opt ${c}"><span><b>${X}.</b> ${o}<i>${m}</i></span></div>`; }).join("")}
+      <div class="pb"><span class="tag">${ok ? "Benar" : "Salah"}</span> · Jawaban Anda: ${ans[i]}, kunci: ${d.key[i]}.${d.expl[i] || ""}</div>
+    </div>`;
+  });
+}
+
+$("send").addEventListener("click", async () => {
+  const nama = $("nama").value.trim(), email = $("email").value.trim();
+  const err = $("terr"); err.textContent = "";
+  if (!nama) { err.textContent = "Isi nama terlebih dahulu."; $("nama").focus(); return; }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = "Isi email dengan format yang benar."; $("email").focus(); return; }
+  const k = ans.findIndex(a => !a);
+  if (k >= 0) { err.textContent = `Soal nomor ${k+1} belum dijawab.`; $("q"+k).scrollIntoView({behavior:"smooth"}); return; }
+  if (SCRIPT_URL.startsWith("PASTE_")) { err.textContent = "SCRIPT_URL belum diisi di file HTML (lihat PETUNJUK_REKAP.md)."; return; }
+
+  const btn = $("send"); btn.disabled = true; btn.textContent = "Mengirim…";
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: "POST",
+      headers: {"Content-Type": "text/plain;charset=utf-8"},
+      body: JSON.stringify({test: cur, nama, email, answers: ans, ver: VER})
+    });
+    const d = await res.json();
+    if (!d.ok) throw new Error(d.error || "Gagal menyimpan");
+    $("test").classList.add("hide"); $("done").classList.remove("hide");
+    if (d.ver !== VER) {
+      // Code.gs yang terpasang bukan untuk tes ini (URL tertukar atau belum diperbarui): skor tidak ditampilkan.
+      $("dmsg").textContent = `Jawaban ${TITLES[cur]} atas nama ${nama} sudah terkirim, tetapi skor belum bisa ditampilkan karena server penilaian belum sesuai. Mohon sampaikan ke trainer.`;
+      $("dscore").textContent = ""; $("dcard").classList.add("warn"); $("dnote").textContent = "Terima kasih sudah mengisi.";
+      window.scrollTo(0, 0); return;
+    }
+    $("dmsg").textContent = `${TITLES[cur]} atas nama ${nama} sudah tercatat. Jawaban benar:`;
+    $("dscore").textContent = `${d.correct} / ${d.total}  (skor ${d.score})`;
+    if (cur === "posttest" && d.key) {
+      $("dnote").textContent = "Pembahasan di bawah ini bisa dipakai untuk belajar. Terima kasih sudah mengisi.";
+      showReview(d);
+    } else {
+      $("dnote").textContent = "Kunci dan pembahasan akan muncul setelah kamu mengerjakan post-test di akhir hari. Terima kasih sudah mengisi.";
+    }
+    window.scrollTo(0, 0);
+  } catch (x) {
+    err.textContent = "Pengiriman gagal. Periksa koneksi lalu coba lagi. Jawaban Anda masih tersimpan di halaman ini.";
+    btn.disabled = false; btn.textContent = "Kumpulkan jawaban";
+  }
+});
+</script>
+</body>
+</html>

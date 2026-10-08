@@ -1,0 +1,301 @@
+policy_id,age,gender,region,vehicle_type,vehicle_age_year,coverage_type,sum_insured,annual_mileage_km,claim_frequency,previous_accident_count,pure_risk_factor,base_rate,premium_amount,premium_category
+POL300001,45,Male,Jawa Timur,MPV,18,Basic,55886399,78596,0,2,1.71,0.015,1433486.0,Low Premium
+POL300002,55,Female,Jawa Barat,Sedan,14,Standard,793228011,20547,1,0,1.43,0.015,17014741.0,High Premium
+POL300003,61,Male,Jakarta,MPV,4,Comprehensive,704877748,48145,1,0,1.48,0.015,15648286.0,High Premium
+POL300004,43,Male,Sulawesi,Truck,2,Basic,36919915,31712,2,0,1.34,0.015,742090.0,Low Premium
+POL300005,60,Female,Sumatera,Motorcycle,3,Basic,261734408,50795,1,0,1.36,0.015,5339382.0,Low Premium
+POL300006,65,Male,Sumatera,Motorcycle,4,Standard,609195914,53313,1,3,1.68,0.015,15351737.0,Medium Premium
+POL300007,46,Female,Sulawesi,Truck,9,Standard,827472197,41894,2,0,1.48,0.015,18369883.0,High Premium
+POL300008,64,Male,Sulawesi,SUV,15,Basic,311876070,13579,2,2,1.8,0.015,8420654.0,Medium Premium
+POL300009,33,Female,Jakarta,Sedan,12,Standard,619029451,36400,2,0,1.54,0.015,14299580.0,Medium Premium
+POL300010,70,Male,Jakarta,MPV,11,Basic,171765743,9150,1,0,1.37,0.015,3529786.0,Low Premium
+POL300011,63,Male,Jawa Barat,Sedan,4,Basic,117459257,19146,1,0,1.23,0.015,2167123.0,Low Premium
+POL300012,63,Male,Jakarta,SUV,7,Comprehensive,155805186,50552,0,1,1.64,0.015,3832808.0,Low Premium
+POL300013,55,Female,Sumatera,Sedan,1,Basic,321619624,70281,1,1,1.42,0.015,6850498.0,Low Premium
+POL300014,46,Female,Sumatera,Motorcycle,9,Basic,507412349,20911,0,0,1.18,0.015,8981199.0,Medium Premium
+POL300015,57,Female,Sulawesi,MPV,9,Standard,178727655,66563,0,1,1.43,0.015,3833708.0,Low Premium
+POL300016,35,Male,Jakarta,Sedan,13,Standard,546892103,18272,2,2,1.76,0.015,14437952.0,Medium Premium
+POL300017,29,Male,Jawa Timur,MPV,8,Comprehensive,540643680,11549,0,2,1.61,0.015,13056545.0,Medium Premium
+POL300018,58,Male,Jawa Timur,Truck,10,Standard,147544211,32116,0,1,1.3,0.015,2877112.0,Low Premium
+POL300019,69,Male,Jakarta,MPV,19,Basic,676440820,36374,1,1,1.63,0.015,16538978.0,High Premium
+POL300020,31,Male,Sumatera,SUV,13,Comprehensive,361808174,22867,0,0,1.51,0.015,8194955.0,Medium Premium
+POL300021,23,Male,Sulawesi,Sedan,9,Standard,650924872,71872,2,1,1.73,0.015,16891500.0,High Premium
+POL300022,52,Female,Sumatera,MPV,14,Standard,101573862,36754,3,1,1.83,0.015,2788203.0,Low Premium
+POL300023,32,Male,Sulawesi,Sedan,2,Basic,116491759,29091,2,0,1.34,0.015,2341484.0,Low Premium
+POL300024,38,Male,Sumatera,SUV,10,Comprehensive,947461321,28454,1,2,1.8,0.015,25581456.0,Very High Premium
+POL300025,52,Male,Jawa Timur,Motorcycle,11,Basic,685563239,9443,2,0,1.52,0.015,15630842.0,High Premium
+POL300026,20,Female,Sulawesi,Truck,18,Standard,920677406,47798,3,0,1.81,0.015,24996392.0,Very High Premium
+POL300027,61,Male,Sulawesi,Sedan,18,Standard,150532946,53865,1,3,1.96,0.015,4425669.0,Low Premium
+POL300028,58,Female,Jakarta,MPV,7,Basic,986687902,22126,2,2,1.64,0.015,24272522.0,Very High Premium
+POL300029,22,Male,Sumatera,Sedan,11,Standard,475017463,36239,3,2,1.87,0.015,13324240.0,Medium Premium
+POL300030,26,Male,Jakarta,MPV,10,Basic,604480161,68929,0,1,1.45,0.015,13147444.0,Medium Premium
+POL300031,39,Male,Jawa Timur,Motorcycle,15,Comprehensive,962456285,57670,2,0,2.0,0.015,28873689.0,Very High Premium
+POL300032,56,Male,Jawa Timur,Sedan,1,Standard,786537559,49403,1,2,1.37,0.015,16163347.0,High Premium
+POL300033,34,Female,Sulawesi,Sedan,3,Basic,966834244,73062,0,2,1.41,0.015,20448544.0,High Premium
+POL300034,59,Female,Jakarta,MPV,9,Standard,138915624,34052,0,1,1.28,0.015,2667180.0,Low Premium
+POL300035,28,Male,Jawa Timur,Sedan,10,Comprehensive,182508744,33535,1,1,1.7,0.015,4653973.0,Low Premium
+POL300036,26,Female,Jakarta,Truck,4,Standard,174163689,61137,1,1,1.48,0.015,3866434.0,Low Premium
+POL300037,62,Female,Sulawesi,SUV,0,Basic,303943998,6078,0,0,1.0,0.015,4559160.0,Low Premium
+POL300038,68,Male,Jawa Barat,SUV,7,Standard,308891185,28094,0,1,1.24,0.015,5745376.0,Low Premium
+POL300039,53,Male,Jawa Timur,Truck,3,Basic,151133598,9270,3,0,1.51,0.015,3423176.0,Low Premium
+POL300040,72,Male,Jakarta,SUV,3,Standard,828872530,48998,2,2,1.56,0.015,19395617.0,High Premium
+POL300041,73,Female,Jawa Barat,Motorcycle,18,Comprehensive,220905523,64035,1,2,2.11,0.015,6991660.0,Low Premium
+POL300042,66,Female,Sumatera,MPV,8,Comprehensive,607345861,74940,1,0,1.71,0.015,15578421.0,High Premium
+POL300043,66,Female,Sumatera,SUV,11,Standard,903839239,57072,0,3,1.67,0.015,22641173.0,High Premium
+POL300044,63,Male,Jakarta,Motorcycle,9,Standard,139308661,27808,0,1,1.28,0.015,2674726.0,Low Premium
+POL300045,69,Female,Sulawesi,Motorcycle,6,Basic,776525345,25856,1,0,1.27,0.015,14792808.0,Medium Premium
+POL300046,53,Male,Jawa Barat,Motorcycle,17,Basic,645690856,20226,2,0,1.64,0.015,15883995.0,High Premium
+POL300047,71,Female,Sumatera,Motorcycle,12,Basic,671745555,27106,1,1,1.49,0.015,15013513.0,Medium Premium
+POL300048,63,Male,Jakarta,Motorcycle,11,Standard,23203319,21388,0,1,1.32,0.015,459426.0,Low Premium
+POL300049,72,Female,Sulawesi,SUV,3,Basic,745891582,26385,0,0,1.06,0.015,11859676.0,Medium Premium
+POL300050,40,Male,Jakarta,SUV,11,Comprehensive,582664647,21877,0,2,1.67,0.015,14595749.0,Medium Premium
+POL300051,53,Female,Jakarta,MPV,17,Basic,657904806,68915,1,1,1.74,0.015,17171315.0,High Premium
+POL300052,74,Male,Sumatera,Motorcycle,4,Comprehensive,511656364,74413,2,2,1.98,0.015,15196194.0,Medium Premium
+POL300053,59,Female,Jakarta,Motorcycle,13,Standard,89760204,47119,0,0,1.26,0.015,1696468.0,Low Premium
+POL300054,40,Female,Jakarta,Truck,1,Standard,857594837,57600,1,0,1.32,0.015,16980378.0,High Premium
+POL300055,28,Male,Jawa Barat,Motorcycle,2,Comprehensive,629945849,29122,2,2,1.79,0.015,16914046.0,High Premium
+POL300056,39,Female,Sulawesi,Truck,2,Standard,615916015,28095,1,0,1.19,0.015,10994101.0,Medium Premium
+POL300057,35,Female,Sumatera,Truck,16,Standard,159162049,49957,1,1,1.57,0.015,3748266.0,Low Premium
+POL300058,24,Male,Sulawesi,SUV,8,Standard,788635758,43905,2,1,1.56,0.015,18454077.0,High Premium
+POL300059,62,Female,Jawa Timur,Truck,16,Standard,135344138,35167,1,0,1.47,0.015,2984338.0,Low Premium
+POL300060,62,Female,Jawa Barat,Truck,1,Basic,822059867,39845,0,0,1.02,0.015,12577516.0,Medium Premium
+POL300061,67,Female,Sumatera,Sedan,19,Comprehensive,340866591,53257,1,2,2.13,0.015,10890688.0,Medium Premium
+POL300062,61,Male,Sumatera,SUV,10,Standard,361557123,48664,3,0,1.65,0.015,8948539.0,Medium Premium
+POL300063,49,Female,Jawa Barat,Truck,14,Basic,316138134,69167,1,2,1.78,0.015,8440888.0,Medium Premium
+POL300064,29,Male,Jawa Timur,Sedan,18,Basic,316516950,76730,0,1,1.61,0.015,7643884.0,Low Premium
+POL300065,61,Female,Sumatera,SUV,4,Basic,156971631,49165,0,0,1.08,0.015,2542940.0,Low Premium
+POL300066,39,Female,Sumatera,SUV,1,Standard,899755262,59578,1,0,1.32,0.015,17815154.0,High Premium
+POL300067,44,Female,Sulawesi,SUV,13,Standard,876883854,9234,0,0,1.26,0.015,16573105.0,High Premium
+POL300068,64,Male,Jawa Barat,Sedan,4,Basic,388870252,13093,0,1,1.18,0.015,6883003.0,Low Premium
+POL300069,63,Female,Sumatera,MPV,14,Standard,129948028,74612,1,1,1.68,0.015,3274690.0,Low Premium
+POL300070,43,Female,Jakarta,Truck,4,Basic,538310924,8446,1,1,1.33,0.015,10739303.0,Medium Premium
+POL300071,30,Female,Sumatera,SUV,1,Standard,529725326,45081,3,2,1.67,0.015,13269619.0,Medium Premium
+POL300072,67,Male,Sumatera,MPV,7,Basic,895875040,43157,1,2,1.49,0.015,20022807.0,High Premium
+POL300073,38,Male,Sulawesi,Sedan,9,Standard,823695038,57541,4,1,2.03,0.015,25081514.0,Very High Premium
+POL300074,71,Male,Sulawesi,Motorcycle,15,Standard,381362345,62951,3,1,2.0,0.015,11440870.0,Medium Premium
+POL300075,69,Female,Jakarta,Truck,15,Comprehensive,79068469,18476,0,1,1.65,0.015,1956945.0,Low Premium
+POL300076,20,Male,Jakarta,Truck,3,Comprehensive,22786597,45336,0,0,1.31,0.015,447757.0,Low Premium
+POL300077,68,Female,Sulawesi,MPV,14,Standard,925578132,51605,3,1,1.98,0.015,27489671.0,Very High Premium
+POL300078,22,Female,Sumatera,SUV,0,Comprehensive,921852499,74089,2,2,1.9,0.015,26272796.0,Very High Premium
+POL300079,33,Female,Sumatera,SUV,0,Basic,744674211,27499,3,0,1.45,0.015,16196664.0,High Premium
+POL300080,23,Male,Jawa Timur,SUV,16,Basic,194260265,16533,2,0,1.62,0.015,4720524.0,Low Premium
+POL300081,22,Female,Sulawesi,SUV,2,Comprehensive,706678524,45955,2,0,1.59,0.015,16854283.0,High Premium
+POL300082,69,Female,Sulawesi,SUV,0,Standard,749230100,43637,2,1,1.4,0.015,15733832.0,High Premium
+POL300083,39,Female,Jawa Timur,Motorcycle,9,Basic,90503770,26074,0,2,1.38,0.015,1873428.0,Low Premium
+POL300084,49,Female,Jakarta,MPV,16,Basic,829519326,76541,2,1,1.87,0.015,23268017.0,Very High Premium
+POL300085,51,Male,Sumatera,Truck,6,Standard,698032678,22250,0,1,1.22,0.015,12773998.0,Medium Premium
+POL300086,28,Female,Jakarta,SUV,8,Standard,456800602,39693,2,1,1.56,0.015,10689134.0,Medium Premium
+POL300087,45,Female,Jakarta,Truck,4,Comprehensive,953429002,28585,1,1,1.58,0.015,22596267.0,High Premium
+POL300088,43,Female,Sulawesi,MPV,8,Standard,419544162,55342,2,0,1.61,0.015,10131992.0,Medium Premium
+POL300089,22,Female,Jawa Barat,Motorcycle,17,Basic,684454131,29397,2,1,1.74,0.015,17864253.0,High Premium
+POL300090,29,Female,Sulawesi,Motorcycle,5,Standard,626303253,42192,0,2,1.3,0.015,12212913.0,Medium Premium
+POL300091,61,Female,Jakarta,SUV,15,Comprehensive,210711125,72036,1,0,1.85,0.015,5847234.0,Low Premium
+POL300092,48,Female,Jawa Barat,SUV,4,Standard,472829237,63073,1,1,1.48,0.015,10496809.0,Medium Premium
+POL300093,46,Male,Jawa Timur,SUV,1,Basic,932114802,44708,0,2,1.22,0.015,17057701.0,High Premium
+POL300094,23,Male,Jawa Timur,Truck,4,Standard,642040056,61628,1,2,1.58,0.015,15216349.0,Medium Premium
+POL300095,74,Male,Sumatera,Motorcycle,1,Standard,988666469,26660,1,0,1.17,0.015,17351097.0,High Premium
+POL300096,65,Male,Jawa Barat,Truck,11,Standard,168300401,9541,1,1,1.47,0.015,3711024.0,Low Premium
+POL300097,25,Female,Jawa Barat,Motorcycle,11,Basic,745330650,48683,2,1,1.62,0.015,18111535.0,High Premium
+POL300098,41,Female,Jakarta,SUV,11,Comprehensive,100726023,36468,1,3,1.92,0.015,2900909.0,Low Premium
+POL300099,30,Female,Jawa Barat,Truck,9,Standard,52474578,70950,3,1,1.88,0.015,1479783.0,Low Premium
+POL300100,59,Female,Sumatera,SUV,2,Basic,655057293,21979,2,0,1.34,0.015,13166652.0,Medium Premium
+POL300101,61,Female,Jawa Barat,Sedan,4,Standard,431277354,26262,0,0,1.08,0.015,6986693.0,Low Premium
+POL300102,65,Male,Jakarta,MPV,4,Standard,149692888,22093,2,2,1.58,0.015,3547721.0,Low Premium
+POL300103,43,Female,Jawa Barat,Motorcycle,0,Basic,858755614,9849,2,0,1.3,0.015,16745734.0,High Premium
+POL300104,33,Female,Sumatera,Sedan,14,Comprehensive,338108910,56481,2,0,1.98,0.015,10041835.0,Medium Premium
+POL300105,38,Male,Jawa Timur,MPV,8,Basic,751520172,75337,5,0,2.06,0.015,23221973.0,Very High Premium
+POL300106,71,Male,Jakarta,MPV,1,Standard,870266572,72088,0,0,1.17,0.015,15273178.0,Medium Premium
+POL300107,35,Male,Jakarta,Motorcycle,10,Comprehensive,125356299,21835,1,0,1.6,0.015,3008551.0,Low Premium
+POL300108,44,Male,Jawa Barat,SUV,15,Comprehensive,872834288,66091,2,0,2.0,0.015,26185029.0,Very High Premium
+POL300109,50,Male,Jakarta,MPV,7,Comprehensive,619370879,59856,1,1,1.79,0.015,16630108.0,High Premium
+POL300110,32,Female,Sulawesi,Sedan,9,Comprehensive,200526825,13805,1,0,1.58,0.015,4752486.0,Low Premium
+POL300111,64,Male,Sulawesi,Sedan,2,Comprehensive,352859684,75868,2,0,1.74,0.015,9209638.0,Medium Premium
+POL300112,30,Female,Jawa Timur,Sedan,14,Standard,967150180,8738,1,1,1.53,0.015,22196097.0,High Premium
+POL300113,26,Male,Jakarta,Sedan,13,Standard,326634872,24871,2,0,1.56,0.015,7643256.0,Low Premium
+POL300114,53,Male,Jakarta,MPV,4,Standard,417544487,66986,1,1,1.48,0.015,9269488.0,Medium Premium
+POL300115,26,Male,Sumatera,Sedan,18,Standard,241924072,69430,0,0,1.51,0.015,5479580.0,Low Premium
+POL300116,33,Male,Jawa Barat,Motorcycle,18,Comprehensive,518847217,28592,1,3,2.06,0.015,16032379.0,High Premium
+POL300117,45,Female,Jawa Barat,Motorcycle,0,Standard,627801171,16975,0,1,1.1,0.015,10358719.0,Medium Premium
+POL300118,33,Female,Jakarta,SUV,14,Basic,994289660,65312,2,3,2.03,0.015,30276120.0,Very High Premium
+POL300119,48,Male,Jawa Timur,MPV,1,Basic,211044623,14692,1,2,1.37,0.015,4336967.0,Low Premium
+POL300120,34,Male,Sumatera,SUV,1,Standard,617823116,48930,1,1,1.27,0.015,11769530.0,Medium Premium
+POL300121,71,Male,Sumatera,Sedan,19,Standard,964187208,35916,2,0,1.68,0.015,24297518.0,Very High Premium
+POL300122,57,Male,Jawa Barat,MPV,10,Standard,755808448,74674,1,1,1.6,0.015,18139403.0,High Premium
+POL300123,62,Female,Jakarta,Motorcycle,10,Comprehensive,943937720,14901,2,1,1.85,0.015,26194272.0,Very High Premium
+POL300124,70,Male,Sulawesi,Sedan,6,Standard,804525963,13281,1,0,1.27,0.015,15326220.0,Medium Premium
+POL300125,28,Female,Jawa Barat,Motorcycle,15,Comprehensive,417428999,75554,2,2,2.2,0.015,13775157.0,Medium Premium
+POL300126,74,Female,Jawa Barat,Truck,16,Comprehensive,954848293,19403,1,2,1.92,0.015,27499631.0,Very High Premium
+POL300127,51,Female,Sulawesi,Truck,0,Standard,66138651,64623,0,1,1.25,0.015,1240100.0,Low Premium
+POL300128,54,Male,Sulawesi,MPV,3,Standard,779459460,72954,1,2,1.56,0.015,18239351.0,High Premium
+POL300129,25,Male,Sumatera,SUV,19,Basic,649377524,74123,1,1,1.78,0.015,17338380.0,High Premium
+POL300130,37,Female,Sumatera,SUV,8,Comprehensive,201356244,20849,1,1,1.66,0.015,5013770.0,Low Premium
+POL300131,55,Male,Jawa Timur,MPV,5,Comprehensive,802118158,55563,2,0,1.8,0.015,21657190.0,High Premium
+POL300132,62,Male,Jawa Timur,Sedan,3,Standard,223783858,28401,0,2,1.26,0.015,4229515.0,Low Premium
+POL300133,62,Male,Jawa Timur,SUV,0,Standard,619896706,70897,2,1,1.55,0.015,14412598.0,Medium Premium
+POL300134,43,Female,Jawa Timur,MPV,6,Standard,285604815,24724,1,2,1.47,0.015,6297586.0,Low Premium
+POL300135,61,Female,Sulawesi,SUV,4,Comprehensive,944513650,40278,0,1,1.43,0.015,20259818.0,High Premium
+POL300136,32,Female,Jakarta,Motorcycle,10,Basic,955616782,25796,1,1,1.45,0.015,20784665.0,High Premium
+POL300137,38,Male,Jawa Barat,Sedan,3,Basic,983414588,66124,1,0,1.36,0.015,20061658.0,High Premium
+POL300138,60,Female,Jawa Timur,MPV,14,Standard,78515657,52777,1,0,1.58,0.015,1860821.0,Low Premium
+POL300139,52,Male,Sulawesi,MPV,9,Standard,718401755,35949,1,3,1.63,0.015,17564923.0,High Premium
+POL300140,31,Female,Jawa Barat,Truck,4,Standard,757027302,44427,3,1,1.63,0.015,18509318.0,High Premium
+POL300141,73,Male,Sulawesi,Motorcycle,2,Standard,54158179,49783,0,0,1.04,0.015,844868.0,Low Premium
+POL300142,29,Male,Sulawesi,SUV,11,Standard,163640462,61883,2,2,1.87,0.015,4590115.0,Low Premium
+POL300143,44,Female,Jawa Barat,MPV,16,Standard,351987109,39186,1,1,1.57,0.015,8289296.0,Medium Premium
+POL300144,44,Male,Jawa Timur,MPV,16,Comprehensive,905520788,55481,2,1,2.12,0.015,28795561.0,Very High Premium
+POL300145,42,Female,Jakarta,Motorcycle,15,Comprehensive,249316951,16131,2,1,1.95,0.015,7292521.0,Low Premium
+POL300146,47,Male,Sulawesi,Sedan,14,Basic,335073123,78992,0,1,1.53,0.015,7689928.0,Low Premium
+POL300147,63,Male,Sulawesi,MPV,18,Standard,348964039,42325,1,2,1.71,0.015,8950928.0,Medium Premium
+POL300148,22,Female,Sumatera,Motorcycle,8,Standard,913300587,44956,1,1,1.41,0.015,19316307.0,High Premium
+POL300149,57,Male,Sumatera,SUV,16,Comprehensive,523839404,58335,3,0,2.17,0.015,17050973.0,High Premium
+POL300150,67,Male,Sulawesi,Truck,14,Standard,996878948,47388,2,0,1.58,0.015,23626031.0,Very High Premium
+POL300151,46,Male,Jawa Barat,SUV,5,Comprehensive,482522871,77117,0,0,1.5,0.015,10856765.0,Medium Premium
+POL300152,63,Male,Jakarta,MPV,8,Comprehensive,200451011,16695,0,1,1.51,0.015,4540215.0,Low Premium
+POL300153,59,Male,Jawa Barat,MPV,2,Comprehensive,560970196,40200,2,1,1.69,0.015,14220594.0,Medium Premium
+POL300154,61,Male,Jawa Barat,MPV,0,Comprehensive,337462149,48856,2,0,1.55,0.015,7845995.0,Low Premium
+POL300155,27,Female,Sumatera,MPV,0,Standard,128547713,26249,0,2,1.2,0.015,2313859.0,Low Premium
+POL300156,40,Female,Jawa Timur,Sedan,8,Comprehensive,321466601,10358,1,1,1.66,0.015,8004518.0,Medium Premium
+POL300157,18,Female,Jawa Barat,MPV,5,Standard,348101216,36788,0,1,1.2,0.015,6265822.0,Low Premium
+POL300158,44,Female,Jakarta,MPV,11,Comprehensive,836229035,77091,0,0,1.62,0.015,20320366.0,High Premium
+POL300159,66,Male,Sumatera,Truck,17,Basic,385517243,60112,1,0,1.64,0.015,9483724.0,Medium Premium
+POL300160,18,Female,Jakarta,Truck,14,Comprehensive,253333301,60827,1,4,2.23,0.015,8473999.0,Medium Premium
+POL300161,29,Male,Sumatera,SUV,8,Basic,452766953,5411,4,0,1.76,0.015,11953048.0,Medium Premium
+POL300162,29,Male,Jawa Timur,MPV,9,Standard,803337556,59183,0,2,1.53,0.015,18436597.0,High Premium
+POL300163,42,Female,Sumatera,Truck,19,Basic,827236064,17273,1,0,1.53,0.015,18985068.0,High Premium
+POL300164,31,Female,Jakarta,Motorcycle,2,Comprehensive,704260910,42014,1,1,1.54,0.015,16268427.0,High Premium
+POL300165,31,Male,Jawa Timur,MPV,19,Standard,567522336,46170,0,1,1.48,0.015,12598996.0,Medium Premium
+POL300166,72,Male,Jawa Timur,MPV,16,Basic,726432126,18178,1,0,1.47,0.015,16017828.0,High Premium
+POL300167,55,Female,Jawa Timur,MPV,16,Standard,853392920,59273,0,1,1.57,0.015,20097403.0,High Premium
+POL300168,68,Male,Sumatera,MPV,18,Basic,91711630,78067,1,1,1.76,0.015,2421187.0,Low Premium
+POL300169,67,Male,Sulawesi,Sedan,19,Basic,314649379,13278,2,2,1.88,0.015,8873112.0,Medium Premium
+POL300170,56,Male,Jawa Barat,Sedan,8,Standard,583073174,50428,1,1,1.56,0.015,13643912.0,Medium Premium
+POL300171,40,Female,Jawa Timur,SUV,2,Basic,222827064,72240,3,1,1.74,0.015,5815786.0,Low Premium
+POL300172,64,Female,Jakarta,Truck,18,Standard,660434914,37372,1,1,1.61,0.015,15949503.0,High Premium
+POL300173,21,Female,Jawa Timur,MPV,13,Standard,806701971,67105,1,1,1.66,0.015,20086879.0,High Premium
+POL300174,33,Male,Jawa Barat,MPV,0,Standard,911640225,59641,1,0,1.3,0.015,17776984.0,High Premium
+POL300175,61,Female,Jakarta,MPV,3,Basic,74510321,68822,2,0,1.51,0.015,1687659.0,Low Premium
+POL300176,47,Male,Sulawesi,Truck,1,Standard,531705023,33955,0,1,1.12,0.015,8932644.0,Medium Premium
+POL300177,58,Female,Jawa Barat,Motorcycle,10,Standard,398927452,28052,1,2,1.55,0.015,9275063.0,Medium Premium
+POL300178,56,Female,Jakarta,Motorcycle,11,Comprehensive,819173007,57809,1,0,1.77,0.015,21749043.0,High Premium
+POL300179,39,Male,Jawa Timur,Truck,0,Standard,366921198,40391,4,3,1.9,0.015,10457254.0,Medium Premium
+POL300180,74,Female,Jawa Barat,Motorcycle,13,Basic,406659195,31304,1,0,1.41,0.015,8600842.0,Medium Premium
+POL300181,34,Male,Jakarta,Sedan,8,Standard,580706831,63466,1,0,1.46,0.015,12717480.0,Medium Premium
+POL300182,73,Male,Sulawesi,MPV,9,Standard,779108690,73738,2,0,1.63,0.015,19049207.0,High Premium
+POL300183,56,Male,Jakarta,SUV,7,Comprehensive,567748867,71751,0,2,1.74,0.015,14818245.0,Medium Premium
+POL300184,64,Male,Jakarta,SUV,1,Standard,479848661,43234,3,2,1.67,0.015,12020209.0,Medium Premium
+POL300185,33,Male,Sumatera,Sedan,15,Standard,923489520,65782,2,1,1.85,0.015,25626834.0,Very High Premium
+POL300186,29,Male,Jawa Timur,Truck,7,Basic,357070423,48749,1,1,1.39,0.015,7444918.0,Low Premium
+POL300187,39,Male,Jawa Timur,SUV,17,Standard,818184900,60783,0,1,1.59,0.015,19513710.0,High Premium
+POL300188,41,Male,Sumatera,MPV,18,Standard,881550699,50872,1,1,1.76,0.015,23272938.0,Very High Premium
+POL300189,36,Female,Jawa Timur,SUV,1,Comprehensive,288744553,47664,1,0,1.42,0.015,6150259.0,Low Premium
+POL300190,20,Female,Jakarta,Truck,7,Basic,114867263,22870,0,1,1.24,0.015,2136531.0,Low Premium
+POL300191,51,Female,Jawa Timur,MPV,13,Basic,362739892,68311,0,1,1.51,0.015,8216059.0,Medium Premium
+POL300192,28,Male,Jawa Timur,MPV,16,Basic,319227665,7774,1,2,1.67,0.015,7996653.0,Medium Premium
+POL300193,43,Female,Jawa Barat,Sedan,5,Basic,872187914,11894,1,1,1.35,0.015,17661805.0,High Premium
+POL300194,20,Male,Jakarta,Sedan,8,Standard,474125102,52268,2,3,1.91,0.015,13583684.0,Medium Premium
+POL300195,54,Female,Jakarta,Motorcycle,17,Standard,289048354,60430,0,2,1.69,0.015,7327376.0,Low Premium
+POL300196,34,Male,Jakarta,SUV,1,Standard,209921649,10912,3,0,1.47,0.015,4628772.0,Low Premium
+POL300197,20,Male,Jawa Barat,MPV,12,Basic,415536354,6437,2,0,1.54,0.015,9598890.0,Medium Premium
+POL300198,24,Female,Jawa Timur,SUV,14,Comprehensive,447771599,66148,2,2,2.18,0.015,14642131.0,Medium Premium
+POL300199,37,Male,Sulawesi,SUV,5,Comprehensive,310267080,24992,0,0,1.35,0.015,6282908.0,Low Premium
+POL300200,31,Female,Sumatera,Motorcycle,19,Standard,205276430,47400,1,1,1.63,0.015,5019009.0,Low Premium
+POL300201,35,Male,Jawa Barat,Truck,9,Basic,870183457,22230,2,1,1.58,0.015,20623348.0,High Premium
+POL300202,56,Female,Jawa Barat,SUV,9,Standard,329462344,32961,0,1,1.28,0.015,6325677.0,Low Premium
+POL300203,66,Female,Jawa Barat,SUV,16,Basic,96038567,69102,2,0,1.77,0.015,2549824.0,Low Premium
+POL300204,35,Female,Jawa Barat,Truck,12,Basic,314539233,36450,0,1,1.34,0.015,6322239.0,Low Premium
+POL300205,18,Female,Jawa Timur,Sedan,16,Basic,40956531,76913,1,1,1.72,0.015,1056678.0,Low Premium
+POL300206,44,Female,Jakarta,SUV,19,Comprehensive,745312563,26579,2,0,1.93,0.015,21576799.0,High Premium
+POL300207,61,Male,Jakarta,Truck,18,Standard,395143725,47026,1,2,1.71,0.015,10135437.0,Medium Premium
+POL300208,45,Male,Jawa Timur,MPV,15,Standard,293358839,29725,1,4,1.85,0.015,8140708.0,Medium Premium
+POL300209,25,Male,Jawa Timur,Sedan,19,Basic,402178808,61696,2,1,1.93,0.015,11643076.0,Medium Premium
+POL300210,50,Female,Sumatera,MPV,14,Standard,360213670,27427,0,0,1.28,0.015,6916102.0,Low Premium
+POL300211,31,Female,Jawa Timur,SUV,8,Standard,771028855,48166,1,0,1.31,0.015,15150717.0,Medium Premium
+POL300212,27,Female,Jakarta,SUV,4,Basic,329464049,53224,2,0,1.53,0.015,7561200.0,Low Premium
+POL300213,30,Male,Sumatera,SUV,6,Basic,117540347,40355,0,2,1.32,0.015,2327299.0,Low Premium
+POL300214,71,Female,Jakarta,Truck,6,Comprehensive,921973038,6498,2,0,1.67,0.015,23095425.0,Very High Premium
+POL300215,32,Female,Jawa Barat,Motorcycle,18,Standard,711145895,68875,2,1,1.91,0.015,20374330.0,High Premium
+POL300216,27,Female,Sumatera,SUV,11,Basic,97357508,21367,0,0,1.22,0.015,1781642.0,Low Premium
+POL300217,33,Female,Jawa Barat,MPV,9,Standard,350374202,21021,1,1,1.43,0.015,7515527.0,Low Premium
+POL300218,49,Male,Jawa Barat,SUV,17,Standard,76350498,44953,0,1,1.44,0.015,1649171.0,Low Premium
+POL300219,29,Female,Jawa Barat,MPV,1,Comprehensive,388434008,9632,1,1,1.52,0.015,8856295.0,Medium Premium
+POL300220,67,Female,Jawa Timur,Sedan,18,Standard,212453943,35418,3,1,1.91,0.015,6086805.0,Low Premium
+POL300221,52,Female,Jakarta,SUV,2,Standard,995359361,65294,1,1,1.44,0.015,21499762.0,High Premium
+POL300222,23,Female,Sulawesi,Sedan,7,Standard,843681871,61038,0,1,1.39,0.015,17590767.0,High Premium
+POL300223,49,Female,Jawa Barat,Truck,18,Basic,719976609,6584,2,0,1.66,0.015,17927418.0,High Premium
+POL300224,61,Female,Jawa Timur,Sedan,13,Basic,31436201,78190,0,1,1.51,0.015,712030.0,Low Premium
+POL300225,22,Female,Sumatera,SUV,18,Comprehensive,425340644,56615,1,1,2.01,0.015,12824020.0,Medium Premium
+POL300226,38,Male,Jawa Barat,SUV,4,Standard,869049838,41125,0,2,1.28,0.015,16685757.0,High Premium
+POL300227,66,Male,Jakarta,Motorcycle,15,Comprehensive,934544298,5349,0,0,1.55,0.015,21728155.0,High Premium
+POL300228,43,Male,Sumatera,Truck,13,Comprehensive,75580593,7402,1,2,1.86,0.015,2108699.0,Low Premium
+POL300229,23,Male,Sumatera,Motorcycle,15,Comprehensive,945135802,72220,0,0,1.7,0.015,24100963.0,Very High Premium
+POL300230,31,Male,Sulawesi,Motorcycle,7,Basic,275457413,69278,0,1,1.39,0.015,5743287.0,Low Premium
+POL300231,22,Male,Sumatera,Truck,14,Comprehensive,751504944,65218,1,0,1.83,0.015,20628811.0,High Premium
+POL300232,41,Female,Sumatera,Motorcycle,7,Comprehensive,892883631,69167,2,0,1.84,0.015,24643588.0,Very High Premium
+POL300233,50,Female,Jawa Timur,SUV,11,Standard,177793649,45302,1,1,1.47,0.015,3920350.0,Low Premium
+POL300234,24,Male,Sumatera,Truck,8,Basic,653012382,43467,2,0,1.46,0.015,14300971.0,Medium Premium
+POL300235,37,Female,Sulawesi,Motorcycle,16,Standard,461987064,26981,1,2,1.67,0.015,11572776.0,Medium Premium
+POL300236,27,Female,Jawa Barat,Truck,13,Comprehensive,268493826,63821,0,0,1.66,0.015,6685496.0,Low Premium
+POL300237,23,Female,Jawa Barat,SUV,13,Standard,572261913,35656,2,1,1.66,0.015,14249322.0,Medium Premium
+POL300238,47,Male,Jakarta,Sedan,0,Standard,157648149,77597,3,0,1.6,0.015,3783556.0,Low Premium
+POL300239,57,Male,Jakarta,SUV,15,Basic,762679762,64319,2,1,1.85,0.015,21164363.0,High Premium
+POL300240,47,Male,Sumatera,SUV,3,Comprehensive,242844577,62611,3,0,1.91,0.015,6957497.0,Low Premium
+POL300241,61,Male,Jawa Barat,Truck,1,Comprehensive,895067912,17920,3,0,1.72,0.015,23092752.0,Very High Premium
+POL300242,46,Male,Jawa Timur,Motorcycle,13,Standard,820123435,18326,0,2,1.46,0.015,17960703.0,High Premium
+POL300243,31,Male,Sulawesi,Motorcycle,5,Comprehensive,883056678,42833,1,1,1.6,0.015,21193360.0,High Premium
+POL300244,24,Female,Sulawesi,Motorcycle,12,Comprehensive,669112227,56686,0,2,1.84,0.015,18467497.0,High Premium
+POL300245,27,Male,Sulawesi,Truck,7,Comprehensive,706016681,15331,2,2,1.89,0.015,20015573.0,High Premium
+POL300246,64,Male,Jawa Timur,Truck,3,Comprehensive,649093671,35412,1,2,1.66,0.015,16162432.0,High Premium
+POL300247,62,Male,Jawa Timur,Motorcycle,19,Comprehensive,399117351,31787,1,1,1.88,0.015,11255109.0,Medium Premium
+POL300248,59,Female,Sulawesi,Motorcycle,12,Standard,704278150,6730,0,1,1.34,0.015,14155991.0,Medium Premium
+POL300249,62,Female,Jawa Timur,Truck,17,Standard,942377306,35732,2,1,1.74,0.015,24596048.0,Very High Premium
+POL300250,30,Female,Jakarta,Motorcycle,11,Basic,590395824,17785,3,2,1.87,0.015,16560603.0,High Premium
+POL300251,47,Female,Jawa Barat,MPV,5,Basic,128807085,67443,0,1,1.35,0.015,2608343.0,Low Premium
+POL300252,29,Male,Jakarta,Motorcycle,19,Standard,26715101,56779,1,1,1.78,0.015,713293.0,Low Premium
+POL300253,62,Female,Jawa Barat,Sedan,1,Standard,676265928,7121,4,2,1.82,0.015,18462060.0,High Premium
+POL300254,68,Female,Sulawesi,Motorcycle,5,Basic,372673070,61846,0,0,1.25,0.015,6987620.0,Low Premium
+POL300255,26,Female,Sumatera,Truck,5,Comprehensive,813039990,53101,1,0,1.65,0.015,20122740.0,High Premium
+POL300256,38,Female,Jawa Timur,Truck,10,Standard,399560837,74244,0,1,1.45,0.015,8690448.0,Medium Premium
+POL300257,36,Male,Jawa Timur,Sedan,7,Standard,63601920,7476,0,3,1.44,0.015,1373801.0,Low Premium
+POL300258,64,Female,Sulawesi,MPV,17,Standard,203929283,54378,2,1,1.89,0.015,5781395.0,Low Premium
+POL300259,71,Female,Jakarta,MPV,4,Standard,593718937,68347,1,1,1.48,0.015,13180560.0,Medium Premium
+POL300260,65,Female,Jawa Barat,Truck,18,Basic,850941465,43364,3,1,1.91,0.015,24379473.0,Very High Premium
+POL300261,49,Female,Sumatera,SUV,10,Basic,896171905,38656,0,0,1.2,0.015,16131094.0,High Premium
+POL300262,70,Male,Jawa Barat,Sedan,10,Standard,146177507,56909,2,6,2.25,0.015,4933491.0,Low Premium
+POL300263,29,Female,Sumatera,SUV,14,Comprehensive,871789336,19318,2,1,1.93,0.015,25238301.0,Very High Premium
+POL300264,74,Male,Sulawesi,Sedan,8,Basic,704132661,43329,1,1,1.41,0.015,14892406.0,Medium Premium
+POL300265,48,Female,Jawa Barat,MPV,12,Comprehensive,415433227,62329,1,1,1.89,0.015,11777532.0,Medium Premium
+POL300266,42,Male,Jawa Barat,Truck,4,Standard,749053248,67779,2,2,1.73,0.015,19437932.0,High Premium
+POL300267,42,Female,Jawa Barat,Motorcycle,6,Comprehensive,695700563,33216,0,0,1.37,0.015,14296647.0,Medium Premium
+POL300268,54,Female,Sumatera,MPV,4,Basic,819796716,79345,1,0,1.38,0.015,16969792.0,High Premium
+POL300269,27,Female,Sulawesi,Sedan,12,Standard,973064279,58791,0,1,1.49,0.015,21747987.0,High Premium
+POL300270,18,Male,Sulawesi,Truck,4,Standard,322778635,60909,2,1,1.63,0.015,7891938.0,Low Premium
+POL300271,68,Female,Jakarta,Sedan,17,Standard,468640784,56625,2,0,1.79,0.015,12583005.0,Medium Premium
+POL300272,19,Female,Jawa Timur,Motorcycle,6,Basic,228291998,66198,1,1,1.52,0.015,5205058.0,Low Premium
+POL300273,50,Female,Jawa Barat,MPV,11,Basic,232577299,22871,0,1,1.32,0.015,4605031.0,Low Premium
+POL300274,69,Male,Sulawesi,SUV,12,Comprehensive,642827229,25611,1,1,1.74,0.015,16777791.0,High Premium
+POL300275,36,Female,Sulawesi,Sedan,6,Basic,654560297,37257,0,0,1.12,0.015,10996613.0,Medium Premium
+POL300276,49,Female,Jakarta,Sedan,6,Standard,953008577,59214,0,0,1.27,0.015,18154813.0,High Premium
+POL300277,32,Female,Jawa Barat,Sedan,12,Comprehensive,354792992,77953,2,0,1.94,0.015,10324476.0,Medium Premium
+POL300278,52,Female,Sumatera,MPV,11,Basic,183451721,39646,2,0,1.52,0.015,4182699.0,Low Premium
+POL300279,21,Female,Sulawesi,Sedan,17,Basic,490574219,54685,5,1,2.34,0.015,17219155.0,High Premium
+POL300280,25,Male,Jawa Timur,Motorcycle,3,Comprehensive,891598964,18986,1,2,1.66,0.015,22200814.0,High Premium
+POL300281,72,Female,Jawa Timur,MPV,12,Standard,236265660,33439,2,2,1.74,0.015,6166534.0,Low Premium
+POL300282,47,Female,Sulawesi,MPV,0,Standard,971979262,43225,2,0,1.3,0.015,18953596.0,High Premium
+POL300283,31,Female,Jakarta,Truck,6,Standard,34525514,50102,1,1,1.52,0.015,787182.0,Low Premium
+POL300284,37,Female,Jakarta,Truck,5,Standard,763603847,29784,0,0,1.1,0.015,12599463.0,Medium Premium
+POL300285,63,Male,Sumatera,Sedan,5,Basic,780187371,48042,0,1,1.2,0.015,14043373.0,Medium Premium
+POL300286,24,Male,Jakarta,MPV,12,Basic,453057133,14595,1,1,1.49,0.015,10125827.0,Medium Premium
+POL300287,65,Female,Sulawesi,Motorcycle,4,Standard,177017377,34215,1,1,1.33,0.015,3531497.0,Low Premium
+POL300288,22,Male,Sulawesi,Motorcycle,3,Standard,870429238,26551,3,1,1.61,0.015,21020866.0,High Premium
+POL300289,33,Female,Jawa Barat,Truck,0,Comprehensive,817428342,12183,1,1,1.5,0.015,18392138.0,High Premium
+POL300290,55,Female,Sulawesi,Sedan,12,Comprehensive,999627496,20407,1,0,1.64,0.015,24590836.0,Very High Premium
+POL300291,32,Female,Jawa Timur,Truck,5,Standard,824896829,47334,2,2,1.6,0.015,19797524.0,High Premium
+POL300292,33,Male,Jakarta,SUV,5,Comprehensive,458228529,76615,0,2,1.7,0.015,11684827.0,Medium Premium
+POL300293,69,Female,Jawa Barat,Truck,17,Basic,972503375,25491,2,1,1.74,0.015,25382338.0,Very High Premium
+POL300294,63,Male,Jakarta,Truck,15,Standard,225210603,28176,3,0,1.75,0.015,5911778.0,Low Premium
+POL300295,51,Female,Sumatera,Truck,8,Standard,101407836,40699,1,0,1.31,0.015,1992664.0,Low Premium
+POL300296,32,Male,Sulawesi,Motorcycle,12,Basic,706115643,68259,2,0,1.69,0.015,17900032.0,High Premium
+POL300297,28,Female,Sumatera,SUV,1,Standard,991966054,16114,1,4,1.57,0.015,23360801.0,Very High Premium
+POL300298,51,Male,Sumatera,SUV,17,Standard,349248336,69614,0,2,1.69,0.015,8853445.0,Medium Premium
+POL300299,58,Male,Sumatera,Sedan,10,Comprehensive,239970043,9422,1,1,1.7,0.015,6119236.0,Low Premium
+POL300300,20,Male,Sulawesi,MPV,18,Standard,886679206,8675,2,0,1.66,0.015,22078312.0,High Premium

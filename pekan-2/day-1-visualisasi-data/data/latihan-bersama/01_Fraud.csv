@@ -1,0 +1,301 @@
+claim_id,age,gender,region,vehicle_type,policy_age_year,claim_amount,num_previous_claim,claim_delay_days,workshop_category,fraud_status,claim_frequency_category
+CLM100001,59,Female,Jawa Barat,Sedan,8,86518073,0,40,Partner,Fraud,Low
+CLM100002,49,Female,Jakarta,Sedan,9,134930531,2,53,Official,Fraud,Medium
+CLM100003,35,Male,Sumatera,Truck,5,53673683,2,45,Partner,Non Fraud,Medium
+CLM100004,63,Female,Jawa Timur,SUV,3,140921122,1,59,Partner,Fraud,Low
+CLM100005,28,Female,Sumatera,Truck,5,125681459,1,43,Official,Fraud,Low
+CLM100006,41,Male,Sumatera,Sedan,5,146633104,2,59,Official,Fraud,Medium
+CLM100007,59,Male,Jawa Barat,SUV,5,77176890,1,56,Non Partner,Non Fraud,Low
+CLM100008,39,Male,Jawa Timur,Sedan,3,148501420,0,30,Partner,Non Fraud,Low
+CLM100009,43,Male,Sumatera,Truck,4,128440874,1,19,Official,Fraud,Low
+CLM100010,31,Female,Jakarta,Truck,9,94389281,3,23,Non Partner,Fraud,Medium
+CLM100011,31,Female,Jakarta,Truck,9,90817241,2,24,Non Partner,Fraud,Medium
+CLM100012,44,Female,Sulawesi,Sedan,2,137939592,6,35,Partner,Fraud,High
+CLM100013,56,Female,Jawa Timur,SUV,8,55278856,1,20,Partner,Non Fraud,Low
+CLM100014,60,Female,Jawa Timur,SUV,8,75842172,0,29,Non Partner,Non Fraud,Low
+CLM100015,44,Female,Sulawesi,Sedan,7,4875754,1,23,Official,Non Fraud,Low
+CLM100016,23,Male,Sumatera,SUV,8,96268888,1,43,Non Partner,Fraud,Low
+CLM100017,42,Female,Jawa Timur,Sedan,3,58696034,3,41,Partner,Non Fraud,Medium
+CLM100018,22,Male,Jakarta,SUV,6,29356738,2,29,Official,Non Fraud,Medium
+CLM100019,44,Male,Jakarta,MPV,1,66564145,2,21,Official,Non Fraud,Medium
+CLM100020,64,Female,Jawa Barat,MPV,7,11047595,1,27,Non Partner,Non Fraud,Low
+CLM100021,50,Male,Jawa Timur,Truck,1,31908587,2,6,Partner,Non Fraud,Medium
+CLM100022,58,Female,Sumatera,MPV,9,130705394,2,34,Non Partner,Fraud,Medium
+CLM100023,22,Male,Sulawesi,MPV,1,96112669,3,54,Non Partner,Fraud,Medium
+CLM100024,41,Female,Sulawesi,MPV,1,23564965,3,27,Non Partner,Non Fraud,Medium
+CLM100025,53,Male,Sumatera,Sedan,7,120102305,3,13,Official,Non Fraud,Medium
+CLM100026,32,Female,Jawa Barat,MPV,2,10004644,3,55,Official,Non Fraud,Medium
+CLM100027,42,Female,Sulawesi,MPV,5,125906539,0,9,Partner,Fraud,Low
+CLM100028,64,Female,Jawa Timur,Truck,8,106650992,0,15,Partner,Non Fraud,Low
+CLM100029,45,Female,Jawa Barat,MPV,8,51760636,2,15,Non Partner,Non Fraud,Medium
+CLM100030,69,Female,Jawa Timur,MPV,3,55706505,2,53,Non Partner,Non Fraud,Medium
+CLM100031,47,Male,Jakarta,SUV,7,14143608,1,30,Non Partner,Non Fraud,Low
+CLM100032,62,Male,Jawa Barat,Truck,3,37532022,3,41,Partner,Non Fraud,Medium
+CLM100033,48,Male,Sulawesi,Truck,6,92485680,0,24,Official,Non Fraud,Low
+CLM100034,36,Female,Jawa Barat,Truck,6,104960587,0,12,Official,Non Fraud,Low
+CLM100035,35,Male,Jawa Barat,Truck,3,89780367,1,5,Non Partner,Fraud,Low
+CLM100036,67,Female,Jawa Barat,Truck,7,37045138,2,43,Non Partner,Non Fraud,Medium
+CLM100037,64,Female,Jawa Barat,Truck,3,60912158,1,8,Non Partner,Non Fraud,Low
+CLM100038,23,Male,Jawa Timur,Sedan,8,39808656,1,44,Non Partner,Non Fraud,Low
+CLM100039,57,Male,Jakarta,MPV,4,146098454,1,35,Partner,Fraud,Low
+CLM100040,27,Female,Sumatera,Truck,1,21515189,3,55,Official,Non Fraud,Medium
+CLM100041,41,Male,Jawa Barat,MPV,4,53534223,3,42,Non Partner,Non Fraud,Medium
+CLM100042,29,Female,Sulawesi,MPV,7,122821649,2,19,Partner,Non Fraud,Medium
+CLM100043,59,Female,Jawa Barat,Sedan,4,94050123,2,17,Non Partner,Fraud,Medium
+CLM100044,38,Female,Sulawesi,Truck,6,145780942,3,57,Non Partner,Fraud,Medium
+CLM100045,24,Female,Jawa Timur,SUV,9,25374842,1,42,Official,Non Fraud,Low
+CLM100046,45,Female,Sulawesi,Sedan,1,29172140,2,56,Non Partner,Fraud,Medium
+CLM100047,34,Male,Sumatera,SUV,5,78632265,2,20,Official,Non Fraud,Medium
+CLM100048,29,Male,Jakarta,MPV,7,111654479,2,3,Official,Non Fraud,Medium
+CLM100049,46,Female,Sulawesi,MPV,1,24387092,1,49,Official,Non Fraud,Low
+CLM100050,22,Female,Sulawesi,Sedan,4,2524102,1,32,Partner,Non Fraud,Low
+CLM100051,40,Male,Jakarta,Sedan,6,146796877,2,26,Partner,Non Fraud,Medium
+CLM100052,48,Male,Sumatera,SUV,2,43607220,1,6,Official,Non Fraud,Low
+CLM100053,67,Female,Jawa Barat,Truck,5,22900146,1,5,Non Partner,Non Fraud,Low
+CLM100054,27,Male,Sulawesi,SUV,1,145131569,2,14,Official,Fraud,Medium
+CLM100055,64,Female,Jakarta,Sedan,6,30061846,2,17,Non Partner,Non Fraud,Medium
+CLM100056,28,Male,Jawa Timur,SUV,6,138651110,1,31,Official,Fraud,Low
+CLM100057,67,Female,Jakarta,Sedan,4,76779042,2,55,Non Partner,Non Fraud,Medium
+CLM100058,55,Male,Jawa Timur,SUV,8,29348817,2,10,Partner,Non Fraud,Medium
+CLM100059,34,Female,Sumatera,Sedan,4,97355770,3,19,Non Partner,Fraud,Medium
+CLM100060,37,Male,Jawa Barat,Sedan,8,71503913,1,23,Official,Non Fraud,Low
+CLM100061,56,Male,Jakarta,Sedan,8,84952230,1,14,Partner,Non Fraud,Low
+CLM100062,60,Female,Sulawesi,Truck,5,109092941,3,47,Non Partner,Fraud,Medium
+CLM100063,24,Male,Sumatera,SUV,4,146040542,3,6,Non Partner,Fraud,Medium
+CLM100064,22,Female,Jakarta,SUV,2,63076001,1,20,Non Partner,Non Fraud,Low
+CLM100065,26,Male,Sulawesi,SUV,3,43942594,1,41,Non Partner,Non Fraud,Low
+CLM100066,62,Female,Jakarta,Sedan,3,38747492,1,25,Non Partner,Non Fraud,Low
+CLM100067,24,Male,Jawa Timur,SUV,4,130987754,0,43,Partner,Fraud,Low
+CLM100068,49,Female,Jakarta,SUV,4,118574567,0,55,Partner,Fraud,Low
+CLM100069,38,Male,Jakarta,Sedan,5,16170521,0,13,Partner,Non Fraud,Low
+CLM100070,46,Female,Jakarta,MPV,4,127639062,2,56,Partner,Fraud,Medium
+CLM100071,64,Male,Sumatera,Sedan,8,13267883,2,36,Official,Non Fraud,Medium
+CLM100072,54,Female,Jakarta,SUV,6,43639398,2,57,Partner,Non Fraud,Medium
+CLM100073,30,Female,Sulawesi,Sedan,6,12984398,1,20,Non Partner,Non Fraud,Low
+CLM100074,56,Female,Jawa Timur,MPV,8,27854296,1,17,Non Partner,Non Fraud,Low
+CLM100075,34,Male,Jawa Timur,Sedan,7,4828433,0,4,Partner,Non Fraud,Low
+CLM100076,51,Female,Jakarta,SUV,8,87621344,0,2,Non Partner,Fraud,Low
+CLM100077,68,Male,Sumatera,MPV,2,48149071,0,22,Partner,Non Fraud,Low
+CLM100078,35,Female,Sumatera,Truck,9,8152747,2,25,Non Partner,Non Fraud,Medium
+CLM100079,28,Male,Sulawesi,SUV,1,105800566,0,36,Official,Fraud,Low
+CLM100080,34,Female,Jakarta,MPV,8,105981218,1,23,Official,Non Fraud,Low
+CLM100081,43,Male,Jawa Timur,MPV,4,92351453,2,48,Partner,Fraud,Medium
+CLM100082,60,Male,Sumatera,Truck,4,2020154,3,18,Partner,Non Fraud,Medium
+CLM100083,41,Female,Jakarta,Sedan,5,125284044,1,50,Partner,Fraud,Low
+CLM100084,36,Male,Sumatera,Sedan,8,39499601,2,24,Non Partner,Non Fraud,Medium
+CLM100085,65,Male,Sumatera,SUV,5,7733215,6,20,Partner,Non Fraud,High
+CLM100086,38,Female,Jawa Timur,Truck,8,33339834,1,11,Official,Non Fraud,Low
+CLM100087,67,Male,Jawa Barat,Sedan,1,41739629,1,56,Non Partner,Fraud,Low
+CLM100088,44,Male,Sulawesi,Truck,9,74823165,3,40,Partner,Non Fraud,Medium
+CLM100089,46,Male,Sulawesi,Sedan,6,112855600,1,32,Non Partner,Fraud,Low
+CLM100090,45,Female,Jawa Timur,MPV,3,116667420,3,49,Non Partner,Fraud,Medium
+CLM100091,65,Male,Sumatera,Sedan,8,11760888,3,52,Partner,Non Fraud,Medium
+CLM100092,61,Female,Jakarta,Truck,9,79414095,1,3,Non Partner,Non Fraud,Low
+CLM100093,49,Male,Sumatera,MPV,6,94144811,1,41,Official,Fraud,Low
+CLM100094,35,Male,Jawa Timur,MPV,7,101018552,2,56,Official,Fraud,Medium
+CLM100095,65,Male,Sulawesi,MPV,1,79483721,1,6,Non Partner,Non Fraud,Low
+CLM100096,21,Female,Sumatera,Truck,5,126410205,2,21,Partner,Non Fraud,Medium
+CLM100097,45,Male,Sulawesi,SUV,5,103522878,0,54,Non Partner,Fraud,Low
+CLM100098,27,Male,Jakarta,SUV,4,97719187,1,32,Official,Fraud,Low
+CLM100099,29,Female,Sulawesi,SUV,6,15372528,3,16,Non Partner,Non Fraud,Medium
+CLM100100,44,Male,Sulawesi,Truck,7,129036268,4,23,Non Partner,Fraud,High
+CLM100101,21,Female,Jawa Barat,MPV,9,121488081,0,33,Official,Fraud,Low
+CLM100102,64,Female,Jawa Barat,SUV,1,115282788,1,27,Non Partner,Fraud,Low
+CLM100103,28,Male,Jawa Barat,Truck,6,118105071,1,57,Non Partner,Fraud,Low
+CLM100104,44,Female,Sulawesi,SUV,7,77767936,3,42,Partner,Non Fraud,Medium
+CLM100105,31,Male,Jawa Timur,Sedan,3,41057648,3,40,Partner,Non Fraud,Medium
+CLM100106,37,Female,Sulawesi,SUV,8,72425912,3,38,Official,Non Fraud,Medium
+CLM100107,28,Female,Jawa Timur,SUV,5,133086923,1,21,Official,Non Fraud,Low
+CLM100108,55,Male,Jawa Timur,MPV,9,82242298,0,48,Official,Fraud,Low
+CLM100109,55,Female,Jawa Barat,Truck,5,54520377,2,16,Partner,Non Fraud,Medium
+CLM100110,53,Female,Sumatera,MPV,9,39580196,3,33,Official,Non Fraud,Medium
+CLM100111,25,Female,Jakarta,MPV,4,116581866,4,5,Official,Fraud,High
+CLM100112,62,Female,Jawa Barat,MPV,9,112902075,0,45,Official,Fraud,Low
+CLM100113,59,Female,Jawa Barat,MPV,5,18687991,2,5,Partner,Non Fraud,Medium
+CLM100114,61,Male,Sumatera,MPV,9,40509310,2,33,Non Partner,Non Fraud,Medium
+CLM100115,48,Female,Jakarta,SUV,3,32061293,2,0,Official,Non Fraud,Medium
+CLM100116,27,Male,Sulawesi,MPV,4,129425994,2,9,Non Partner,Fraud,Medium
+CLM100117,29,Female,Sulawesi,MPV,9,124368509,0,20,Official,Non Fraud,Low
+CLM100118,28,Male,Jawa Barat,Truck,6,11679043,0,4,Non Partner,Non Fraud,Low
+CLM100119,32,Male,Jakarta,Sedan,2,115161223,2,1,Partner,Non Fraud,Medium
+CLM100120,54,Female,Jawa Barat,SUV,7,23470291,2,21,Partner,Non Fraud,Medium
+CLM100121,53,Female,Jawa Timur,SUV,2,109773212,3,47,Official,Fraud,Medium
+CLM100122,68,Female,Jawa Barat,SUV,2,106856574,1,56,Non Partner,Fraud,Low
+CLM100123,43,Male,Jawa Barat,MPV,1,78921522,5,1,Partner,Fraud,High
+CLM100124,44,Female,Sulawesi,MPV,3,55496748,1,9,Official,Non Fraud,Low
+CLM100125,57,Male,Sulawesi,MPV,6,40043896,1,33,Official,Non Fraud,Low
+CLM100126,55,Male,Sulawesi,Truck,8,142674713,2,15,Partner,Non Fraud,Medium
+CLM100127,64,Male,Jawa Timur,Sedan,9,85912633,1,47,Partner,Fraud,Low
+CLM100128,60,Female,Sulawesi,MPV,7,128064322,0,50,Official,Fraud,Low
+CLM100129,42,Female,Jakarta,Sedan,4,59865527,1,38,Non Partner,Non Fraud,Low
+CLM100130,47,Male,Sumatera,Truck,6,21521013,1,21,Non Partner,Non Fraud,Low
+CLM100131,55,Male,Jakarta,SUV,5,136732270,0,11,Non Partner,Fraud,Low
+CLM100132,21,Female,Jakarta,MPV,8,124798230,1,23,Official,Non Fraud,Low
+CLM100133,55,Male,Sulawesi,Sedan,1,38735088,2,46,Partner,Fraud,Medium
+CLM100134,57,Female,Sumatera,Sedan,1,79427656,1,39,Official,Fraud,Low
+CLM100135,67,Male,Sumatera,MPV,6,108509488,2,37,Partner,Fraud,Medium
+CLM100136,34,Female,Sumatera,SUV,2,44951994,3,59,Non Partner,Non Fraud,Medium
+CLM100137,23,Male,Jawa Timur,SUV,5,92233769,2,58,Non Partner,Fraud,Medium
+CLM100138,21,Female,Sulawesi,SUV,1,66489314,1,9,Partner,Non Fraud,Low
+CLM100139,25,Male,Sumatera,Truck,7,36383985,3,34,Partner,Non Fraud,Medium
+CLM100140,46,Female,Jawa Timur,Sedan,1,37595773,0,50,Official,Non Fraud,Low
+CLM100141,34,Female,Jawa Barat,Sedan,4,125106967,1,48,Non Partner,Fraud,Low
+CLM100142,59,Male,Jawa Barat,Sedan,9,97362498,2,31,Official,Fraud,Medium
+CLM100143,47,Male,Jawa Timur,Truck,1,15315679,1,6,Official,Non Fraud,Low
+CLM100144,29,Female,Jawa Timur,Sedan,4,112156962,0,20,Official,Non Fraud,Low
+CLM100145,35,Male,Sulawesi,Truck,6,131738504,1,19,Non Partner,Fraud,Low
+CLM100146,35,Female,Sulawesi,SUV,6,86561923,2,25,Official,Non Fraud,Medium
+CLM100147,46,Male,Jawa Barat,MPV,8,76532173,1,3,Official,Non Fraud,Low
+CLM100148,62,Female,Sumatera,Sedan,1,125497505,3,45,Official,Fraud,Medium
+CLM100149,33,Female,Jawa Barat,Sedan,7,86607690,1,51,Official,Fraud,Low
+CLM100150,52,Female,Sumatera,SUV,1,11569320,1,21,Official,Non Fraud,Low
+CLM100151,59,Female,Sumatera,MPV,7,70448631,2,14,Official,Non Fraud,Medium
+CLM100152,69,Female,Sulawesi,Truck,3,68001666,1,55,Non Partner,Non Fraud,Low
+CLM100153,52,Female,Jakarta,MPV,8,99609786,1,39,Official,Fraud,Low
+CLM100154,24,Male,Jakarta,SUV,3,20391451,2,20,Partner,Non Fraud,Medium
+CLM100155,50,Male,Jawa Timur,SUV,1,60047560,1,14,Official,Non Fraud,Low
+CLM100156,57,Male,Sulawesi,MPV,8,78960088,1,21,Official,Non Fraud,Low
+CLM100157,43,Female,Sumatera,Truck,3,72087566,3,51,Non Partner,Non Fraud,Medium
+CLM100158,59,Female,Jakarta,Truck,2,130888295,0,27,Non Partner,Fraud,Low
+CLM100159,65,Female,Sumatera,Sedan,1,106169850,0,13,Partner,Fraud,Low
+CLM100160,35,Female,Jakarta,Truck,3,135823137,1,26,Partner,Non Fraud,Low
+CLM100161,63,Male,Jakarta,MPV,2,144680471,1,40,Non Partner,Fraud,Low
+CLM100162,49,Male,Jakarta,SUV,2,12377787,1,39,Non Partner,Non Fraud,Low
+CLM100163,56,Female,Sulawesi,Sedan,6,22827621,2,57,Official,Non Fraud,Medium
+CLM100164,33,Male,Jawa Barat,Sedan,1,42892167,1,27,Non Partner,Fraud,Low
+CLM100165,52,Male,Sumatera,SUV,2,36280122,3,25,Partner,Non Fraud,Medium
+CLM100166,27,Female,Sulawesi,Truck,6,141026769,1,48,Official,Fraud,Low
+CLM100167,42,Male,Sulawesi,SUV,3,80655365,3,1,Partner,Non Fraud,Medium
+CLM100168,48,Female,Sulawesi,Truck,4,106750564,1,24,Official,Fraud,Low
+CLM100169,22,Male,Sulawesi,SUV,1,141373307,0,55,Non Partner,Fraud,Low
+CLM100170,62,Female,Sulawesi,MPV,8,84665691,2,2,Partner,Fraud,Medium
+CLM100171,65,Female,Jawa Timur,Truck,7,59544068,0,7,Official,Non Fraud,Low
+CLM100172,26,Female,Sumatera,MPV,7,34957164,1,43,Official,Non Fraud,Low
+CLM100173,48,Female,Sulawesi,Sedan,3,70058877,3,32,Non Partner,Non Fraud,Medium
+CLM100174,48,Male,Sumatera,SUV,3,129452956,1,41,Non Partner,Fraud,Low
+CLM100175,64,Female,Jawa Timur,Sedan,2,136350386,0,51,Non Partner,Fraud,Low
+CLM100176,64,Female,Jawa Timur,Sedan,1,53316857,4,34,Partner,Fraud,High
+CLM100177,40,Female,Sumatera,Sedan,7,38877058,1,5,Official,Non Fraud,Low
+CLM100178,50,Male,Jakarta,Sedan,7,14881178,2,38,Non Partner,Non Fraud,Medium
+CLM100179,31,Female,Jawa Barat,SUV,2,74135852,0,51,Partner,Non Fraud,Low
+CLM100180,48,Male,Jakarta,Sedan,7,16590661,1,22,Partner,Non Fraud,Low
+CLM100181,45,Female,Jakarta,SUV,8,92312343,3,24,Partner,Fraud,Medium
+CLM100182,59,Male,Jakarta,SUV,1,144674535,1,58,Non Partner,Fraud,Low
+CLM100183,53,Male,Sulawesi,MPV,9,139902074,0,49,Non Partner,Fraud,Low
+CLM100184,21,Female,Jawa Timur,Truck,7,90605800,1,42,Official,Fraud,Low
+CLM100185,47,Male,Jakarta,Truck,3,93379916,1,18,Official,Non Fraud,Low
+CLM100186,33,Female,Jawa Timur,SUV,8,106283946,0,4,Non Partner,Fraud,Low
+CLM100187,61,Female,Sumatera,MPV,7,43827096,0,50,Partner,Non Fraud,Low
+CLM100188,23,Female,Jawa Barat,SUV,8,50352346,3,10,Partner,Non Fraud,Medium
+CLM100189,59,Male,Sumatera,SUV,6,12667877,1,55,Partner,Non Fraud,Low
+CLM100190,26,Male,Sumatera,SUV,9,8393979,0,11,Official,Non Fraud,Low
+CLM100191,28,Female,Sulawesi,MPV,5,145332806,1,9,Partner,Non Fraud,Low
+CLM100192,47,Female,Jawa Barat,Truck,3,29506244,0,7,Official,Non Fraud,Low
+CLM100193,29,Male,Sumatera,MPV,3,26214698,3,23,Official,Non Fraud,Medium
+CLM100194,57,Female,Sumatera,Sedan,1,103285868,1,59,Partner,Fraud,Low
+CLM100195,53,Female,Jawa Barat,MPV,8,121130296,0,27,Partner,Non Fraud,Low
+CLM100196,62,Female,Jawa Barat,MPV,2,126616114,4,40,Non Partner,Fraud,High
+CLM100197,64,Male,Sumatera,MPV,3,18486878,2,35,Non Partner,Non Fraud,Medium
+CLM100198,44,Male,Jawa Barat,MPV,8,58195030,1,36,Partner,Non Fraud,Low
+CLM100199,35,Male,Sumatera,Truck,8,23098345,2,20,Official,Non Fraud,Medium
+CLM100200,52,Female,Sumatera,Sedan,4,17620937,0,7,Official,Non Fraud,Low
+CLM100201,52,Female,Sulawesi,Truck,4,32984287,2,54,Official,Non Fraud,Medium
+CLM100202,44,Female,Jakarta,Truck,5,98147242,1,8,Official,Non Fraud,Low
+CLM100203,61,Male,Sumatera,MPV,6,145746022,1,46,Official,Fraud,Low
+CLM100204,69,Female,Jawa Timur,SUV,5,5810833,2,14,Non Partner,Non Fraud,Medium
+CLM100205,69,Female,Jakarta,SUV,7,24480675,0,47,Partner,Non Fraud,Low
+CLM100206,32,Female,Jakarta,Truck,2,85328141,0,45,Non Partner,Fraud,Low
+CLM100207,59,Female,Jakarta,Truck,7,29500556,1,39,Official,Non Fraud,Low
+CLM100208,22,Male,Sulawesi,MPV,7,33073692,2,17,Official,Non Fraud,Medium
+CLM100209,23,Male,Sumatera,Truck,1,38316107,0,41,Official,Non Fraud,Low
+CLM100210,69,Female,Sulawesi,MPV,7,28427110,0,59,Official,Non Fraud,Low
+CLM100211,57,Male,Sumatera,SUV,5,25192961,1,19,Partner,Non Fraud,Low
+CLM100212,69,Male,Sulawesi,SUV,3,93763660,4,5,Official,Fraud,High
+CLM100213,37,Female,Sulawesi,Sedan,3,60844250,1,11,Partner,Non Fraud,Low
+CLM100214,69,Female,Jawa Timur,SUV,4,30263888,0,1,Official,Non Fraud,Low
+CLM100215,22,Male,Sulawesi,Truck,2,43106078,3,6,Partner,Non Fraud,Medium
+CLM100216,22,Female,Jawa Barat,SUV,2,8281505,2,15,Non Partner,Non Fraud,Medium
+CLM100217,48,Male,Jawa Timur,MPV,1,39679227,3,2,Official,Non Fraud,Medium
+CLM100218,43,Female,Sulawesi,SUV,5,39965695,1,44,Partner,Non Fraud,Low
+CLM100219,57,Male,Jakarta,Sedan,4,27540396,3,2,Non Partner,Non Fraud,Medium
+CLM100220,52,Female,Jawa Barat,SUV,2,129184994,2,26,Official,Non Fraud,Medium
+CLM100221,53,Male,Jawa Barat,MPV,3,15812143,0,49,Official,Non Fraud,Low
+CLM100222,21,Male,Jawa Barat,MPV,7,144206866,3,42,Official,Fraud,Medium
+CLM100223,39,Male,Jawa Timur,Truck,7,48364509,0,39,Partner,Non Fraud,Low
+CLM100224,22,Female,Sulawesi,SUV,4,80146438,1,37,Partner,Fraud,Low
+CLM100225,64,Male,Sulawesi,MPV,5,110487327,5,32,Non Partner,Fraud,High
+CLM100226,46,Male,Jakarta,Sedan,5,119633441,2,27,Partner,Non Fraud,Medium
+CLM100227,52,Female,Jakarta,Truck,6,127152510,0,0,Partner,Non Fraud,Low
+CLM100228,26,Female,Jawa Barat,Sedan,9,74663899,1,54,Official,Non Fraud,Low
+CLM100229,52,Male,Jakarta,SUV,2,33735803,3,7,Official,Non Fraud,Medium
+CLM100230,24,Male,Jawa Timur,SUV,5,16886372,2,36,Official,Non Fraud,Medium
+CLM100231,31,Female,Sulawesi,SUV,3,2656671,1,31,Official,Non Fraud,Low
+CLM100232,37,Female,Jawa Barat,Truck,4,90567715,0,59,Official,Fraud,Low
+CLM100233,58,Female,Jakarta,MPV,6,23922481,3,47,Official,Non Fraud,Medium
+CLM100234,44,Female,Jawa Timur,Truck,8,43081603,0,42,Official,Non Fraud,Low
+CLM100235,25,Female,Jawa Timur,Sedan,1,89785936,1,36,Non Partner,Fraud,Low
+CLM100236,54,Male,Jakarta,Truck,8,91126859,3,3,Non Partner,Fraud,Medium
+CLM100237,26,Female,Sulawesi,Sedan,7,21833173,0,29,Non Partner,Non Fraud,Low
+CLM100238,42,Male,Jakarta,Truck,1,91503568,0,5,Non Partner,Fraud,Low
+CLM100239,31,Male,Jawa Barat,MPV,2,85483977,0,45,Official,Fraud,Low
+CLM100240,68,Male,Jakarta,Sedan,3,144379136,1,53,Non Partner,Fraud,Low
+CLM100241,36,Female,Jawa Timur,SUV,1,53374647,1,18,Official,Non Fraud,Low
+CLM100242,53,Male,Jakarta,SUV,9,135766876,1,31,Non Partner,Fraud,Low
+CLM100243,29,Male,Sulawesi,Truck,8,37328139,2,8,Partner,Non Fraud,Medium
+CLM100244,26,Female,Sumatera,SUV,2,97953082,1,11,Non Partner,Fraud,Low
+CLM100245,36,Male,Jakarta,Sedan,9,22845218,2,10,Non Partner,Non Fraud,Medium
+CLM100246,49,Male,Sulawesi,SUV,7,137991667,2,45,Official,Fraud,Medium
+CLM100247,23,Female,Sulawesi,MPV,9,36490172,1,54,Non Partner,Non Fraud,Low
+CLM100248,40,Male,Jawa Timur,MPV,6,37989387,3,15,Partner,Non Fraud,Medium
+CLM100249,56,Male,Sulawesi,Truck,6,106600006,0,0,Official,Fraud,Low
+CLM100250,39,Male,Sulawesi,Sedan,4,14426716,2,44,Official,Non Fraud,Medium
+CLM100251,46,Female,Sulawesi,MPV,2,96019914,2,54,Non Partner,Fraud,Medium
+CLM100252,23,Female,Sulawesi,MPV,7,39710304,1,52,Official,Non Fraud,Low
+CLM100253,39,Female,Jawa Barat,Sedan,5,48718021,2,20,Official,Non Fraud,Medium
+CLM100254,40,Male,Jawa Barat,SUV,6,27996639,1,29,Official,Non Fraud,Low
+CLM100255,52,Male,Jawa Timur,SUV,2,88649202,3,12,Official,Non Fraud,Medium
+CLM100256,27,Female,Jakarta,Truck,5,11774986,0,33,Official,Non Fraud,Low
+CLM100257,61,Male,Sulawesi,SUV,4,5421590,0,3,Official,Non Fraud,Low
+CLM100258,53,Male,Jakarta,Sedan,9,37089369,2,27,Partner,Non Fraud,Medium
+CLM100259,60,Female,Jakarta,MPV,6,146763809,0,37,Non Partner,Fraud,Low
+CLM100260,59,Female,Jawa Timur,SUV,2,102475757,4,57,Partner,Fraud,High
+CLM100261,38,Male,Sulawesi,Truck,1,134313249,0,30,Official,Fraud,Low
+CLM100262,60,Male,Sulawesi,SUV,5,30221379,2,58,Official,Non Fraud,Medium
+CLM100263,21,Male,Sumatera,Sedan,9,60644300,4,54,Non Partner,Fraud,High
+CLM100264,31,Female,Jakarta,Truck,6,117067598,3,26,Partner,Non Fraud,Medium
+CLM100265,48,Female,Jakarta,SUV,7,58641756,1,4,Non Partner,Non Fraud,Low
+CLM100266,45,Female,Jawa Barat,Truck,5,27552476,5,24,Partner,Non Fraud,High
+CLM100267,43,Female,Sumatera,Sedan,6,143891891,1,2,Official,Non Fraud,Low
+CLM100268,51,Male,Jawa Barat,MPV,5,118884703,2,32,Non Partner,Fraud,Medium
+CLM100269,50,Female,Jawa Barat,Sedan,9,86388417,0,3,Non Partner,Fraud,Low
+CLM100270,62,Female,Jawa Barat,Sedan,6,99023086,0,24,Official,Non Fraud,Low
+CLM100271,55,Female,Jawa Timur,Sedan,8,127749717,1,19,Non Partner,Fraud,Low
+CLM100272,27,Female,Jawa Timur,Sedan,2,28209162,0,33,Partner,Non Fraud,Low
+CLM100273,36,Female,Jawa Barat,MPV,9,100898906,0,25,Partner,Non Fraud,Low
+CLM100274,46,Male,Sumatera,MPV,5,58396048,0,4,Partner,Non Fraud,Low
+CLM100275,68,Male,Jakarta,Truck,7,111538109,0,34,Partner,Fraud,Low
+CLM100276,69,Female,Sumatera,SUV,1,112917803,1,27,Official,Fraud,Low
+CLM100277,22,Male,Sulawesi,MPV,5,135442423,3,28,Non Partner,Fraud,Medium
+CLM100278,21,Female,Jawa Timur,MPV,2,27267668,1,8,Partner,Non Fraud,Low
+CLM100279,68,Female,Jakarta,SUV,6,149281646,0,51,Official,Fraud,Low
+CLM100280,32,Male,Jakarta,MPV,1,59093498,2,37,Non Partner,Fraud,Medium
+CLM100281,25,Male,Sulawesi,Sedan,3,117052051,0,49,Non Partner,Fraud,Low
+CLM100282,57,Female,Sulawesi,Sedan,5,98042181,1,5,Official,Non Fraud,Low
+CLM100283,52,Female,Jawa Barat,SUV,4,44353746,0,18,Official,Non Fraud,Low
+CLM100284,29,Female,Jawa Timur,Truck,3,105003512,3,59,Partner,Fraud,Medium
+CLM100285,61,Male,Jawa Timur,Truck,5,21610500,2,43,Non Partner,Fraud,Medium
+CLM100286,55,Female,Sumatera,SUV,8,148463424,0,56,Non Partner,Fraud,Low
+CLM100287,39,Female,Jawa Barat,SUV,4,36402297,1,10,Official,Non Fraud,Low
+CLM100288,68,Female,Jawa Barat,Sedan,1,83030459,1,1,Non Partner,Fraud,Low
+CLM100289,36,Male,Jawa Barat,Truck,7,110971388,3,46,Partner,Fraud,Medium
+CLM100290,23,Female,Jawa Barat,MPV,8,56229602,0,43,Non Partner,Fraud,Low
+CLM100291,40,Female,Jawa Timur,Sedan,3,134719871,2,43,Official,Fraud,Medium
+CLM100292,44,Male,Jawa Timur,SUV,6,115533144,5,8,Official,Fraud,High
+CLM100293,53,Female,Jawa Barat,Truck,2,118785367,2,20,Partner,Non Fraud,Medium
+CLM100294,44,Female,Sumatera,MPV,7,2074961,3,23,Partner,Non Fraud,Medium
+CLM100295,31,Male,Jakarta,MPV,8,147168299,2,33,Non Partner,Fraud,Medium
+CLM100296,69,Female,Jakarta,Sedan,6,132827271,1,21,Non Partner,Fraud,Low
+CLM100297,28,Male,Sumatera,Truck,6,148084347,1,2,Official,Non Fraud,Low
+CLM100298,56,Male,Jawa Barat,Truck,5,70583832,1,11,Partner,Non Fraud,Low
+CLM100299,58,Female,Jawa Timur,SUV,8,124113052,3,27,Partner,Non Fraud,Medium
+CLM100300,60,Female,Jakarta,Truck,1,115232628,3,29,Partner,Fraud,Medium

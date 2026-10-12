@@ -1,0 +1,301 @@
+vehicle_id,vehicle_age_year,vehicle_type,brand_category,region,annual_mileage_km,engine_capacity_cc,driver_age,driver_experience_year,previous_accident_count,traffic_violation_count,vehicle_usage,risk_score,risk_category
+VH200001,9,Motorcycle,Low Risk,Sumatera,18021,3623,31,38,1,0,Personal,2,Low Risk
+VH200002,8,MPV,Medium Risk,Sumatera,70677,2044,41,15,2,0,Personal,14,Low Risk
+VH200003,17,Truck,High Risk,Jakarta,66472,1267,72,43,1,2,Personal,21,Medium Risk
+VH200004,8,SUV,Low Risk,Sumatera,15490,3148,25,24,0,1,Personal,13,Low Risk
+VH200005,5,SUV,Medium Risk,Sumatera,27645,3985,59,17,1,1,Commercial,15,Low Risk
+VH200006,8,Sedan,Low Risk,Jawa Barat,23700,2746,20,9,2,1,Commercial,33,Medium Risk
+VH200007,19,Sedan,Medium Risk,Jawa Timur,64251,2722,66,2,1,2,Commercial,38,Medium Risk
+VH200008,1,Motorcycle,Low Risk,Sumatera,63526,3668,62,24,1,1,Commercial,25,Medium Risk
+VH200009,13,Sedan,Low Risk,Sumatera,38397,1732,74,36,2,1,Personal,24,Medium Risk
+VH200010,11,MPV,High Risk,Jawa Timur,70482,3995,32,26,1,0,Personal,24,Medium Risk
+VH200011,10,Motorcycle,Low Risk,Jawa Timur,54157,1240,43,26,0,0,Personal,15,Low Risk
+VH200012,5,SUV,Medium Risk,Kalimantan,55702,2279,54,26,4,1,Personal,31,Medium Risk
+VH200013,2,MPV,Medium Risk,Jawa Barat,53004,1662,39,16,0,0,Personal,19,Low Risk
+VH200014,18,SUV,Medium Risk,Jawa Timur,73534,3962,37,35,2,2,Personal,21,Medium Risk
+VH200015,3,Truck,Medium Risk,Kalimantan,50720,2536,65,10,1,3,Personal,24,Medium Risk
+VH200016,9,Motorcycle,Medium Risk,Jakarta,44706,3536,57,14,5,1,Personal,26,Medium Risk
+VH200017,18,SUV,Low Risk,Sumatera,32202,2995,41,39,1,1,Commercial,22,Medium Risk
+VH200018,12,SUV,Low Risk,Jawa Timur,41396,3946,44,47,2,0,Commercial,23,Medium Risk
+VH200019,1,Motorcycle,Medium Risk,Kalimantan,40536,3188,21,38,1,1,Personal,15,Low Risk
+VH200020,14,Sedan,Medium Risk,Jawa Barat,16392,2575,62,29,6,1,Personal,31,Medium Risk
+VH200021,11,Sedan,Low Risk,Kalimantan,71176,3492,44,9,0,1,Personal,29,Medium Risk
+VH200022,18,Truck,Low Risk,Jawa Barat,5082,2831,59,5,2,0,Personal,18,Low Risk
+VH200023,10,Motorcycle,Medium Risk,Jakarta,50623,1941,36,41,1,1,Personal,19,Low Risk
+VH200024,1,Sedan,Low Risk,Jawa Barat,38781,3208,34,21,2,0,Commercial,17,Low Risk
+VH200025,1,SUV,Medium Risk,Jawa Barat,63001,3368,56,37,1,0,Personal,14,Low Risk
+VH200026,0,SUV,Low Risk,Jawa Barat,13987,2432,67,21,1,2,Personal,4,Low Risk
+VH200027,14,SUV,Medium Risk,Jawa Barat,33361,1608,45,27,1,1,Personal,19,Low Risk
+VH200028,4,Sedan,Medium Risk,Sumatera,65207,2526,54,3,1,1,Personal,18,Low Risk
+VH200029,11,MPV,Low Risk,Kalimantan,43276,1786,23,5,1,3,Commercial,49,High Risk
+VH200030,15,Sedan,Low Risk,Sumatera,36990,3099,65,49,0,2,Commercial,27,Medium Risk
+VH200031,11,Truck,Low Risk,Jawa Barat,27086,2718,44,5,2,3,Commercial,46,High Risk
+VH200032,3,Truck,Medium Risk,Kalimantan,11232,2609,74,24,1,0,Personal,5,Low Risk
+VH200033,16,Truck,Medium Risk,Jakarta,64715,3033,31,27,0,0,Personal,22,Medium Risk
+VH200034,19,Motorcycle,Medium Risk,Jawa Barat,15318,1937,70,19,2,2,Personal,25,Medium Risk
+VH200035,7,SUV,Medium Risk,Sumatera,17373,2670,51,25,0,0,Personal,8,Low Risk
+VH200036,4,Motorcycle,Medium Risk,Jakarta,15897,1332,50,48,1,1,Commercial,17,Low Risk
+VH200037,11,Motorcycle,Low Risk,Kalimantan,36998,3229,37,43,0,2,Commercial,23,Medium Risk
+VH200038,13,SUV,High Risk,Kalimantan,27774,3843,29,24,0,0,Personal,15,Low Risk
+VH200039,5,Truck,Low Risk,Jakarta,25736,1971,25,48,2,0,Personal,3,Low Risk
+VH200040,7,Sedan,Medium Risk,Sumatera,48281,2069,57,18,1,0,Personal,7,Low Risk
+VH200041,0,Sedan,Medium Risk,Jawa Timur,63258,1105,45,35,0,0,Personal,25,Medium Risk
+VH200042,11,SUV,Medium Risk,Sumatera,20129,2991,52,34,2,2,Personal,18,Low Risk
+VH200043,10,Sedan,Low Risk,Sumatera,9194,3100,33,47,2,2,Commercial,19,Low Risk
+VH200044,7,Motorcycle,Medium Risk,Kalimantan,37145,1876,56,8,2,1,Personal,14,Low Risk
+VH200045,1,Truck,Low Risk,Jawa Timur,41900,1617,70,47,1,1,Commercial,16,Low Risk
+VH200046,0,SUV,Low Risk,Kalimantan,9004,2144,50,43,2,2,Personal,8,Low Risk
+VH200047,2,SUV,Low Risk,Kalimantan,70690,1253,67,16,3,0,Personal,32,Medium Risk
+VH200048,6,Sedan,Low Risk,Jakarta,10839,1151,63,44,0,0,Personal,17,Low Risk
+VH200049,17,Motorcycle,Low Risk,Jawa Timur,41705,1733,35,32,0,0,Personal,16,Low Risk
+VH200050,13,Truck,Medium Risk,Jakarta,25982,2438,51,4,0,2,Personal,16,Low Risk
+VH200051,11,SUV,Low Risk,Jawa Barat,39622,3491,70,44,1,3,Personal,32,Medium Risk
+VH200052,15,Sedan,High Risk,Jakarta,20819,3566,38,38,8,1,Personal,42,High Risk
+VH200053,16,Sedan,Low Risk,Jakarta,20940,2318,69,19,0,1,Personal,28,Medium Risk
+VH200054,2,Truck,Low Risk,Sumatera,7721,2598,34,24,2,0,Personal,9,Low Risk
+VH200055,12,SUV,Medium Risk,Jawa Timur,73192,2982,55,42,3,1,Commercial,53,High Risk
+VH200056,3,MPV,Medium Risk,Jakarta,11015,2993,25,12,0,1,Personal,3,Low Risk
+VH200057,0,MPV,Medium Risk,Sumatera,53543,1028,27,14,1,1,Personal,25,Medium Risk
+VH200058,19,SUV,Low Risk,Jawa Timur,7282,1686,21,34,1,1,Personal,22,Medium Risk
+VH200059,9,MPV,Low Risk,Kalimantan,75738,3181,22,33,2,2,Personal,39,Medium Risk
+VH200060,5,MPV,Medium Risk,Sumatera,32966,2033,23,21,0,1,Commercial,28,Medium Risk
+VH200061,16,Motorcycle,Low Risk,Jawa Timur,33004,3633,70,34,0,1,Personal,17,Low Risk
+VH200062,18,MPV,Low Risk,Jawa Timur,43394,2470,41,42,2,0,Commercial,23,Medium Risk
+VH200063,5,Truck,Low Risk,Kalimantan,68985,1230,56,31,0,1,Personal,15,Low Risk
+VH200064,2,Sedan,Low Risk,Jawa Barat,27341,1856,33,36,0,3,Commercial,31,Medium Risk
+VH200065,19,Truck,Low Risk,Sumatera,65497,1641,18,17,2,0,Commercial,42,High Risk
+VH200066,9,Sedan,Medium Risk,Jawa Timur,15249,3813,53,13,0,2,Commercial,14,Low Risk
+VH200067,4,Sedan,High Risk,Jakarta,30262,1373,66,15,0,2,Commercial,29,Medium Risk
+VH200068,10,Motorcycle,Low Risk,Jakarta,52031,1785,74,15,0,1,Commercial,21,Medium Risk
+VH200069,14,MPV,Low Risk,Kalimantan,32700,1969,39,27,1,1,Personal,21,Medium Risk
+VH200070,19,Motorcycle,High Risk,Jakarta,54016,3535,43,22,3,3,Personal,65,High Risk
+VH200071,1,Motorcycle,Low Risk,Sumatera,70584,3726,49,31,0,3,Commercial,31,Medium Risk
+VH200072,18,Sedan,Medium Risk,Kalimantan,56266,1579,42,0,0,1,Commercial,35,Medium Risk
+VH200073,15,Sedan,Low Risk,Jawa Barat,42293,3159,20,47,2,0,Personal,23,Medium Risk
+VH200074,14,Truck,Low Risk,Jakarta,52976,3694,47,32,1,0,Personal,21,Medium Risk
+VH200075,3,Truck,Medium Risk,Sumatera,34521,2815,43,29,1,0,Personal,11,Low Risk
+VH200076,2,SUV,Low Risk,Jakarta,66992,3740,52,11,2,0,Personal,17,Low Risk
+VH200077,2,MPV,Medium Risk,Sumatera,55967,2369,48,43,1,1,Personal,14,Low Risk
+VH200078,9,MPV,Low Risk,Sumatera,61951,1361,72,20,3,0,Personal,35,Medium Risk
+VH200079,0,MPV,Low Risk,Jakarta,54302,1028,36,0,3,0,Personal,39,Medium Risk
+VH200080,7,Motorcycle,Low Risk,Kalimantan,65903,3597,51,20,1,3,Commercial,36,Medium Risk
+VH200081,10,Truck,High Risk,Sumatera,71543,3953,33,16,1,0,Personal,15,Low Risk
+VH200082,1,Sedan,Low Risk,Jawa Timur,42149,3010,23,20,0,3,Personal,22,Medium Risk
+VH200083,0,Truck,Low Risk,Kalimantan,48036,1823,58,7,1,1,Personal,5,Low Risk
+VH200084,9,SUV,Low Risk,Sumatera,56352,2506,62,43,0,3,Personal,23,Medium Risk
+VH200085,0,Motorcycle,Low Risk,Sumatera,55423,1000,30,46,2,1,Personal,18,Low Risk
+VH200086,3,MPV,High Risk,Kalimantan,74454,3402,51,8,1,1,Commercial,26,Medium Risk
+VH200087,16,MPV,High Risk,Jawa Timur,14666,1484,45,21,1,0,Commercial,24,Medium Risk
+VH200088,15,Sedan,High Risk,Jakarta,49698,3359,23,34,3,3,Personal,51,High Risk
+VH200089,8,Motorcycle,High Risk,Jakarta,30166,3102,42,18,0,0,Commercial,15,Low Risk
+VH200090,7,Sedan,Medium Risk,Jawa Timur,26500,2013,64,44,2,1,Personal,2,Low Risk
+VH200091,9,Motorcycle,Low Risk,Jakarta,71149,1326,64,44,0,1,Personal,16,Low Risk
+VH200092,16,Truck,High Risk,Sumatera,49968,1712,59,31,0,0,Commercial,24,Medium Risk
+VH200093,10,MPV,Medium Risk,Jawa Timur,43235,3054,57,44,0,0,Personal,9,Low Risk
+VH200094,16,SUV,Medium Risk,Kalimantan,67783,2739,18,37,1,0,Personal,41,High Risk
+VH200095,12,MPV,Medium Risk,Kalimantan,41027,3773,60,8,2,2,Commercial,23,Medium Risk
+VH200096,12,Motorcycle,Low Risk,Sumatera,43231,2792,49,13,1,2,Personal,18,Low Risk
+VH200097,11,MPV,Medium Risk,Jakarta,69069,2377,22,42,1,0,Personal,31,Medium Risk
+VH200098,11,SUV,Medium Risk,Jawa Timur,48355,1564,44,28,1,0,Personal,18,Low Risk
+VH200099,17,Sedan,Low Risk,Jawa Barat,67655,1340,35,2,3,0,Personal,41,High Risk
+VH200100,18,Motorcycle,Low Risk,Kalimantan,52673,2480,62,2,3,3,Commercial,67,High Risk
+VH200101,11,SUV,Low Risk,Jakarta,10379,1356,49,9,0,2,Personal,19,Low Risk
+VH200102,5,MPV,Low Risk,Sumatera,10272,3082,36,41,1,2,Personal,13,Low Risk
+VH200103,12,MPV,Low Risk,Kalimantan,10328,1311,67,48,0,4,Commercial,33,Medium Risk
+VH200104,1,SUV,Medium Risk,Jakarta,10423,3076,26,43,0,2,Personal,4,Low Risk
+VH200105,13,Truck,Low Risk,Jawa Timur,74029,3928,31,4,2,0,Personal,35,Medium Risk
+VH200106,11,SUV,Low Risk,Kalimantan,62227,1749,26,15,2,0,Commercial,34,Medium Risk
+VH200107,9,MPV,Medium Risk,Kalimantan,19636,3484,74,18,2,1,Personal,2,Low Risk
+VH200108,7,Motorcycle,High Risk,Jawa Barat,59348,2342,51,35,1,1,Personal,25,Medium Risk
+VH200109,4,SUV,Medium Risk,Jawa Barat,65266,2866,63,37,0,2,Commercial,21,Medium Risk
+VH200110,5,MPV,Medium Risk,Sumatera,28834,1434,23,46,4,1,Commercial,48,High Risk
+VH200111,18,Sedan,Low Risk,Jakarta,71474,3741,36,5,0,1,Personal,27,Medium Risk
+VH200112,14,Sedan,Low Risk,Kalimantan,42865,1231,38,23,0,1,Commercial,29,Medium Risk
+VH200113,4,SUV,Low Risk,Jawa Barat,38928,1066,32,38,0,2,Personal,9,Low Risk
+VH200114,15,Motorcycle,Low Risk,Sumatera,32957,2033,22,3,1,0,Commercial,37,Medium Risk
+VH200115,8,Truck,Medium Risk,Jawa Barat,40730,1941,40,28,1,1,Commercial,18,Low Risk
+VH200116,7,SUV,Low Risk,Jawa Timur,62261,2190,44,26,1,1,Personal,11,Low Risk
+VH200117,17,Truck,Low Risk,Sumatera,44420,2330,32,9,1,0,Commercial,26,Medium Risk
+VH200118,14,MPV,Low Risk,Kalimantan,32549,2177,54,45,0,0,Personal,18,Low Risk
+VH200119,16,Motorcycle,Medium Risk,Sumatera,6252,1282,57,40,1,0,Personal,18,Low Risk
+VH200120,15,Motorcycle,Medium Risk,Kalimantan,48643,3920,74,1,3,2,Personal,39,Medium Risk
+VH200121,0,MPV,Medium Risk,Jawa Timur,15270,3462,31,10,0,0,Personal,17,Low Risk
+VH200122,9,Sedan,High Risk,Jawa Timur,47688,1876,63,33,0,1,Personal,6,Low Risk
+VH200123,16,Motorcycle,Low Risk,Jakarta,34507,2887,58,33,0,1,Commercial,23,Medium Risk
+VH200124,16,Sedan,High Risk,Kalimantan,58431,1192,34,25,1,4,Personal,34,Medium Risk
+VH200125,18,Motorcycle,Low Risk,Jawa Barat,70960,3912,32,11,1,1,Personal,24,Medium Risk
+VH200126,10,MPV,Medium Risk,Jakarta,50465,3884,47,5,3,0,Personal,33,Medium Risk
+VH200127,4,Sedan,Low Risk,Jawa Barat,51262,1284,42,33,1,0,Personal,13,Low Risk
+VH200128,12,SUV,Medium Risk,Jawa Timur,31785,3792,67,13,0,1,Personal,15,Low Risk
+VH200129,2,SUV,Medium Risk,Sumatera,38201,1858,61,0,1,0,Commercial,19,Low Risk
+VH200130,0,Truck,Low Risk,Sumatera,67390,1311,19,30,0,1,Personal,25,Medium Risk
+VH200131,5,Motorcycle,Medium Risk,Jawa Timur,30749,1747,70,48,3,0,Commercial,32,Medium Risk
+VH200132,14,MPV,High Risk,Jakarta,39468,1519,19,31,1,1,Personal,22,Medium Risk
+VH200133,0,Truck,Low Risk,Jawa Timur,53357,1009,64,1,1,0,Commercial,25,Medium Risk
+VH200134,16,Truck,Medium Risk,Kalimantan,18552,3581,37,16,1,1,Personal,29,Medium Risk
+VH200135,19,Truck,Low Risk,Jawa Timur,77808,3786,33,26,5,1,Personal,49,High Risk
+VH200136,16,Sedan,High Risk,Kalimantan,13242,2377,52,47,0,0,Personal,15,Low Risk
+VH200137,7,Motorcycle,Medium Risk,Jawa Barat,26863,3035,39,6,1,0,Personal,19,Low Risk
+VH200138,0,Truck,Medium Risk,Jakarta,42751,1387,74,40,1,3,Personal,17,Low Risk
+VH200139,8,Truck,Medium Risk,Jawa Barat,31613,3564,46,17,2,1,Personal,4,Low Risk
+VH200140,1,MPV,Medium Risk,Sumatera,13719,2752,21,22,3,2,Commercial,53,High Risk
+VH200141,2,Truck,Medium Risk,Jakarta,75363,2977,38,21,2,1,Personal,18,Low Risk
+VH200142,4,SUV,Medium Risk,Jawa Barat,8182,2400,20,26,0,1,Personal,21,Medium Risk
+VH200143,12,Motorcycle,Medium Risk,Sumatera,28059,1746,26,15,0,0,Personal,12,Low Risk
+VH200144,19,Motorcycle,Medium Risk,Jakarta,24744,1840,50,7,0,2,Commercial,25,Medium Risk
+VH200145,14,SUV,Low Risk,Kalimantan,45208,2264,29,5,0,0,Commercial,33,Medium Risk
+VH200146,14,Sedan,Low Risk,Jakarta,5428,1777,59,21,2,1,Personal,27,Medium Risk
+VH200147,19,Motorcycle,Low Risk,Jawa Timur,54655,1007,53,26,1,1,Personal,26,Medium Risk
+VH200148,15,MPV,Low Risk,Jakarta,6992,2154,23,28,1,0,Commercial,33,Medium Risk
+VH200149,13,Truck,Medium Risk,Jakarta,59756,1626,40,48,1,1,Personal,21,Medium Risk
+VH200150,18,SUV,Medium Risk,Sumatera,76741,2366,66,21,2,0,Personal,23,Medium Risk
+VH200151,3,MPV,Medium Risk,Sumatera,66094,1609,46,5,1,0,Personal,17,Low Risk
+VH200152,1,Truck,Low Risk,Jakarta,7492,1409,29,33,1,2,Commercial,26,Medium Risk
+VH200153,9,Motorcycle,Medium Risk,Jawa Barat,67346,1072,46,30,1,1,Commercial,24,Medium Risk
+VH200154,5,Truck,Low Risk,Kalimantan,60235,3534,40,30,1,0,Personal,17,Low Risk
+VH200155,6,SUV,Medium Risk,Jawa Barat,40604,3499,41,24,1,0,Personal,3,Low Risk
+VH200156,8,Truck,Medium Risk,Jawa Barat,29370,2146,67,13,0,2,Personal,8,Low Risk
+VH200157,9,Sedan,Low Risk,Sumatera,59500,3327,24,35,0,1,Personal,27,Medium Risk
+VH200158,4,SUV,Medium Risk,Jawa Timur,63506,1031,49,34,1,2,Personal,18,Low Risk
+VH200159,4,Sedan,Medium Risk,Jawa Timur,40949,1579,32,2,1,0,Personal,19,Low Risk
+VH200160,7,MPV,Medium Risk,Jawa Barat,69275,1547,30,5,2,1,Commercial,22,Medium Risk
+VH200161,10,Truck,High Risk,Jawa Barat,23241,1639,61,20,2,1,Personal,2,Low Risk
+VH200162,7,Truck,Medium Risk,Jakarta,61043,2685,46,32,2,0,Personal,23,Medium Risk
+VH200163,16,Motorcycle,Low Risk,Sumatera,62458,2100,57,47,3,0,Personal,46,High Risk
+VH200164,6,Truck,Low Risk,Jawa Timur,53338,3676,53,26,1,0,Personal,11,Low Risk
+VH200165,5,SUV,Medium Risk,Jakarta,42296,1652,56,29,2,0,Commercial,19,Low Risk
+VH200166,4,Motorcycle,Low Risk,Kalimantan,14755,1345,61,29,2,0,Personal,5,Low Risk
+VH200167,5,SUV,Medium Risk,Kalimantan,72966,2259,23,20,0,0,Personal,26,Medium Risk
+VH200168,10,Sedan,Medium Risk,Sumatera,19238,3329,74,3,2,1,Personal,7,Low Risk
+VH200169,7,SUV,High Risk,Jawa Timur,79778,2325,21,41,2,0,Personal,29,Medium Risk
+VH200170,16,SUV,Medium Risk,Kalimantan,23950,1777,21,13,2,0,Commercial,36,Medium Risk
+VH200171,11,SUV,High Risk,Jakarta,70509,3858,34,35,1,3,Personal,34,Medium Risk
+VH200172,11,MPV,High Risk,Jawa Barat,62237,1507,71,14,1,2,Personal,22,Medium Risk
+VH200173,10,Truck,Low Risk,Kalimantan,73351,1169,74,17,2,1,Commercial,21,Medium Risk
+VH200174,14,SUV,Low Risk,Jawa Barat,55160,3305,41,14,3,1,Personal,47,High Risk
+VH200175,10,SUV,Medium Risk,Kalimantan,59286,1579,33,25,0,0,Personal,28,Medium Risk
+VH200176,6,Motorcycle,Medium Risk,Kalimantan,65542,1867,65,37,3,1,Personal,45,High Risk
+VH200177,18,SUV,Medium Risk,Jawa Timur,47368,1381,35,25,3,2,Personal,31,Medium Risk
+VH200178,8,MPV,Medium Risk,Jawa Timur,42789,1030,57,10,1,0,Personal,5,Low Risk
+VH200179,8,Truck,Low Risk,Jawa Barat,66492,1623,22,10,2,0,Personal,23,Medium Risk
+VH200180,14,MPV,Low Risk,Kalimantan,36346,1341,51,6,1,1,Personal,13,Low Risk
+VH200181,16,MPV,High Risk,Kalimantan,32816,1481,46,43,1,2,Personal,22,Medium Risk
+VH200182,13,Sedan,Medium Risk,Sumatera,32597,1815,54,7,4,0,Commercial,55,High Risk
+VH200183,10,MPV,Medium Risk,Sumatera,79386,3717,58,11,3,1,Personal,32,Medium Risk
+VH200184,0,SUV,Medium Risk,Sumatera,29249,3354,39,5,2,3,Personal,24,Medium Risk
+VH200185,9,SUV,High Risk,Kalimantan,21300,2740,37,26,0,1,Personal,1,Low Risk
+VH200186,0,Sedan,High Risk,Sumatera,31611,3622,72,0,1,2,Personal,4,Low Risk
+VH200187,9,SUV,Medium Risk,Jawa Timur,19852,2855,57,47,0,1,Personal,5,Low Risk
+VH200188,17,Truck,Low Risk,Jakarta,18788,3757,45,40,1,1,Personal,15,Low Risk
+VH200189,11,Truck,High Risk,Jakarta,67924,3927,48,18,0,2,Commercial,38,Medium Risk
+VH200190,5,SUV,Medium Risk,Kalimantan,78015,1383,38,47,1,2,Personal,15,Low Risk
+VH200191,11,Truck,Low Risk,Jakarta,57341,1148,48,20,1,0,Personal,24,Medium Risk
+VH200192,2,Sedan,Low Risk,Jakarta,79083,1649,42,38,1,1,Commercial,26,Medium Risk
+VH200193,12,Motorcycle,Low Risk,Jakarta,50804,3586,50,0,2,0,Personal,37,Medium Risk
+VH200194,1,Motorcycle,Low Risk,Jawa Barat,26278,3631,58,30,3,0,Personal,23,Medium Risk
+VH200195,1,Sedan,Low Risk,Sumatera,39624,3209,20,1,0,2,Personal,11,Low Risk
+VH200196,2,Motorcycle,High Risk,Jawa Barat,64205,1551,20,3,1,0,Personal,23,Medium Risk
+VH200197,5,SUV,Medium Risk,Sumatera,18530,3866,46,45,1,0,Commercial,28,Medium Risk
+VH200198,5,Motorcycle,Medium Risk,Jawa Barat,49743,2566,23,7,2,2,Commercial,29,Medium Risk
+VH200199,4,Motorcycle,High Risk,Jakarta,33640,3874,57,7,1,2,Commercial,15,Low Risk
+VH200200,2,MPV,Medium Risk,Jakarta,69706,1178,53,12,1,2,Commercial,34,Medium Risk
+VH200201,14,Truck,High Risk,Jawa Timur,34536,2956,52,46,1,2,Commercial,32,Medium Risk
+VH200202,1,MPV,Medium Risk,Jawa Barat,41948,2216,33,10,0,2,Personal,18,Low Risk
+VH200203,7,Motorcycle,Low Risk,Jawa Timur,9126,1922,43,30,2,1,Personal,18,Low Risk
+VH200204,1,MPV,Low Risk,Jawa Timur,9713,3746,32,15,2,1,Commercial,26,Medium Risk
+VH200205,14,SUV,Low Risk,Sumatera,64426,2898,37,31,2,1,Personal,32,Medium Risk
+VH200206,12,Truck,Medium Risk,Kalimantan,28436,2126,68,39,3,1,Personal,45,High Risk
+VH200207,12,MPV,High Risk,Jawa Barat,21160,3101,28,25,6,2,Commercial,48,High Risk
+VH200208,10,SUV,Medium Risk,Jakarta,26574,3723,44,27,4,0,Personal,26,Medium Risk
+VH200209,0,Truck,High Risk,Jakarta,67602,3931,22,4,0,0,Personal,21,Medium Risk
+VH200210,5,Motorcycle,Medium Risk,Kalimantan,18645,2294,42,39,2,1,Personal,2,Low Risk
+VH200211,12,Truck,Low Risk,Kalimantan,57421,2283,56,13,3,1,Commercial,55,High Risk
+VH200212,9,Sedan,Medium Risk,Jakarta,14804,1363,29,45,0,1,Personal,13,Low Risk
+VH200213,14,SUV,High Risk,Jawa Barat,39330,1958,45,33,0,1,Personal,22,Medium Risk
+VH200214,0,SUV,Medium Risk,Jawa Timur,74486,3734,74,18,5,0,Personal,38,Medium Risk
+VH200215,13,Truck,Low Risk,Jakarta,33144,3190,68,7,0,3,Personal,34,Medium Risk
+VH200216,2,SUV,Low Risk,Kalimantan,62000,2716,24,12,0,1,Personal,26,Medium Risk
+VH200217,12,MPV,Medium Risk,Jawa Barat,17229,1119,65,6,0,0,Commercial,27,Medium Risk
+VH200218,19,Motorcycle,Low Risk,Jakarta,71861,3256,19,20,3,0,Personal,61,High Risk
+VH200219,12,Motorcycle,High Risk,Jawa Timur,26453,3207,74,7,1,0,Commercial,22,Medium Risk
+VH200220,6,Truck,Medium Risk,Jakarta,52866,3767,71,34,0,3,Personal,27,Medium Risk
+VH200221,1,SUV,Medium Risk,Jakarta,73188,3125,20,5,0,0,Personal,38,Medium Risk
+VH200222,17,Sedan,Medium Risk,Jakarta,5520,1975,62,5,0,1,Personal,19,Low Risk
+VH200223,10,Sedan,High Risk,Sumatera,69976,3206,68,22,1,2,Personal,28,Medium Risk
+VH200224,16,Truck,Medium Risk,Jawa Barat,23966,2127,34,17,1,0,Commercial,26,Medium Risk
+VH200225,8,SUV,Low Risk,Jawa Barat,42192,2782,53,7,1,0,Personal,5,Low Risk
+VH200226,19,Sedan,Medium Risk,Jawa Timur,16219,3986,29,9,0,0,Personal,14,Low Risk
+VH200227,6,SUV,Medium Risk,Jawa Timur,35692,1137,38,13,1,3,Commercial,36,Medium Risk
+VH200228,8,Sedan,Medium Risk,Jakarta,37132,1401,38,1,0,0,Personal,4,Low Risk
+VH200229,0,Motorcycle,Medium Risk,Jakarta,66506,1732,61,46,2,1,Commercial,29,Medium Risk
+VH200230,4,SUV,Low Risk,Kalimantan,20713,2665,59,49,3,0,Personal,34,Medium Risk
+VH200231,2,Truck,Medium Risk,Kalimantan,23538,3126,58,8,0,1,Personal,4,Low Risk
+VH200232,9,MPV,Low Risk,Jakarta,39600,1484,26,1,2,2,Personal,9,Low Risk
+VH200233,15,Truck,High Risk,Sumatera,5143,3617,58,29,0,1,Personal,18,Low Risk
+VH200234,16,MPV,Low Risk,Jawa Barat,6036,1504,39,36,3,2,Personal,31,Medium Risk
+VH200235,17,MPV,High Risk,Jawa Barat,57216,1576,67,1,3,0,Personal,41,High Risk
+VH200236,18,SUV,Low Risk,Jakarta,17046,1353,39,32,1,0,Personal,19,Low Risk
+VH200237,11,SUV,High Risk,Sumatera,21989,3001,44,38,2,2,Personal,13,Low Risk
+VH200238,7,SUV,Medium Risk,Jawa Timur,60406,1697,64,3,3,3,Personal,46,High Risk
+VH200239,15,Truck,Low Risk,Sumatera,78526,1861,29,8,3,2,Personal,47,High Risk
+VH200240,10,SUV,Low Risk,Kalimantan,67999,3205,56,38,0,1,Personal,13,Low Risk
+VH200241,12,MPV,High Risk,Kalimantan,37424,1312,60,0,0,1,Commercial,23,Medium Risk
+VH200242,2,Motorcycle,Low Risk,Kalimantan,5132,2745,74,33,1,1,Personal,7,Low Risk
+VH200243,7,Truck,Low Risk,Jawa Barat,53839,2360,61,43,2,1,Personal,12,Low Risk
+VH200244,0,SUV,Medium Risk,Jawa Timur,66253,2049,67,38,2,0,Commercial,28,Medium Risk
+VH200245,13,MPV,Low Risk,Jakarta,68879,1100,66,46,1,0,Personal,25,Medium Risk
+VH200246,6,Sedan,High Risk,Jakarta,58802,1873,45,19,1,3,Personal,23,Medium Risk
+VH200247,6,Sedan,Low Risk,Jawa Barat,73296,3394,44,18,0,2,Commercial,22,Medium Risk
+VH200248,10,MPV,Low Risk,Jawa Barat,77686,2272,19,4,0,2,Personal,21,Medium Risk
+VH200249,16,Truck,Low Risk,Kalimantan,70582,2236,62,36,0,1,Personal,24,Medium Risk
+VH200250,15,Truck,Low Risk,Kalimantan,20361,2076,37,9,4,1,Personal,44,High Risk
+VH200251,1,Truck,Low Risk,Kalimantan,54736,1515,57,26,0,1,Personal,13,Low Risk
+VH200252,2,Truck,Medium Risk,Jawa Timur,16868,3298,31,44,0,4,Personal,14,Low Risk
+VH200253,2,Sedan,Low Risk,Jawa Barat,64576,3797,37,48,1,1,Personal,13,Low Risk
+VH200254,10,Sedan,Low Risk,Jawa Timur,23731,3122,18,30,3,1,Commercial,44,High Risk
+VH200255,19,SUV,Medium Risk,Kalimantan,51210,1534,41,8,2,0,Commercial,39,Medium Risk
+VH200256,5,Sedan,High Risk,Sumatera,19212,2517,50,14,1,1,Personal,8,Low Risk
+VH200257,10,Motorcycle,Medium Risk,Kalimantan,54733,3801,71,1,2,1,Personal,17,Low Risk
+VH200258,12,Sedan,Medium Risk,Sumatera,61560,3651,48,12,1,0,Commercial,35,Medium Risk
+VH200259,6,SUV,Medium Risk,Jawa Barat,62221,2868,19,21,3,1,Personal,46,High Risk
+VH200260,0,Truck,Medium Risk,Sumatera,44562,2002,27,5,1,0,Personal,6,Low Risk
+VH200261,18,Truck,Medium Risk,Sumatera,62314,1171,23,28,1,1,Commercial,45,High Risk
+VH200262,3,Motorcycle,Medium Risk,Kalimantan,66651,1506,28,27,2,0,Personal,14,Low Risk
+VH200263,11,Sedan,Low Risk,Sumatera,5796,2521,28,3,0,1,Personal,22,Medium Risk
+VH200264,1,Motorcycle,Low Risk,Jakarta,75290,3617,65,16,1,0,Personal,19,Low Risk
+VH200265,2,Truck,Medium Risk,Kalimantan,78025,2310,73,35,1,0,Personal,27,Medium Risk
+VH200266,13,Truck,Medium Risk,Jawa Barat,54677,2297,58,10,3,0,Personal,45,High Risk
+VH200267,17,SUV,Medium Risk,Jawa Timur,48192,2053,46,36,1,1,Commercial,27,Medium Risk
+VH200268,9,Truck,Low Risk,Jawa Barat,16965,2639,61,19,1,1,Personal,4,Low Risk
+VH200269,19,SUV,Low Risk,Jakarta,35734,3480,56,9,2,1,Personal,18,Low Risk
+VH200270,6,Motorcycle,Medium Risk,Jawa Barat,15018,1534,37,4,3,3,Commercial,48,High Risk
+VH200271,14,Sedan,Medium Risk,Jakarta,18217,3759,18,31,2,0,Commercial,31,Medium Risk
+VH200272,7,MPV,Low Risk,Jawa Timur,59118,1291,44,36,1,2,Personal,11,Low Risk
+VH200273,11,Sedan,Low Risk,Jawa Timur,24592,3005,49,38,0,4,Commercial,39,Medium Risk
+VH200274,14,SUV,Medium Risk,Jakarta,76983,3984,31,20,2,1,Commercial,37,Medium Risk
+VH200275,18,SUV,Low Risk,Jawa Barat,20891,1874,61,10,1,2,Personal,15,Low Risk
+VH200276,14,Sedan,Medium Risk,Jawa Barat,41513,2385,44,0,0,1,Commercial,29,Medium Risk
+VH200277,4,SUV,Medium Risk,Jakarta,42944,3557,70,35,1,2,Personal,16,Low Risk
+VH200278,1,Motorcycle,High Risk,Sumatera,37938,3680,47,32,2,4,Commercial,26,Medium Risk
+VH200279,7,Truck,Low Risk,Jawa Barat,71528,3375,33,0,1,0,Personal,27,Medium Risk
+VH200280,4,MPV,Medium Risk,Sumatera,27220,3065,38,48,1,0,Commercial,15,Low Risk
+VH200281,9,Truck,Medium Risk,Jawa Timur,63492,1933,61,44,0,2,Personal,12,Low Risk
+VH200282,2,Truck,Medium Risk,Sumatera,13427,2685,56,35,5,2,Personal,25,Medium Risk
+VH200283,8,SUV,Medium Risk,Jakarta,16615,1273,49,29,4,0,Personal,27,Medium Risk
+VH200284,12,Sedan,Medium Risk,Jawa Barat,42891,1412,60,26,2,0,Personal,25,Medium Risk
+VH200285,5,Motorcycle,Low Risk,Jawa Timur,46338,3245,40,39,0,0,Personal,15,Low Risk
+VH200286,9,Motorcycle,Low Risk,Kalimantan,9276,3119,68,28,1,0,Personal,4,Low Risk
+VH200287,4,MPV,High Risk,Sumatera,31260,1308,34,22,1,0,Personal,9,Low Risk
+VH200288,13,SUV,Medium Risk,Jakarta,70643,3246,66,1,0,0,Personal,24,Medium Risk
+VH200289,12,Sedan,Medium Risk,Sumatera,57702,2492,19,35,1,0,Commercial,54,High Risk
+VH200290,14,MPV,Low Risk,Kalimantan,71993,3867,42,43,0,1,Personal,32,Medium Risk
+VH200291,5,Sedan,Medium Risk,Jakarta,68232,2328,48,19,4,0,Commercial,42,High Risk
+VH200292,10,Truck,Low Risk,Jakarta,77709,1926,70,33,0,0,Personal,23,Medium Risk
+VH200293,4,Truck,Low Risk,Jawa Barat,28145,3336,40,18,1,0,Personal,1,Low Risk
+VH200294,6,Sedan,Medium Risk,Sumatera,35386,1602,33,45,1,0,Commercial,28,Medium Risk
+VH200295,8,SUV,Medium Risk,Jakarta,29130,2406,60,11,1,0,Personal,7,Low Risk
+VH200296,9,Sedan,Low Risk,Jawa Barat,14109,1428,54,2,0,2,Personal,1,Low Risk
+VH200297,5,SUV,High Risk,Jawa Timur,45946,1297,24,15,1,1,Personal,22,Medium Risk
+VH200298,9,MPV,Low Risk,Kalimantan,52020,1677,71,42,0,0,Personal,16,Low Risk
+VH200299,18,Truck,Medium Risk,Jawa Timur,5188,2946,55,48,2,2,Personal,26,Medium Risk
+VH200300,15,Sedan,Low Risk,Jakarta,12536,3112,39,1,1,1,Commercial,25,Medium Risk

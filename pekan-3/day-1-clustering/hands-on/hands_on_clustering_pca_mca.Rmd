@@ -1,0 +1,770 @@
+---
+title: "Hands-on: Clustering, PCA & MCA untuk Data Asuransi"
+subtitle: "Latihan analisis di R dengan data polis asuransi kendaraan `dataCar` (paket insuranceData)"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+    toc_depth: 2
+    code_folding: show
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = "#>", message = FALSE, warning = FALSE,
+                      fig.width = 8, fig.height = 5, dpi = 90, fig.align = "center")
+```
+
+```{css, echo=FALSE}
+:root { --navy:#0F2A4A; --blue:#1D5FB4; --sky:#E3EDF9; --ice:#F4F8FD; --ink:#1E293B;
+        --orange:#E08A1E; --grey:#7A8BA0; }
+body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--ice); font-size: 16px; line-height: 1.6; }
+.main-container { max-width: 1180px; }
+h1.title { background: linear-gradient(120deg, var(--navy), var(--blue)); color: #fff; padding: 28px 32px 10px; border-radius: 14px 14px 0 0; margin-bottom: 0; font-weight: 700; }
+h3.subtitle { background: var(--blue); color: #DCEAFB; padding: 0 32px 24px; margin-top: 0; border-radius: 0 0 14px 14px; font-size: 18px; }
+h3.subtitle code { background: rgba(255,255,255,.15); color:#fff; }
+h1:not(.title) { background: var(--navy); color: #fff; padding: 14px 22px; border-radius: 12px; margin-top: 56px; font-size: 26px; border-left: 10px solid #6FA3E0; }
+h2 { color: var(--blue); border-bottom: 3px solid var(--sky); padding-bottom: 6px; margin-top: 34px; font-size: 22px; font-weight: 700; }
+h3 { color: var(--navy); font-size: 18px; font-weight: 700; }
+a { color: var(--blue); }
+pre, pre.r { background: #fff !important; border: 1px solid #D5E2F2; border-left: 5px solid var(--blue); border-radius: 8px; }
+pre:not(.r) { background: #F8FBFF !important; border-left-color: #9DBDE4; }
+.tocify { border: none; background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(15,42,74,.08); font-size: 14px; }
+.tocify .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background: var(--blue); border-color: var(--blue); color: #fff; }
+.list-group-item { border: none; color: var(--navy); }
+.btn-default { color: var(--blue); border-color: var(--blue); }
+table { background: #fff; }
+thead th { background: var(--sky); color: var(--navy); }
+.box { border-radius: 12px; padding: 14px 20px; margin: 18px 0; border-left: 8px solid; }
+.box p:last-child, .box ul:last-child { margin-bottom: 0; }
+.tafsir { background: #fff; border-color: var(--blue); box-shadow: 0 2px 8px rgba(15,42,74,.06); }
+.tafsir::before { content: "INTERPRETASI"; display:block; font-weight: 700; letter-spacing: 1.5px; color: var(--blue); font-size: 13px; margin-bottom: 4px; }
+.catatan { background: var(--sky); border-color: #6FA3E0; }
+.catatan::before { content: "CATATAN"; display:block; font-weight: 700; letter-spacing: 1.5px; color: var(--navy); font-size: 13px; margin-bottom: 4px; }
+.kode { background: #FFF8EE; border-color: var(--orange); }
+.kode::before { content: "MEMBACA KODE"; display:block; font-weight: 700; letter-spacing: 1.5px; color: #B06A10; font-size: 13px; margin-bottom: 4px; }
+.kode code { background: #fff; }
+.latihan { background: var(--navy); color: #E6EEF8; border-color: #6FA3E0; }
+.latihan::before { content: "LATIHAN"; display:block; font-weight: 700; letter-spacing: 1.5px; color: #8CC0F5; font-size: 13px; margin-bottom: 4px; }
+.latihan code { background: rgba(255,255,255,.12); color: #fff; }
+.part-intro { font-size: 17px; color: #334155; }
+img { border-radius: 8px; background: #fff; }
+
+/* ---- label jenis kode ---- */
+pre.wajib, pre.pelengkap, pre.opsional { position: relative; padding-top: 34px; }
+pre.wajib::before, pre.pelengkap::before, pre.opsional::before {
+  position: absolute; top: 0; left: 0; padding: 3px 12px; border-radius: 0 0 8px 0;
+  font-family: "Segoe UI", Arial, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1px; }
+pre.wajib { border-left-color: var(--blue) !important; }
+pre.wajib::before { content: "WAJIB · inti analisis, hafalkan polanya"; background: var(--blue); color: #fff; }
+pre.pelengkap { border-left-color: var(--grey) !important; }
+pre.pelengkap::before { content: "PELENGKAP · grafik/cek hasil, cukup pahami"; background: #E4E9F0; color: #3E4C5E; }
+pre.opsional { border-left: 5px dashed var(--orange) !important; }
+pre.opsional::before { content: "OPSIONAL · boleh dilewati"; background: #FCEBD5; color: #8A4E05; }
+.legend-kode { display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0 4px; }
+.legend-kode span { padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; letter-spacing: .5px; }
+.lg-w { background: var(--blue); color:#fff; } .lg-p { background:#E4E9F0; color:#3E4C5E; } .lg-o { background:#FCEBD5; color:#8A4E05; }
+```
+
+# Part 0 · Persiapan
+
+<p class="part-intro">Tujuan latihan ini adalah mempraktikkan **PCA, MCA, dan berbagai metode clustering** pada data asuransi kendaraan, lalu menafsirkan hasilnya dari sudut pandang bisnis asuransi.</p>
+
+## Cara membaca kode di modul ini
+
+Setiap blok kode diberi label supaya Anda tahu mana yang harus dikuasai dan mana yang cukup dipahami:
+
+<div class="legend-kode"><span class="lg-w">WAJIB</span><span class="lg-p">PELENGKAP</span><span class="lg-o">OPSIONAL</span></div>
+
+| Label | Artinya | Yang perlu Anda lakukan |
+|---|---|---|
+| **WAJIB** | Langkah inti analisis: menyiapkan data, menjalankan metode, dan membaca hasil utama. Tanpa kode ini analisis tidak jalan. | Pahami tiap baris dan **hafalkan polanya** (nama fungsi + argumen penting). |
+| **PELENGKAP** | Grafik dan pengecekan hasil (`fviz_*`, `plot`, `summary`, tabel silang). Membantu membaca hasil, tetapi analisis tetap jalan tanpanya. | Cukup tahu **fungsi apa untuk grafik apa**; argumen tampilan (warna, label, ukuran) tidak perlu dihafal. |
+| **OPSIONAL** | Pembanding atau pendalaman (metode alternatif, latihan tambahan). | Boleh dilewati jika waktu terbatas. |
+
+Setiap baris kode juga diberi komentar `# ...` yang menjelaskan maksudnya. Di akhir modul ada **[Contekan kode wajib](#part-7-contekan-kode-wajib)** yang merangkum semua kode WAJIB dalam satu tempat untuk dihafal.
+
+<div class="box catatan">
+Di R, tanda `<-` berarti "simpan hasil ke dalam objek". Contoh: `km <- kmeans(...)` artinya "jalankan k-means, simpan hasilnya dengan nama `km`". Tanda `$` dipakai untuk mengambil bagian dari objek, misalnya `km$cluster` = nomor cluster tiap baris data.
+</div>
+
+## Package yang dipakai
+
+Jalankan sekali saja jika package belum terpasang:
+
+```{r, eval=FALSE, class.source="pelengkap"}
+# Memasang package dari CRAN. Cukup SEKALI per komputer, tidak perlu diulang tiap sesi.
+install.packages(c("insuranceData",   # berisi data dataCar
+                   "cluster",         # pam(), daisy(), silhouette
+                   "factoextra",      # grafik PCA, MCA, dan cluster (fungsi fviz_*)
+                   "FactoMineR",      # MCA()
+                   "dbscan",          # dbscan()
+                   "clustMixType", "klaR"))   # dua terakhir hanya untuk bagian opsional
+```
+
+```{r, class.source="wajib"}
+# Memuat package ke sesi R. WAJIB dijalankan setiap kali R dibuka ulang.
+library(cluster)      # pam(), daisy(), silhouette()
+library(factoextra)   # visualisasi PCA, MCA, cluster
+library(FactoMineR)   # MCA()
+library(dbscan)       # dbscan(), kNNdistplot()
+```
+
+## Data latihan: `dataCar`
+
+Data `dataCar` dari package **insuranceData** berisi **67.856 polis asuransi kendaraan** satu tahun (periode 2004–2005, Australia), 4.624 di antaranya mengajukan klaim.
+
+| Variabel | Arti | Jenis |
+|---|---|---|
+| `veh_value` | Nilai kendaraan, dalam satuan 10.000 AUD | numerik |
+| `exposure` | Lama polis aktif dalam setahun (0–1) | numerik |
+| `clm` | Ada klaim? (1 = ya, 0 = tidak) | biner |
+| `numclaims` | Jumlah klaim dalam periode polis | numerik (0–4) |
+| `claimcst0` | Total biaya klaim (AUD; 0 jika tidak klaim) | numerik |
+| `veh_body` | Jenis bodi kendaraan (SEDAN, HBACK = hatchback, STNWG = station wagon, UTE = pikap, dll.) | kategorik |
+| `veh_age` | Kelompok umur kendaraan: 1 = paling baru … 4 = paling tua | ordinal |
+| `gender` | Jenis kelamin pengemudi (F/M) | kategorik |
+| `area` | Wilayah tempat tinggal (A–F) | kategorik |
+| `agecat` | Kelompok usia pengemudi: 1 = paling muda … 6 = paling tua | ordinal |
+| `X_OBSTAT_` | Kolom teknis, isinya sama semua, tidak dipakai | – |
+
+Pembagian pemakaian data:
+
+| Bagian | Data yang dipakai | Metode |
+|---|---|---|
+| Part 1–3 | 4.624 polis yang **mengajukan klaim** (variabel numerik) | PCA, k-means, PAM, hierarchical, DBSCAN |
+| Part 4–5 | **Sampel 2.000 polis** (semua polis, klaim maupun tidak) | MCA, clustering data campuran |
+
+```{r, class.source="wajib"}
+data("dataCar", package = "insuranceData")   # memuat data dataCar ke memori R
+dim(dataCar)                                   # jumlah baris (polis) dan kolom (variabel)
+```
+
+# Part 1 · Eksplorasi Data Klaim
+
+<p class="part-intro">Sebelum PCA atau clustering, pahami dulu bentuk datanya. Biaya klaim hampir selalu **miring ke kanan** (*heavy-tailed*): banyak klaim kecil dan sedikit klaim sangat besar.</p>
+
+## Memilih polis yang klaim
+
+```{r, class.source="wajib"}
+klaim <- subset(dataCar, clm == 1)   # ambil hanya baris dengan clm = 1 (polis yang klaim)
+nrow(klaim)                          # berapa banyak polis yang klaim
+```
+
+```{r, class.source="pelengkap"}
+# ringkasan statistik (min, kuartil, median, rata-rata, maks) variabel yang akan dipakai
+summary(klaim[, c("veh_value", "veh_age", "claimcst0", "numclaims")])
+```
+
+```{r, class.source="pelengkap"}
+table(klaim$numclaims)   # hitung berapa polis yang klaim 1x, 2x, 3x, 4x
+```
+
+<div class="box tafsir">
+- Median biaya klaim hanya **`r format(round(median(klaim$claimcst0)))` AUD**, tetapi maksimumnya **`r format(round(max(klaim$claimcst0)))` AUD**, dan rata-ratanya (`r format(round(mean(klaim$claimcst0)))`) jauh di atas median: distribusinya sangat miring.
+- Sebagian besar polis hanya klaim sekali; hanya `r sum(klaim$numclaims >= 2)` polis (`r round(100*mean(klaim$numclaims >= 2))`%) yang klaim 2 kali atau lebih.
+</div>
+
+## Transformasi log dan standardisasi
+
+Jarak Euclid (dipakai PCA dan k-means) sangat sensitif terhadap nilai ekstrem. Karena itu variabel yang miring kita transformasi log dulu, lalu semua variabel **distandardisasi** (mean 0, sd 1) supaya satuannya setara.
+
+```{r, class.source="wajib"}
+# Susun data numerik untuk analisis. Nama kolom dibuat singkat supaya grafik mudah dibaca.
+X <- data.frame(nilai  = log1p(klaim$veh_value),   # log(1 + nilai kendaraan); log1p aman untuk nilai 0
+                umur   = klaim$veh_age,            # umur kendaraan 1-4 (tidak miring, tidak perlu log)
+                biaya  = log(klaim$claimcst0),     # log biaya klaim (semua > 0, jadi cukup log)
+                jumlah = klaim$numclaims)          # jumlah klaim 1-4
+
+Z <- scale(X)    # standardisasi: setiap kolom dikurangi rata-rata lalu dibagi sd
+```
+
+<div class="box kode">
+- `log1p(x)` = `log(1 + x)`. Dipakai jika data bisa bernilai 0 (karena `log(0)` tidak terdefinisi).
+- `scale()` menghasilkan **z-score**. Tanpa ini, variabel dengan angka besar akan mendominasi jarak.
+- Hasil `X` dipakai untuk PCA (PCA melakukan standardisasi sendiri lewat `scale. = TRUE`); hasil `Z` dipakai untuk clustering.
+</div>
+
+```{r, fig.height=4, class.source="pelengkap"}
+par(mfrow = c(1, 2))                    # bagi area gambar menjadi 1 baris, 2 kolom
+hist(klaim$claimcst0, breaks = 60,      # histogram biaya klaim asli
+     main = "Biaya klaim (asli)", xlab = "AUD")
+hist(log(klaim$claimcst0), breaks = 40, # histogram setelah di-log
+     main = "Biaya klaim (log)", xlab = "log(AUD)")
+```
+
+```{r, class.source="wajib"}
+round(cor(X), 2)   # matriks korelasi antar variabel, dibulatkan 2 desimal
+```
+
+<div class="box tafsir">
+- Korelasi terkuat adalah **nilai kendaraan vs umur kendaraan** (`r round(cor(X)[1,2], 2)`): mobil yang lebih tua cenderung bernilai lebih rendah.
+- **Biaya** dan **jumlah klaim** berkorelasi positif lemah (`r round(cor(X)[3,4], 2)`): polis yang klaim berkali-kali cenderung total biayanya lebih besar.
+- Kedua pasangan ini hampir tidak berkorelasi satu sama lain. PCA akan menangkap pola ini sebagai dua sumbu terpisah.
+</div>
+
+# Part 2 · PCA pada Data Klaim
+
+<p class="part-intro">PCA meringkas beberapa variabel numerik yang saling berkorelasi menjadi **komponen baru (Dim)** yang tidak berkorelasi.</p>
+
+## Menjalankan PCA
+
+```{r, class.source="wajib"}
+res.pca <- prcomp(X, scale. = TRUE)   # jalankan PCA; scale. = TRUE -> variabel distandardisasi dulu
+eig <- get_eigenvalue(res.pca)        # ambil eigenvalue & persen varians tiap Dim (factoextra)
+round(eig, 2)
+```
+
+```{r, fig.height=4, class.source="pelengkap"}
+fviz_eig(res.pca, addlabels = TRUE)   # scree plot: persen varians tiap Dim; addlabels = tulis angkanya
+```
+
+<div class="box tafsir">
+- **eigenvalue**: besar variasi yang ditangkap tiap Dim. Totalnya = jumlah variabel = 4.
+- Dim 1 menjelaskan `r round(eig[1,2],1)`% variasi, Dim 1 + Dim 2 = `r round(eig[2,3],1)`%.
+- **Aturan Kaiser** (eigenvalue ≥ 1) memilih **2 Dim** (`r round(eig[1,1],2)` dan `r round(eig[2,1],2)`). Kita pakai Dim 1 dan Dim 2.
+</div>
+
+## Loading dan lingkaran korelasi
+
+```{r, class.source="wajib"}
+round(res.pca$rotation, 2)   # loading: bobot tiap variabel asli di setiap Dim (PC)
+```
+
+<div class="box kode">
+Cara membaca loading: lihat angka dengan **nilai mutlak besar** (misalnya > 0.5) di tiap kolom. Tanda +/− menunjukkan arah. Contoh: di PC1 `nilai` bertanda + dan `umur` bertanda −, artinya PC1 tinggi = mobil bernilai tinggi dan masih baru.
+</div>
+
+```{r, class.source="pelengkap"}
+# lingkaran korelasi; col.var = "contrib" -> warna panah sesuai kontribusi; repel -> label tidak bertumpuk
+fviz_pca_var(res.pca, col.var = "contrib", repel = TRUE)
+```
+
+```{r, fig.height=3.8, class.source="pelengkap"}
+fviz_contrib(res.pca, choice = "var", axes = 1)   # kontribusi variabel ke Dim 1
+fviz_contrib(res.pca, choice = "var", axes = 2)   # kontribusi variabel ke Dim 2
+```
+
+<div class="box tafsir">
+- **Dim 1 = "profil kendaraan"**: `nilai` (+) dan `umur` (−) berlawanan arah. Nilai Dim 1 tinggi = kendaraan **baru dan mahal**; rendah = kendaraan **tua dan murah**.
+- **Dim 2 = "keparahan klaim"**: dibentuk oleh `biaya` dan `jumlah`. Nilai Dim 2 tinggi = polis dengan **klaim mahal dan/atau berulang**.
+- Panah yang panjang dan dekat lingkaran berarti variabel itu terwakili baik di bidang Dim 1–Dim 2 (cos2 tinggi).
+- Garis merah putus-putus pada plot kontribusi = kontribusi rata-rata (100% / 4 = 25%); variabel di atas garis adalah pembentuk utama Dim tersebut.
+</div>
+
+## Plot individu (polis yang klaim)
+
+```{r, class.source="pelengkap"}
+fviz_pca_ind(res.pca, geom = "point",      # setiap titik = satu polis; geom = "point" -> tanpa label
+             col.ind = "cos2", alpha.ind = 0.5)   # warna = kualitas representasi (cos2)
+```
+
+<div class="box tafsir">
+Klaim di kanan adalah polis dengan kendaraan baru/mahal; klaim di atas adalah polis dengan klaim besar atau berulang. "Garis-garis" titik yang terlihat muncul karena `umur` dan `jumlah` hanya bernilai bulat 1–4 (variabel diskrit).
+</div>
+
+<div class="box latihan">
+Ulangi PCA dengan menambahkan `exposure` dan `agecat` ke dalam `X`. Apa yang terjadi pada persen varians Dim 1 dan Dim 2? Apakah variabel baru itu berkorelasi dengan variabel lain? (Petunjuk: lihat `cor(X)` dulu.)
+</div>
+
+# Part 3 · Clustering Polis yang Klaim
+
+<p class="part-intro">Tujuan bisnis: mengelompokkan klaim menjadi segmen dengan pola berbeda, misalnya untuk penetapan cadangan, penanganan klaim, atau deteksi klaim tidak lazim.</p>
+
+## Menentukan jumlah cluster (k)
+
+```{r, fig.height=4, class.source="wajib"}
+set.seed(123)                                               # kunci angka acak agar hasil bisa diulang
+fviz_nbclust(Z, kmeans, method = "wss", k.max = 8)          # elbow: total jarak dalam cluster per k
+fviz_nbclust(Z, kmeans, method = "silhouette", k.max = 8)   # rata-rata silhouette per k
+```
+
+<div class="box kode">
+- `method = "wss"` (*within sum of squares*): cari **siku**, titik ketika penurunan garis mulai melandai.
+- `method = "silhouette"`: cari **nilai tertinggi**. Silhouette berkisar −1 s.d. 1; makin tinggi, makin jelas pemisahan cluster.
+</div>
+
+<div class="box tafsir">
+Silhouette tertinggi ada di **k = 3**, dan nilai k = 4 hampir sama. Siku pada WSS juga ada di sekitar k = 3–4. Kita pakai **k = 4** karena lebih informatif secara bisnis (klaim besar terpisah dari klaim kecil). Pemilihan k selalu gabungan antara ukuran statistik dan kebutuhan interpretasi.
+</div>
+
+## K-Means
+
+```{r, class.source="wajib"}
+set.seed(123)                                  # k-means memakai titik awal acak
+km <- kmeans(Z, centers = 4, nstart = 25)      # 4 cluster, coba 25 titik awal, ambil yang terbaik
+table(km$cluster)                              # jumlah polis per cluster
+```
+
+<div class="box kode">
+- `centers` = jumlah cluster (k).
+- `nstart = 25`: k-means diulang 25 kali dengan titik awal berbeda, lalu dipilih hasil terbaik. Ini membuat hasil lebih stabil.
+- `km$cluster` = nomor cluster setiap polis; `km$centers` = pusat cluster (dalam skala z).
+</div>
+
+```{r, class.source="pelengkap"}
+fviz_cluster(km, data = Z, geom = "point",      # gambar cluster di bidang Dim 1-Dim 2 (PCA otomatis)
+             ellipse.type = "convex", alpha = 0.4)
+```
+
+## Profil cluster
+
+Profil selalu dibaca dari **data asli**, bukan data yang sudah di-log atau di-scale.
+
+```{r, class.source="wajib"}
+# median tiap variabel asli per cluster
+prof <- aggregate(klaim[, c("veh_value", "veh_age", "claimcst0", "numclaims")],
+                  by = list(cluster = km$cluster), FUN = median)
+prof$rata_biaya <- as.vector(tapply(klaim$claimcst0, km$cluster, mean))   # rata-rata biaya per cluster
+prof$n <- as.vector(table(km$cluster))                                    # jumlah polis per cluster
+knitr::kable(prof, digits = 2, caption = "Median per cluster (biaya dalam AUD)")   # tampilkan tabel rapi
+```
+
+<div class="box kode">
+- `aggregate(data, by = list(cluster = ...), FUN = median)`: hitung median setiap kolom untuk setiap cluster.
+- `tapply(x, kelompok, mean)`: hitung rata-rata `x` untuk setiap kelompok.
+- `knitr::kable()` hanya untuk mempercantik tampilan tabel (boleh diganti `print(prof)`).
+</div>
+
+```{r, include=FALSE}
+# nomor cluster untuk teks interpretasi (disembunyikan)
+id_ulang <- which.max(prof$numclaims)
+id_besar <- setdiff(order(-prof$claimcst0), id_ulang)[1]
+sisa     <- setdiff(1:4, c(id_ulang, id_besar))
+id_baru  <- sisa[which.min(prof$veh_age[sisa])]
+id_tua   <- setdiff(sisa, id_baru)
+```
+
+<div class="box tafsir">
+- **Cluster `r id_baru` – kendaraan baru/mahal, klaim kecil** (`r prof$n[id_baru]` polis): median nilai kendaraan `r prof$veh_value[id_baru]` (×10.000 AUD), umur kelompok `r prof$veh_age[id_baru]`, median biaya klaim `r round(prof$claimcst0[id_baru])` AUD.
+- **Cluster `r id_tua` – kendaraan tua/murah, klaim kecil** (`r prof$n[id_tua]` polis): median nilai `r prof$veh_value[id_tua]`, umur kelompok `r prof$veh_age[id_tua]`, median biaya `r round(prof$claimcst0[id_tua])` AUD.
+- **Cluster `r id_besar` – klaim besar** (`r prof$n[id_besar]` polis): median biaya **`r format(round(prof$claimcst0[id_besar]))` AUD**, sekitar `r round(prof$claimcst0[id_besar]/prof$claimcst0[id_tua])`× lipat klaim kecil. Segmen ini paling relevan untuk cadangan klaim.
+- **Cluster `r id_ulang` – klaim berulang** (`r prof$n[id_ulang]` polis): semua polis di sini klaim **2 kali atau lebih**; rata-rata total biayanya `r format(round(prof$rata_biaya[id_ulang]))` AUD. Segmen ini relevan untuk evaluasi underwriting dan premi perpanjangan.
+</div>
+
+## K-Medoids (PAM)
+
+PAM memakai **titik data nyata (medoid)** sebagai pusat cluster, sehingga lebih tahan terhadap outlier daripada k-means.
+
+```{r, class.source="wajib"}
+pm <- pam(Z, k = 4)                  # PAM dengan 4 cluster (tidak perlu set.seed, hasilnya tetap)
+klaim[pm$id.med, c("veh_value", "veh_age", "claimcst0", "numclaims")]   # polis "wakil" tiap cluster
+```
+
+<div class="box kode">
+`pm$id.med` = nomor baris medoid. Karena medoid adalah polis nyata, kita bisa langsung melihat data aslinya: ini "polis tipikal" dari setiap cluster.
+</div>
+
+```{r, class.source="pelengkap"}
+table(KMeans = km$cluster, PAM = pm$clustering)   # tabel silang: seberapa sama hasil k-means dan PAM
+```
+
+```{r, fig.height=4, class.source="pelengkap"}
+fviz_silhouette(pm, print.summary = FALSE)   # plot silhouette tiap polis
+```
+
+<div class="box tafsir">
+Tabel silang menunjukkan seberapa konsisten PAM dengan k-means (nomor cluster boleh berbeda; yang dilihat adalah apakah anggota berkumpul di satu sel per baris). Pada plot silhouette, batang yang panjang (mendekati 1) berarti polis itu cocok di cluster-nya; batang negatif berarti polis itu mungkin lebih cocok di cluster lain. Rata-rata silhouette PAM = `r round(pm$silinfo$avg.width, 2)`.
+</div>
+
+## Hierarchical clustering
+
+```{r, class.source="wajib"}
+hc <- hclust(dist(Z), method = "ward.D2")   # dist() = matriks jarak Euclid; ward.D2 = metode penggabungan
+grup_hc <- cutree(hc, k = 4)                # potong dendrogram menjadi 4 cluster
+```
+
+<div class="box kode">
+- `dist(Z)` menghitung jarak antar **semua pasangan** polis (4.624 × 4.624). Untuk data sangat besar, ini berat; ambil sampel dulu.
+- `method = "ward.D2"` menggabungkan cluster yang paling sedikit menambah variasi dalam cluster; biasanya menghasilkan cluster yang seimbang.
+- `cutree()` mengubah dendrogram menjadi nomor cluster.
+</div>
+
+```{r, class.source="pelengkap"}
+plot(hc, labels = FALSE, hang = -1, main = "Dendrogram Ward", xlab = "", sub = "")   # gambar dendrogram
+rect.hclust(hc, k = 4, border = 2:5)                                               # kotak 4 cluster
+```
+
+```{r, class.source="pelengkap"}
+table(Hierarki = grup_hc, KMeans = km$cluster)   # bandingkan dengan k-means
+```
+
+<div class="box tafsir">
+Tinggi sambungan menunjukkan seberapa berbeda dua kelompok yang digabung. Potongan di 4 cluster dipilih di bagian dengan "loncatan" tinggi yang besar. Tabel silang memperlihatkan bahwa segmen klaim berulang dan klaim kendaraan baru ditemukan oleh kedua metode; perbedaan terbesar ada pada batas antara klaim besar dan klaim kecil kendaraan tua.
+</div>
+
+## DBSCAN
+
+DBSCAN **tidak perlu menentukan k** dan bisa menandai **noise** (polis yang tidak mirip kelompok mana pun), berguna untuk mendeteksi klaim tidak lazim.
+
+```{r, fig.height=4, class.source="pelengkap"}
+kNNdistplot(Z, k = 8)                  # jarak ke tetangga ke-8 untuk setiap titik, diurutkan
+abline(h = 0.5, lty = 2, col = "red")  # garis bantu di "siku" kurva -> kandidat eps
+```
+
+```{r, class.source="wajib"}
+db <- dbscan(Z, eps = 0.5, minPts = 8)   # eps = radius tetangga; minPts = min. titik agar disebut padat
+db                                       # ringkasan: jumlah cluster dan noise (cluster 0 = noise)
+```
+
+<div class="box kode">
+- `eps` dipilih di sekitar "siku" `kNNdistplot` (garis merah).
+- `minPts` ≈ 2 × jumlah variabel = 2 × 4 = 8.
+- Di hasil DBSCAN, **cluster 0 = noise**.
+</div>
+
+```{r, class.source="pelengkap"}
+fviz_cluster(db, data = Z, geom = "point", ellipse = FALSE, show.clust.cent = FALSE)
+```
+
+```{r, class.source="wajib"}
+noise <- db$cluster == 0   # TRUE jika polis ditandai noise
+# bandingkan median polis noise dengan polis lain
+rbind(noise = sapply(klaim[noise,  c("veh_value","veh_age","claimcst0","numclaims")], median),
+      lain  = sapply(klaim[!noise, c("veh_value","veh_age","claimcst0","numclaims")], median))
+```
+
+```{r, include=FALSE}
+n_cl <- length(unique(db$cluster[db$cluster > 0]))
+med_noise <- median(klaim$claimcst0[noise]); med_lain <- median(klaim$claimcst0[!noise])
+```
+
+<div class="box tafsir">
+- DBSCAN menemukan `r n_cl` cluster dan **`r sum(noise)` polis noise**. Banyaknya cluster kecil muncul karena `umur` dan `jumlah` hanya bernilai 1–4: DBSCAN memisahkan setiap kombinasi nilai diskrit yang padat. Jadi pada data ini DBSCAN **kurang cocok untuk segmentasi**.
+- Namun sebagai **pendeteksi klaim tidak lazim** DBSCAN berguna: polis noise memiliki median biaya **`r format(round(med_noise))` AUD** dibanding `r format(round(med_lain))` AUD pada polis lain, median nilai kendaraannya lebih tinggi, dan median jumlah klaimnya 2 (klaim berulang). Polis seperti ini layak diperiksa lebih lanjut oleh tim klaim.
+</div>
+
+<div class="box latihan">
+- Ganti `centers = 4` menjadi `3` pada k-means. Cluster mana yang bergabung? Mana yang lebih bermakna untuk bisnis?
+- Coba `eps = 0.4` dan `eps = 0.8` pada DBSCAN. Bagaimana jumlah noise berubah?
+</div>
+
+# Part 4 · MCA pada Profil Polis
+
+<p class="part-intro">MCA adalah "PCA untuk data kategorik". Di sini kita ingin melihat profil polis (jenis kendaraan, umur, nilai, pengemudi, wilayah) dan di mana posisi polis yang **mengajukan klaim**.</p>
+
+## Menyiapkan data
+
+Untuk latihan kita ambil **sampel 2.000 polis** agar komputasi cepat (terutama untuk matriks jarak Gower di Part 5). Variabel numerik/ordinal dibuat menjadi kategori karena MCA hanya menerima data kategorik.
+
+```{r, class.source="wajib"}
+set.seed(123)
+P <- dataCar[sample(nrow(dataCar), 2000), ]   # ambil 2.000 baris secara acak
+
+# 1) jenis bodi: 4 jenis terbanyak dipertahankan, sisanya digabung menjadi "LAIN"
+P$bodi <- factor(ifelse(P$veh_body %in% c("SEDAN", "HBACK", "STNWG", "UTE"),
+                        as.character(P$veh_body), "LAIN"))
+# 2) umur kendaraan & usia pengemudi: angka 1-4 / 1-6 diubah menjadi kategori berlabel
+P$umur_kend <- factor(P$veh_age, labels = c("baru", "2", "3", "tua"))
+P$usia      <- factor(P$agecat,  labels = c("muda", "2", "3", "4", "5", "tua"))
+# 3) nilai kendaraan: dibagi 4 kelompok sama besar berdasarkan kuartil
+P$nilai <- cut(P$veh_value, breaks = quantile(P$veh_value, c(0, .25, .5, .75, 1)),
+               include.lowest = TRUE, labels = c("murah", "sedang", "mahal", "sgt_mahal"))
+# 4) status klaim sebagai kategori (nama dibuat jelas agar mudah dibaca di peta)
+P$klaim <- factor(ifelse(P$clm == 1, "klaim_ya", "klaim_tidak"))
+```
+
+<div class="box kode">
+- `factor()` mengubah angka/teks menjadi **kategori**. `labels =` memberi nama pada setiap kategori sesuai urutannya.
+- `ifelse(kondisi, jika_ya, jika_tidak)`: dipakai untuk menggabungkan jenis bodi yang jarang (BUS, COUPE, dll.) menjadi "LAIN". Kategori yang sangat jarang akan terlalu dominan di MCA, jadi sebaiknya digabung.
+- `cut()` memotong variabel numerik menjadi interval; `quantile(..., c(0,.25,.5,.75,1))` membuat 4 kelompok dengan jumlah anggota kira-kira sama.
+</div>
+
+```{r, class.source="pelengkap"}
+str(P[, c("bodi", "umur_kend", "nilai", "gender", "area", "usia", "klaim")])   # cek: semuanya Factor
+```
+
+## Menjalankan MCA
+
+Variabel `klaim` dijadikan **variabel suplementer**: tidak ikut membentuk Dim, tetapi posisinya diproyeksikan ke peta sehingga bisa dibaca terhadap profil yang terbentuk.
+
+```{r, class.source="wajib"}
+cat_vars <- c("bodi", "umur_kend", "nilai", "gender", "area", "usia", "klaim")   # urutan kolom
+res.mca <- MCA(P[, cat_vars], quali.sup = 7, graph = FALSE)   # kolom ke-7 (klaim) = suplementer
+round(head(res.mca$eig, 6), 2)                                # eigenvalue 6 Dim pertama
+```
+
+<div class="box kode">
+- `quali.sup = 7` = kolom ke-7 pada `cat_vars` (yaitu `klaim`) hanya "ikut ditampilkan", tidak ikut dihitung.
+- `graph = FALSE` = jangan langsung menggambar grafik bawaan; grafik kita buat sendiri dengan `fviz_mca_*`.
+</div>
+
+```{r, fig.height=4, class.source="pelengkap"}
+fviz_eig(res.mca, addlabels = TRUE)   # scree plot MCA
+```
+
+<div class="box tafsir">
+- Persen varians per Dim pada MCA memang kecil (Dim 1 = `r round(res.mca$eig[1,2],1)`%); ini wajar karena setiap kategori menjadi kolom 0/1 terpisah.
+- Batas Kaiser untuk MCA adalah **1/Q**, dengan Q = jumlah variabel aktif = 6, yaitu `r round(1/6,3)`. Ada `r sum(res.mca$eig[,1] > 1/6)` Dim yang melewati batas ini. Untuk visualisasi dan interpretasi kita fokus pada **Dim 1 dan Dim 2** yang paling besar dan jelas lebih tinggi daripada Dim berikutnya.
+</div>
+
+## Variabel mana yang membentuk tiap Dim?
+
+```{r, class.source="wajib"}
+round(res.mca$var$eta2[, 1:2], 2)   # eta2: kekuatan hubungan tiap variabel dengan Dim 1 & 2 (0-1)
+```
+
+```{r, class.source="pelengkap"}
+fviz_mca_var(res.mca, choice = "mca.cor", repel = TRUE)   # peta variabel berdasarkan eta2
+```
+
+```{r, fig.height=4, class.source="pelengkap"}
+fviz_contrib(res.mca, choice = "var", axes = 1, top = 10)   # 10 kategori penyumbang terbesar Dim 1
+fviz_contrib(res.mca, choice = "var", axes = 2, top = 10)   # 10 kategori penyumbang terbesar Dim 2
+```
+
+<div class="box tafsir">
+- **Dim 1** paling dipengaruhi **nilai kendaraan** (eta2 = `r round(res.mca$var$eta2["nilai",1],2)`) dan **jenis bodi**: sumbu **murah ↔ mahal**.
+- **Dim 2** paling dipengaruhi **umur kendaraan** (eta2 = `r round(res.mca$var$eta2["umur_kend",2],2)`), lalu nilai dan bodi: sumbu **baru ↔ tua**.
+- Gender, wilayah, dan usia pengemudi hanya berperan kecil di dua Dim ini.
+- Garis merah putus-putus pada plot kontribusi = kontribusi rata-rata yang diharapkan; kategori di atas garis adalah pembentuk utama Dim tersebut.
+</div>
+
+## Peta kategori dan cara membacanya per kuadran
+
+```{r, fig.height=6.5, class.source="pelengkap"}
+fviz_mca_var(res.mca, repel = TRUE,            # peta semua kategori
+             col.quali.sup = "darkorange")     # kategori suplementer (klaim) diberi warna oranye
+```
+
+<div class="box tafsir">
+**Cara membaca:**
+
+- **Titik pusat (0, 0) = profil rata-rata.** Kategori yang dekat pusat (misalnya `area_A`, `usia_3`) adalah kategori umum yang tidak khas. Makin jauh dari pusat, makin khas.
+- **Kiri ↔ kanan (Dim 1)**: kiri berisi `murah`, `HBACK` (hatchback), `SEDAN`; kanan berisi `sgt_mahal`, `STNWG` (station wagon), `UTE` (pikap), dan `umur_kend_baru`. Jadi Dim 1 = kendaraan kecil/murah ↔ kendaraan besar/mahal.
+- **Atas ↔ bawah (Dim 2)**: atas berisi `umur_kend_tua`, `murah`, `UTE`, `LAIN`; bawah berisi `umur_kend_2`, `umur_kend_baru`, `mahal`, `HBACK`. Jadi Dim 2 = kendaraan baru ↔ tua.
+- Kategori dalam **kuadran yang sama** cenderung muncul bersama:
+    - **kiri-atas** = kendaraan murah dan tua;
+    - **kanan-atas** = station wagon/pikap bernilai sangat tinggi, termasuk wilayah `area_F` (kategori jarang, sehingga letaknya jauh);
+    - **kanan-bawah** = kendaraan baru dan mahal;
+    - **kiri-bawah** = hatchback dan sedan.
+- **Variabel suplementer (oranye)**: `klaim_ya` dan `klaim_tidak` **hampir berada di pusat** (eta2 dengan Dim 1–2 ≈ `r round(res.mca$quali.sup$eta2[1,2],3)`). Artinya, peluang klaim **hampir tidak berbeda** antar profil kendaraan ini. Ini temuan penting: risiko klaim tidak bisa dibaca hanya dari profil kendaraan; perlu model prediksi (misalnya regresi logistik/GLM frekuensi) yang juga memperhitungkan `exposure`.
+</div>
+
+<div class="box catatan">
+Kategori dari variabel yang sama selalu berada di sisi berlawanan terhadap pusat (misalnya `gender_F` vs `gender_M`), dan kategori yang lebih jarang terletak lebih jauh. Jangan menilai jarak antar dua kategori dari variabel berbeda secara terlalu harfiah; cek juga cos2.
+</div>
+
+## Individu diwarnai status klaim
+
+```{r, class.source="pelengkap"}
+fviz_mca_ind(res.mca, habillage = P$klaim,     # warnai titik berdasarkan status klaim
+             geom = "point", addEllipses = TRUE, # tambahkan elips kelompok
+             alpha.ind = 0.4)
+```
+
+<div class="box tafsir">
+Elips kedua kelompok **hampir menumpuk sempurna**: polis yang klaim tersebar di semua profil. Ini wajar karena `klaim` tidak ikut membentuk Dim, dan konsisten dengan posisi `klaim_ya` yang dekat pusat.
+</div>
+
+<div class="box latihan">
+Jalankan ulang MCA dengan `klaim` sebagai variabel aktif (hapus argumen `quali.sup`). Apakah Dim 1 dan Dim 2 berubah? Kategori apa yang sekarang berdekatan dengan `klaim_ya`?
+</div>
+
+# Part 5 · Clustering Data Campuran (Profil Nasabah)
+
+<p class="part-intro">Data polis berisi variabel **numerik** (`veh_value`, `exposure`, `veh_age`, `agecat`) dan **kategorik** (`bodi`, `gender`, `area`). Jarak Euclid tidak cocok, jadi kita pakai **jarak Gower**. Status klaim **tidak dipakai** untuk membentuk cluster, tetapi dipakai untuk menafsirkan hasilnya.</p>
+
+## Jarak Gower + PAM
+
+```{r, class.source="wajib"}
+# pilih variabel pembentuk cluster (tanpa variabel klaim)
+M <- P[, c("veh_value", "exposure", "veh_age", "agecat", "bodi", "gender", "area")]
+g <- daisy(M, metric = "gower")   # matriks jarak Gower: bisa untuk numerik + kategorik sekaligus
+```
+
+<div class="box kode">
+- `daisy(..., metric = "gower")` otomatis mengenali kolom numerik (dihitung selisih relatif) dan kolom factor (cocok = 0, beda = 1).
+- Pastikan variabel kategorik sudah berbentuk **factor**; jika masih teks/angka, Gower akan menganggapnya numerik.
+</div>
+
+```{r, fig.height=4, class.source="wajib"}
+# hitung rata-rata silhouette PAM untuk k = 2 sampai 6
+sil <- sapply(2:6, function(k) pam(g, k, diss = TRUE)$silinfo$avg.width)
+plot(2:6, sil, type = "b", pch = 19,                   # plot garis + titik
+     xlab = "Jumlah cluster (k)", ylab = "Rata-rata silhouette")
+```
+
+<div class="box kode">
+- `sapply(2:6, function(k) ...)` = "ulangi perintah untuk k = 2, 3, 4, 5, 6 lalu kumpulkan hasilnya". Ini cara singkat pengganti *for-loop*.
+- `diss = TRUE` memberi tahu `pam()` bahwa input `g` sudah berupa **matriks jarak**, bukan data mentah.
+</div>
+
+```{r, class.source="wajib"}
+k_pilih <- 4                              # jumlah cluster yang dipilih (lihat interpretasi di bawah)
+pg <- pam(g, k = k_pilih, diss = TRUE)    # PAM pada matriks jarak Gower
+table(pg$clustering)                      # jumlah polis per cluster
+```
+
+<div class="box tafsir">
+Silhouette tertinggi ada di k = `r (2:6)[which.max(sil)]` (`r round(max(sil),2)`), tetapi nilai untuk k = 4 (`r round(sil[3],2)`) tidak jauh berbeda. Dengan k = 2 data hanya terbelah menurut gender, sehingga kurang informatif. Kita pilih **k = 4** agar segmen juga dibedakan oleh jenis kendaraan dan wilayah.
+</div>
+
+## Profil cluster
+
+```{r, class.source="wajib"}
+P$cluster <- factor(pg$clustering)                                    # simpan nomor cluster ke data
+num <- aggregate(cbind(veh_value, veh_age, agecat) ~ cluster, data = P, FUN = mean)  # rata-rata numerik
+pct <- function(v, lv) round(100 * tapply(P[[v]] == lv, P$cluster, mean))  # fungsi bantu: % kategori lv
+top <- function(v) tapply(P[[v]], P$cluster, function(x) names(which.max(table(x))))  # kategori terbanyak
+profil <- data.frame(num,
+  n            = as.vector(table(P$cluster)),
+  pria_pct     = pct("gender", "M"),
+  bodi_utama   = top("bodi"),
+  area_utama   = top("area"),
+  KLAIM_pct    = round(100 * tapply(P$clm, P$cluster, mean), 1))   # % polis yang klaim
+knitr::kable(profil, digits = 2, caption = "Profil tiap cluster nasabah")
+```
+
+<div class="box kode">
+- `pct("gender", "M")` = persentase pengemudi pria di setiap cluster. Fungsi kecil `pct()` dibuat supaya tidak menulis rumus yang sama berulang kali.
+- `top("bodi")` = jenis bodi yang paling sering muncul di setiap cluster (modus).
+- `KLAIM_pct` = persentase polis yang klaim; **bukan** bagian pembentuk cluster, hanya untuk menafsirkan.
+</div>
+
+```{r, include=FALSE}
+o <- order(profil$KLAIM_pct)
+```
+
+<div class="box tafsir">
+Cluster terbentuk terutama oleh **gender** dan **jenis bodi** (variabel kategorik mendapat bobot besar dalam Gower):
+
+`r paste0("- **Cluster ", profil$cluster, "** (", profil$n, " polis): ", profil$pria_pct, "% pria, bodi utama ", profil$bodi_utama, ", wilayah utama ", profil$area_utama, ", rata-rata nilai kendaraan ", round(profil$veh_value, 2), ", **", profil$KLAIM_pct, "% klaim**.", collapse = "\n")`
+
+Usulan nama segmen: **1 = pria, station wagon mahal**; **2 = pria, sedan, pengemudi lebih tua**; **3 = wanita, sedan**; **4 = wanita, hatchback lebih baru**.
+
+Tingkat klaim tertinggi ada di **cluster `r profil$cluster[o[4]]`** (`r profil$KLAIM_pct[o[4]]`%) dan terendah di **cluster `r profil$cluster[o[1]]`** (`r profil$KLAIM_pct[o[1]]`%). Selisih ini cukup berarti secara bisnis (rata-rata seluruh sampel `r round(100*mean(P$clm),1)`%), sehingga bisa menjadi masukan untuk diferensiasi premi atau fokus pemasaran. Karena sampel hanya 2.000 polis, selisihnya perlu dikonfirmasi pada data penuh atau dengan model GLM.
+</div>
+
+## Visualisasi cluster di peta MCA
+
+`fviz_cluster` butuh data numerik, jadi cluster Gower kita tampilkan di atas **koordinat individu MCA** dari Part 4.
+
+```{r, class.source="pelengkap"}
+fviz_mca_ind(res.mca, habillage = P$cluster,   # titik = polis, warna = cluster Gower
+             geom = "point", addEllipses = TRUE, alpha.ind = 0.4)
+```
+
+## Hierarchical clustering dengan jarak Gower
+
+```{r, class.source="wajib"}
+hc_g <- hclust(g, method = "ward.D2")   # hierarchical langsung dari matriks jarak Gower
+```
+
+```{r, class.source="pelengkap"}
+plot(hc_g, labels = FALSE, hang = -1, main = "Dendrogram Ward (jarak Gower)", xlab = "", sub = "")
+rect.hclust(hc_g, k = k_pilih, border = 2:5)
+table(Hierarki = cutree(hc_g, k = k_pilih), PAM = pg$clustering)   # bandingkan dengan PAM
+```
+
+<div class="box tafsir">
+Tabel silang menunjukkan apakah hierarchical clustering menemukan segmen yang sama dengan PAM. Jika sebagian besar anggota berkumpul di satu sel per baris, kedua metode sepakat dan segmen tersebut cukup stabil. Di sini kesepakatannya hanya sebagian: hierarchical juga memisahkan pria dan wanita (baris 3 hanya berisi cluster PAM 3 dan 4 yang mayoritas wanita), tetapi tidak memisahkan jenis kendaraan sejelas PAM. Artinya pembagian menurut **gender** stabil, sedangkan pembagian menurut **jenis kendaraan** lebih bergantung pada metode.
+</div>
+
+## Opsional: K-Prototypes dan K-Modes
+
+Chunk di bawah hanya dijalankan jika package `clustMixType` / `klaR` sudah terpasang.
+
+```{r, eval=FALSE, class.source="opsional"}
+library(clustMixType)
+set.seed(123)
+kp <- kproto(M, k = k_pilih, verbose = FALSE)             # k-prototypes: untuk data campuran
+table(KProto = kp$cluster, PAM = pg$clustering)            # bandingkan dengan PAM
+round(100 * tapply(P$clm, kp$cluster, mean), 1)            # % klaim per cluster
+```
+
+```{r, eval=FALSE, class.source="opsional"}
+library(klaR)
+set.seed(123)
+C <- P[, c("bodi", "umur_kend", "nilai", "gender", "area", "usia")]   # hanya variabel kategorik
+kmo <- kmodes(C, modes = k_pilih)                                     # k-modes: untuk data kategorik
+kmo$modes                                                             # kategori khas tiap cluster
+round(100 * tapply(P$clm, kmo$cluster, mean), 1)                      # % klaim per cluster
+```
+
+<div class="box catatan">
+K-Prototypes menggabungkan jarak Euclid (numerik) dan jumlah ketidakcocokan (kategorik) dengan bobot `lambda`; K-Modes hanya untuk data kategorik dan memakai **modus** sebagai pusat cluster. Keduanya perlu `set.seed()` karena hasil bergantung pada titik awal.
+</div>
+
+<div class="box latihan">
+- Keluarkan `gender` dari data `M`, lalu ulangi Gower + PAM. Variabel apa yang sekarang membedakan cluster?
+- Hitung rata-rata biaya klaim (`claimcst0`) hanya untuk polis yang klaim di setiap cluster. Segmen mana yang paling mahal dari sisi keparahan klaim?
+</div>
+
+# Part 6 · Ringkasan
+
+| Metode | Jenis data | Fungsi R | Kapan dipakai |
+|---|---|---|---|
+| PCA | Numerik | `prcomp()` | Meringkas variabel numerik berkorelasi; visualisasi 2D |
+| MCA | Kategorik | `FactoMineR::MCA()` | Memetakan hubungan antar kategori / profil nasabah |
+| K-Means | Numerik | `kmeans()` | Segmentasi cepat, cluster bulat, perlu tentukan k |
+| K-Medoids (PAM) | Numerik / matriks jarak | `cluster::pam()` | Lebih tahan outlier; bisa dipakai dengan jarak Gower |
+| Hierarchical | Matriks jarak | `hclust()` | Melihat struktur bertingkat lewat dendrogram |
+| DBSCAN | Numerik | `dbscan::dbscan()` | Tidak perlu k, mendeteksi noise / klaim tidak lazim |
+| Gower + PAM | Campuran | `daisy()` + `pam()` | Data campuran numerik & kategorik |
+| K-Prototypes | Campuran | `clustMixType::kproto()` | Alternatif untuk data campuran |
+| K-Modes | Kategorik | `klaR::kmodes()` | Data kategorik murni |
+
+<div class="box catatan">
+**Pesan utama:**
+
+- Transformasi dan standardisasi data (log, `scale`) sangat menentukan hasil PCA dan clustering pada data klaim yang miring.
+- Tentukan k dengan kombinasi ukuran statistik (elbow, silhouette) **dan** kebutuhan interpretasi bisnis.
+- Profil cluster selalu dibaca dari **data asli**, lalu diberi nama segmen yang bermakna.
+- Variabel diskrit (nilai 1–4) membuat pola "bergaris" dan bisa mengacaukan metode berbasis kepadatan seperti DBSCAN.
+- Clustering adalah alat **segmentasi/profiling**, bukan prediksi. Untuk memprediksi (misalnya siapa yang akan klaim), lanjutkan dengan model seperti regresi logistik atau GLM frekuensi-keparahan.
+</div>
+
+# Part 7 · Contekan Kode Wajib
+
+<p class="part-intro">Semua kode berlabel **WAJIB** dirangkum di sini sebagai **pola** yang bisa dipakai ulang pada data lain. Hafalkan pola ini; kode grafik (PELENGKAP) cukup dilihat saat dibutuhkan.</p>
+
+```{r, eval=FALSE, class.source="wajib"}
+## 0. PERSIAPAN --------------------------------------------------------------
+library(cluster); library(factoextra); library(FactoMineR); library(dbscan)
+data("dataCar", package = "insuranceData")
+
+## 1. SIAPKAN DATA NUMERIK ----------------------------------------------------
+klaim <- subset(dataCar, clm == 1)                   # pilih baris
+X <- data.frame(nilai = log1p(klaim$veh_value),      # log untuk data miring
+                umur  = klaim$veh_age,
+                biaya = log(klaim$claimcst0),
+                jumlah = klaim$numclaims)
+Z <- scale(X)                                        # standardisasi
+cor(X)                                               # cek korelasi
+
+## 2. PCA ---------------------------------------------------------------------
+res.pca <- prcomp(X, scale. = TRUE)
+get_eigenvalue(res.pca)                              # berapa Dim dipakai?
+res.pca$rotation                                     # loading -> arti tiap Dim
+
+## 3. CLUSTERING NUMERIK ------------------------------------------------------
+fviz_nbclust(Z, kmeans, method = "silhouette")       # pilih k
+set.seed(123); km <- kmeans(Z, centers = 4, nstart = 25)   # k-means
+pm <- pam(Z, k = 4)                                  # k-medoids
+hc <- hclust(dist(Z), method = "ward.D2"); cutree(hc, k = 4)   # hierarchical
+db <- dbscan(Z, eps = 0.5, minPts = 8)               # DBSCAN (cluster 0 = noise)
+aggregate(klaim[, c("veh_value", "claimcst0")],      # PROFIL dari data asli
+          by = list(cluster = km$cluster), FUN = median)
+
+## 4. MCA ---------------------------------------------------------------------
+# semua variabel harus factor; variabel yang ingin "ditumpangkan" -> quali.sup
+res.mca <- MCA(P[, cat_vars], quali.sup = 7, graph = FALSE)
+res.mca$eig                                          # eigenvalue
+res.mca$var$eta2                                     # variabel pembentuk Dim
+
+## 5. DATA CAMPURAN: GOWER + PAM ----------------------------------------------
+g  <- daisy(M, metric = "gower")                     # jarak untuk numerik + kategorik
+sil <- sapply(2:6, function(k) pam(g, k, diss = TRUE)$silinfo$avg.width)   # pilih k
+pg <- pam(g, k = 4, diss = TRUE)                     # cluster
+hc_g <- hclust(g, method = "ward.D2")                # pembanding
+```
+
+<div class="box catatan">
+**Pola yang selalu sama di setiap metode:** (1) siapkan data → (2) tentukan k (jika perlu) → (3) jalankan fungsi metode dan simpan ke objek → (4) ambil nomor cluster (`$cluster`, `$clustering`, atau `cutree()`) → (5) buat **profil dari data asli** dengan `aggregate()` / `tapply()` → (6) beri nama segmen.
+</div>
+
+```{r, echo=FALSE, comment=""}
+cat("#> Dibuat dengan", R.version.string)
+```

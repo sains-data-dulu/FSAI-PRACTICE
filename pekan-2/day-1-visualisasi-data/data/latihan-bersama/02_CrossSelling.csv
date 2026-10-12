@@ -1,0 +1,301 @@
+customer_id,age,gender,region,income_level,customer_tenure_year,existing_product,annual_premium,claim_frequency,digital_activity_score,customer_service_contact,cross_sell_status,premium_category
+CUST100001,66,Female,Kalimantan,Middle,5,Life Insurance,10042006,0,3,0,Interested,Medium
+CUST100002,23,Male,Jakarta,Middle,12,Health Insurance,15307409,3,5,4,Not Interested,High
+CUST100003,49,Male,Sumatera,Middle,5,Motor Insurance,13690394,0,4,6,Not Interested,Medium
+CUST100004,55,Female,Jawa Timur,Middle,10,Life Insurance,14678348,1,5,0,Interested,Medium
+CUST100005,59,Female,Jawa Timur,Middle,11,Property Insurance,19737110,1,4,6,Interested,High
+CUST100006,38,Male,Sumatera,Middle,12,Life Insurance,10981482,3,8,2,Interested,Medium
+CUST100007,40,Male,Kalimantan,Low,11,Health Insurance,5447940,2,3,4,Not Interested,Medium
+CUST100008,63,Female,Jawa Barat,High,5,Motor Insurance,15056378,1,2,6,Interested,High
+CUST100009,43,Female,Jawa Barat,High,12,Life Insurance,17412348,0,7,5,Interested,High
+CUST100010,54,Male,Jawa Timur,Low,7,Life Insurance,23903018,2,3,7,Not Interested,High
+CUST100011,53,Female,Kalimantan,Middle,6,Life Insurance,20483681,2,2,7,Not Interested,High
+CUST100012,68,Male,Jawa Timur,High,7,Motor Insurance,11589979,0,8,7,Interested,Medium
+CUST100013,30,Female,Jawa Timur,High,7,Life Insurance,13222488,1,3,5,Interested,Medium
+CUST100014,53,Female,Jakarta,Middle,10,Health Insurance,17140831,4,8,5,Interested,High
+CUST100015,67,Female,Jawa Barat,Middle,6,Health Insurance,19790711,2,5,6,Not Interested,High
+CUST100016,53,Male,Kalimantan,Low,12,Property Insurance,9851930,0,1,2,Not Interested,Medium
+CUST100017,68,Female,Jawa Timur,Low,13,Property Insurance,22783287,0,1,4,Interested,High
+CUST100018,46,Female,Kalimantan,Low,3,Property Insurance,12258432,2,4,7,Not Interested,Medium
+CUST100019,40,Female,Kalimantan,High,5,Motor Insurance,8414129,0,8,6,Interested,Medium
+CUST100020,35,Female,Kalimantan,Middle,12,Health Insurance,21792391,0,4,5,Not Interested,High
+CUST100021,57,Female,Jawa Barat,Middle,6,Health Insurance,4190516,1,5,2,Not Interested,Low
+CUST100022,53,Male,Sumatera,Middle,4,Property Insurance,10052597,2,3,1,Not Interested,Medium
+CUST100023,37,Male,Jawa Barat,Low,14,Property Insurance,4450546,1,9,5,Not Interested,Low
+CUST100024,25,Female,Kalimantan,Middle,5,Life Insurance,19421025,2,8,4,Interested,High
+CUST100025,24,Female,Jawa Barat,Low,8,Property Insurance,14985200,1,3,0,Not Interested,Medium
+CUST100026,23,Female,Jakarta,Middle,2,Motor Insurance,19278599,0,3,6,Not Interested,High
+CUST100027,41,Female,Jawa Barat,Middle,2,Property Insurance,1060242,2,6,3,Not Interested,Low
+CUST100028,60,Female,Kalimantan,Middle,8,Health Insurance,1835350,0,7,2,Interested,Low
+CUST100029,23,Female,Jawa Barat,Middle,9,Motor Insurance,3769310,0,5,4,Not Interested,Low
+CUST100030,41,Female,Jakarta,Middle,9,Life Insurance,1323235,2,1,2,Not Interested,Low
+CUST100031,68,Female,Jakarta,Middle,14,Motor Insurance,3409482,1,6,5,Not Interested,Low
+CUST100032,69,Female,Jawa Barat,Middle,11,Life Insurance,18926957,0,9,1,Interested,High
+CUST100033,28,Female,Kalimantan,Middle,11,Life Insurance,9260217,1,1,6,Not Interested,Medium
+CUST100034,62,Female,Kalimantan,Low,11,Health Insurance,4064298,1,6,2,Not Interested,Low
+CUST100035,56,Female,Jawa Timur,Low,11,Motor Insurance,11993976,0,4,6,Not Interested,Medium
+CUST100036,49,Female,Kalimantan,Middle,1,Life Insurance,16937726,2,4,1,Not Interested,High
+CUST100037,59,Male,Sumatera,Low,10,Motor Insurance,21518782,0,9,1,Interested,High
+CUST100038,54,Male,Kalimantan,High,14,Life Insurance,7030974,3,3,6,Interested,Medium
+CUST100039,42,Female,Sumatera,Middle,3,Property Insurance,20590361,0,7,0,Not Interested,High
+CUST100040,51,Female,Sumatera,Middle,6,Property Insurance,23611000,0,7,2,Interested,High
+CUST100041,48,Female,Jawa Timur,Middle,9,Motor Insurance,19065278,2,9,5,Interested,High
+CUST100042,55,Male,Jawa Timur,Low,8,Motor Insurance,24283081,0,9,7,Interested,High
+CUST100043,54,Male,Kalimantan,Middle,8,Life Insurance,16829265,1,8,3,Interested,High
+CUST100044,33,Female,Kalimantan,High,10,Life Insurance,22154800,1,9,4,Interested,High
+CUST100045,61,Male,Sumatera,High,2,Life Insurance,1733221,4,1,1,Not Interested,Low
+CUST100046,24,Male,Jawa Timur,Middle,10,Health Insurance,6095467,0,8,6,Interested,Medium
+CUST100047,63,Male,Jawa Timur,Middle,7,Health Insurance,13752514,1,3,0,Not Interested,Medium
+CUST100048,26,Male,Kalimantan,High,6,Motor Insurance,11943454,2,4,2,Interested,Medium
+CUST100049,21,Female,Jakarta,High,9,Motor Insurance,18428291,2,7,6,Interested,High
+CUST100050,32,Male,Jakarta,Middle,14,Property Insurance,14511861,0,3,5,Not Interested,Medium
+CUST100051,55,Male,Jakarta,Middle,9,Property Insurance,4621804,1,5,3,Not Interested,Low
+CUST100052,31,Male,Jawa Timur,Middle,13,Motor Insurance,4072717,0,2,1,Not Interested,Low
+CUST100053,43,Male,Jakarta,Middle,5,Life Insurance,3557101,1,4,4,Not Interested,Low
+CUST100054,34,Female,Jakarta,Middle,1,Health Insurance,6521533,2,2,2,Not Interested,Medium
+CUST100055,39,Male,Kalimantan,High,11,Motor Insurance,18925462,0,4,7,Interested,High
+CUST100056,57,Female,Kalimantan,High,2,Motor Insurance,7096614,2,3,2,Not Interested,Medium
+CUST100057,36,Male,Jawa Barat,Middle,13,Property Insurance,12941731,1,9,6,Interested,Medium
+CUST100058,64,Female,Jakarta,Middle,5,Motor Insurance,3968319,1,8,2,Not Interested,Low
+CUST100059,48,Male,Sumatera,Middle,2,Property Insurance,14467115,0,9,0,Not Interested,Medium
+CUST100060,65,Male,Jakarta,Middle,13,Health Insurance,3249535,0,2,1,Not Interested,Low
+CUST100061,51,Male,Jakarta,High,4,Motor Insurance,15032046,1,9,4,Interested,High
+CUST100062,27,Male,Jakarta,Middle,8,Health Insurance,18472637,0,1,4,Not Interested,High
+CUST100063,66,Female,Jakarta,High,4,Property Insurance,3479591,1,9,3,Interested,Low
+CUST100064,47,Female,Kalimantan,Middle,5,Life Insurance,13869626,0,5,6,Not Interested,Medium
+CUST100065,37,Male,Kalimantan,Low,11,Life Insurance,24688750,1,9,5,Interested,High
+CUST100066,27,Female,Jakarta,Low,12,Health Insurance,12546533,2,9,0,Interested,Medium
+CUST100067,35,Male,Jawa Barat,Middle,11,Life Insurance,6510032,1,4,0,Not Interested,Medium
+CUST100068,60,Female,Jawa Barat,Middle,9,Health Insurance,6060882,1,8,3,Not Interested,Medium
+CUST100069,32,Male,Jakarta,Middle,10,Life Insurance,7173312,1,6,6,Not Interested,Medium
+CUST100070,28,Female,Sumatera,Middle,7,Motor Insurance,19149300,1,6,6,Not Interested,High
+CUST100071,22,Female,Kalimantan,Middle,13,Property Insurance,3097236,2,9,1,Not Interested,Low
+CUST100072,64,Female,Jawa Timur,Low,12,Life Insurance,15057847,1,2,7,Not Interested,High
+CUST100073,58,Male,Sumatera,Middle,6,Health Insurance,24981767,1,3,0,Not Interested,High
+CUST100074,46,Female,Kalimantan,Low,11,Property Insurance,11360493,1,3,0,Not Interested,Medium
+CUST100075,41,Male,Jawa Timur,Middle,8,Motor Insurance,9668358,3,7,3,Interested,Medium
+CUST100076,33,Male,Jawa Barat,Middle,5,Motor Insurance,3511095,1,5,2,Not Interested,Low
+CUST100077,39,Male,Jawa Barat,Low,9,Health Insurance,23049053,3,1,2,Not Interested,High
+CUST100078,38,Male,Kalimantan,Middle,9,Life Insurance,520776,1,8,4,Not Interested,Low
+CUST100079,22,Female,Kalimantan,High,4,Life Insurance,17979966,0,5,6,Interested,High
+CUST100080,65,Female,Jawa Timur,Low,13,Property Insurance,15664923,4,4,7,Not Interested,High
+CUST100081,62,Female,Jawa Barat,Middle,5,Health Insurance,603786,2,4,3,Not Interested,Low
+CUST100082,69,Male,Sumatera,Middle,6,Health Insurance,23703156,2,2,2,Not Interested,High
+CUST100083,48,Male,Jawa Barat,Middle,7,Property Insurance,2001083,0,1,2,Not Interested,Low
+CUST100084,43,Male,Jawa Timur,Middle,5,Property Insurance,17987780,0,6,5,Not Interested,High
+CUST100085,24,Female,Jawa Barat,Middle,1,Life Insurance,13747236,3,3,2,Not Interested,Medium
+CUST100086,24,Female,Sumatera,High,1,Property Insurance,16664495,3,9,0,Interested,High
+CUST100087,32,Female,Jawa Barat,Low,10,Health Insurance,17758006,1,4,4,Not Interested,High
+CUST100088,42,Male,Sumatera,Middle,1,Motor Insurance,17467263,0,2,1,Not Interested,High
+CUST100089,46,Male,Jakarta,Middle,1,Motor Insurance,19455869,0,4,6,Not Interested,High
+CUST100090,60,Male,Sumatera,Middle,2,Motor Insurance,22157093,0,4,3,Not Interested,High
+CUST100091,62,Male,Sumatera,Low,5,Motor Insurance,15718749,1,1,1,Not Interested,High
+CUST100092,55,Female,Kalimantan,Middle,8,Health Insurance,19588518,2,8,7,Interested,High
+CUST100093,24,Male,Jawa Barat,Middle,1,Motor Insurance,4772846,0,4,7,Not Interested,Low
+CUST100094,32,Female,Jawa Barat,Middle,2,Health Insurance,2553821,2,4,0,Not Interested,Low
+CUST100095,24,Female,Kalimantan,Middle,13,Life Insurance,14731797,2,7,2,Interested,Medium
+CUST100096,51,Male,Jawa Barat,High,14,Motor Insurance,14146865,0,2,4,Interested,Medium
+CUST100097,27,Female,Jakarta,Middle,3,Health Insurance,15788616,3,6,1,Not Interested,High
+CUST100098,30,Male,Jawa Timur,Middle,10,Life Insurance,15297101,1,6,1,Not Interested,High
+CUST100099,44,Male,Jawa Barat,Middle,10,Life Insurance,10262126,0,7,0,Interested,Medium
+CUST100100,35,Female,Sumatera,Middle,8,Life Insurance,24752290,2,2,2,Not Interested,High
+CUST100101,59,Male,Jakarta,Low,13,Motor Insurance,5518613,1,7,1,Not Interested,Medium
+CUST100102,40,Male,Sumatera,Middle,12,Property Insurance,5434578,2,2,6,Not Interested,Medium
+CUST100103,27,Male,Sumatera,Middle,3,Health Insurance,11031306,4,2,1,Not Interested,Medium
+CUST100104,33,Female,Jakarta,Middle,9,Motor Insurance,19403009,1,1,1,Not Interested,High
+CUST100105,48,Male,Jakarta,Middle,4,Health Insurance,531838,2,9,0,Not Interested,Low
+CUST100106,59,Male,Jawa Barat,Low,5,Health Insurance,10090784,4,9,3,Interested,Medium
+CUST100107,38,Male,Jawa Timur,High,5,Property Insurance,12689765,2,5,2,Interested,Medium
+CUST100108,67,Male,Sumatera,High,5,Motor Insurance,18253919,1,7,4,Interested,High
+CUST100109,31,Male,Sumatera,Middle,12,Property Insurance,13256813,1,7,0,Interested,Medium
+CUST100110,56,Female,Jakarta,Middle,13,Life Insurance,6980178,2,3,0,Not Interested,Medium
+CUST100111,56,Female,Jawa Timur,Middle,11,Motor Insurance,1784868,5,2,1,Not Interested,Low
+CUST100112,22,Male,Sumatera,Middle,12,Life Insurance,15995796,1,4,2,Not Interested,High
+CUST100113,68,Male,Jakarta,Low,14,Property Insurance,12611146,0,8,6,Interested,Medium
+CUST100114,66,Female,Jawa Barat,Middle,11,Life Insurance,23389591,0,1,4,Not Interested,High
+CUST100115,37,Female,Jawa Barat,High,6,Health Insurance,18008630,0,8,2,Interested,High
+CUST100116,26,Female,Kalimantan,Middle,6,Property Insurance,7004602,2,2,0,Not Interested,Medium
+CUST100117,61,Female,Kalimantan,Low,3,Life Insurance,2067619,0,8,5,Not Interested,Low
+CUST100118,66,Female,Jawa Barat,Middle,5,Life Insurance,12574820,1,2,5,Not Interested,Medium
+CUST100119,43,Female,Jakarta,Middle,11,Life Insurance,11505131,0,7,0,Interested,Medium
+CUST100120,67,Male,Jakarta,Middle,12,Life Insurance,11536494,1,3,6,Not Interested,Medium
+CUST100121,36,Male,Kalimantan,High,13,Motor Insurance,593344,2,6,2,Interested,Low
+CUST100122,61,Female,Jawa Timur,High,1,Life Insurance,13555705,0,7,0,Interested,Medium
+CUST100123,46,Male,Jawa Barat,Low,10,Life Insurance,3789798,1,6,5,Not Interested,Low
+CUST100124,66,Female,Jawa Timur,Middle,1,Motor Insurance,14221427,1,5,3,Not Interested,Medium
+CUST100125,21,Female,Kalimantan,Middle,12,Life Insurance,13546888,4,9,1,Interested,Medium
+CUST100126,56,Male,Jawa Timur,Middle,13,Life Insurance,19813403,1,9,2,Interested,High
+CUST100127,50,Female,Jakarta,Middle,4,Life Insurance,17266296,1,3,0,Not Interested,High
+CUST100128,22,Male,Sumatera,High,7,Motor Insurance,23872435,1,7,2,Interested,High
+CUST100129,40,Female,Sumatera,Middle,8,Health Insurance,1487088,0,2,6,Not Interested,Low
+CUST100130,25,Male,Jawa Timur,High,13,Health Insurance,16042362,0,1,0,Interested,High
+CUST100131,51,Male,Sumatera,Low,8,Motor Insurance,17518339,3,4,4,Interested,High
+CUST100132,28,Female,Jawa Timur,Middle,14,Health Insurance,12974658,0,3,1,Not Interested,Medium
+CUST100133,50,Female,Jawa Barat,Middle,8,Health Insurance,8053071,1,4,2,Not Interested,Medium
+CUST100134,59,Female,Kalimantan,High,10,Motor Insurance,1688680,1,3,2,Interested,Low
+CUST100135,22,Male,Jawa Timur,High,11,Property Insurance,2069168,2,9,2,Interested,Low
+CUST100136,33,Male,Jakarta,Low,3,Motor Insurance,11962534,2,4,2,Not Interested,Medium
+CUST100137,24,Female,Kalimantan,Low,11,Health Insurance,14708559,0,4,7,Interested,Medium
+CUST100138,65,Female,Jakarta,Middle,14,Health Insurance,6481004,2,7,4,Not Interested,Medium
+CUST100139,28,Female,Sumatera,Middle,2,Life Insurance,22190366,2,4,0,Not Interested,High
+CUST100140,59,Male,Jawa Barat,Middle,6,Property Insurance,13283825,2,9,6,Interested,Medium
+CUST100141,45,Male,Sumatera,Middle,4,Health Insurance,19407937,0,9,6,Not Interested,High
+CUST100142,27,Female,Jawa Barat,High,1,Life Insurance,14741997,0,9,2,Interested,Medium
+CUST100143,34,Female,Jawa Timur,Low,1,Property Insurance,6429971,2,6,6,Not Interested,Medium
+CUST100144,49,Female,Kalimantan,Middle,1,Health Insurance,3890479,2,9,3,Not Interested,Low
+CUST100145,65,Female,Jakarta,Middle,8,Property Insurance,18966962,4,3,2,Not Interested,High
+CUST100146,41,Female,Jawa Timur,Low,2,Life Insurance,12418856,1,2,3,Not Interested,Medium
+CUST100147,57,Male,Jakarta,Middle,12,Health Insurance,8213022,2,2,6,Not Interested,Medium
+CUST100148,69,Female,Jawa Barat,Middle,4,Motor Insurance,20502727,1,7,6,Interested,High
+CUST100149,53,Male,Jakarta,High,4,Motor Insurance,12027928,2,5,3,Interested,Medium
+CUST100150,61,Male,Sumatera,Low,7,Health Insurance,5037094,2,4,0,Not Interested,Medium
+CUST100151,45,Male,Jakarta,Middle,1,Health Insurance,10786648,1,2,2,Not Interested,Medium
+CUST100152,66,Female,Jawa Barat,High,9,Life Insurance,6470979,2,4,6,Interested,Medium
+CUST100153,34,Male,Jakarta,High,1,Life Insurance,7556084,0,6,1,Not Interested,Medium
+CUST100154,29,Female,Kalimantan,Middle,9,Life Insurance,22128694,0,6,0,Not Interested,High
+CUST100155,35,Female,Jawa Barat,Low,10,Health Insurance,18514307,0,8,4,Interested,High
+CUST100156,27,Female,Kalimantan,High,1,Property Insurance,13618558,1,6,3,Interested,Medium
+CUST100157,22,Male,Jawa Timur,Middle,12,Property Insurance,22445214,0,5,7,Not Interested,High
+CUST100158,51,Male,Kalimantan,Middle,14,Health Insurance,5575791,2,7,2,Not Interested,Medium
+CUST100159,27,Male,Jawa Timur,Middle,4,Property Insurance,24673912,3,3,3,Not Interested,High
+CUST100160,61,Female,Jawa Barat,Middle,14,Motor Insurance,20000091,0,4,7,Interested,High
+CUST100161,31,Male,Jakarta,Middle,12,Health Insurance,20218051,0,6,7,Not Interested,High
+CUST100162,33,Female,Jawa Barat,Low,13,Motor Insurance,24115357,1,9,7,Interested,High
+CUST100163,33,Female,Sumatera,Middle,12,Motor Insurance,24582560,0,6,1,Interested,High
+CUST100164,46,Male,Jawa Barat,Low,8,Motor Insurance,23888224,1,4,4,Not Interested,High
+CUST100165,63,Female,Jawa Barat,Middle,2,Life Insurance,10903354,0,8,2,Not Interested,Medium
+CUST100166,28,Male,Sumatera,High,10,Motor Insurance,5443658,0,5,2,Interested,Medium
+CUST100167,34,Male,Sumatera,Middle,6,Life Insurance,5787634,0,5,1,Not Interested,Medium
+CUST100168,65,Male,Jawa Barat,High,7,Health Insurance,24021568,1,8,6,Interested,High
+CUST100169,22,Male,Sumatera,Low,1,Life Insurance,21222053,0,9,3,Interested,High
+CUST100170,62,Male,Jawa Barat,High,12,Property Insurance,17558073,3,4,5,Interested,High
+CUST100171,35,Male,Jawa Barat,Middle,4,Motor Insurance,23294605,0,8,7,Not Interested,High
+CUST100172,44,Female,Sumatera,Middle,14,Motor Insurance,11057041,3,8,2,Interested,Medium
+CUST100173,54,Female,Jawa Timur,Low,14,Property Insurance,20154826,1,3,0,Not Interested,High
+CUST100174,24,Male,Sumatera,Low,12,Life Insurance,21282321,2,4,6,Not Interested,High
+CUST100175,38,Female,Jakarta,Middle,7,Motor Insurance,8722231,2,2,7,Not Interested,Medium
+CUST100176,45,Female,Jawa Timur,Low,10,Life Insurance,9780659,1,5,3,Not Interested,Medium
+CUST100177,67,Female,Jakarta,Middle,10,Property Insurance,924627,0,6,6,Not Interested,Low
+CUST100178,44,Female,Sumatera,Middle,12,Motor Insurance,9508297,0,6,0,Not Interested,Medium
+CUST100179,26,Female,Sumatera,Middle,1,Property Insurance,17961685,0,2,7,Not Interested,High
+CUST100180,54,Male,Jawa Barat,Middle,6,Life Insurance,12017887,0,4,6,Not Interested,Medium
+CUST100181,58,Male,Jakarta,Low,7,Life Insurance,3131761,1,2,4,Not Interested,Low
+CUST100182,23,Female,Sumatera,High,9,Life Insurance,4190652,1,5,5,Interested,Low
+CUST100183,39,Male,Sumatera,Low,8,Health Insurance,991701,2,2,6,Not Interested,Low
+CUST100184,67,Male,Sumatera,High,2,Property Insurance,5113166,0,9,7,Interested,Medium
+CUST100185,66,Female,Jakarta,Low,13,Life Insurance,24649903,2,1,4,Interested,High
+CUST100186,56,Female,Sumatera,Low,4,Life Insurance,18008931,4,6,7,Not Interested,High
+CUST100187,39,Male,Kalimantan,Middle,2,Health Insurance,19527253,0,9,3,Not Interested,High
+CUST100188,48,Male,Kalimantan,Middle,12,Health Insurance,19231435,2,3,3,Not Interested,High
+CUST100189,67,Female,Sumatera,Middle,10,Property Insurance,5656287,4,9,0,Interested,Medium
+CUST100190,30,Female,Jawa Timur,Middle,2,Property Insurance,16679950,2,2,0,Not Interested,High
+CUST100191,38,Female,Jakarta,High,11,Life Insurance,14816341,1,2,0,Interested,Medium
+CUST100192,24,Female,Jawa Barat,Middle,13,Property Insurance,886570,3,2,5,Not Interested,Low
+CUST100193,32,Female,Jawa Timur,Middle,7,Health Insurance,4795168,1,3,0,Not Interested,Low
+CUST100194,47,Male,Kalimantan,High,10,Motor Insurance,9210004,1,4,5,Interested,Medium
+CUST100195,49,Male,Jakarta,Middle,11,Life Insurance,13206556,1,3,4,Not Interested,Medium
+CUST100196,32,Male,Jawa Barat,Middle,2,Health Insurance,10696654,0,6,5,Not Interested,Medium
+CUST100197,31,Female,Kalimantan,Middle,3,Health Insurance,17117051,2,6,1,Not Interested,High
+CUST100198,24,Female,Sumatera,High,14,Life Insurance,16357865,1,5,4,Interested,High
+CUST100199,66,Female,Sumatera,Low,11,Property Insurance,12050182,3,2,2,Not Interested,Medium
+CUST100200,44,Female,Jawa Barat,Low,7,Life Insurance,14718075,2,4,4,Not Interested,Medium
+CUST100201,46,Female,Jakarta,Middle,13,Health Insurance,20851924,0,7,4,Interested,High
+CUST100202,48,Female,Jawa Barat,Middle,4,Property Insurance,17757189,2,8,4,Not Interested,High
+CUST100203,67,Female,Jawa Barat,Low,12,Health Insurance,2794507,2,9,4,Not Interested,Low
+CUST100204,24,Male,Jawa Timur,Low,7,Life Insurance,9078814,3,2,3,Not Interested,Medium
+CUST100205,56,Male,Sumatera,Middle,3,Life Insurance,13013241,1,9,4,Not Interested,Medium
+CUST100206,35,Male,Sumatera,High,2,Property Insurance,22569286,0,7,2,Interested,High
+CUST100207,42,Female,Kalimantan,Middle,5,Property Insurance,21179726,1,7,3,Interested,High
+CUST100208,69,Female,Jawa Timur,Middle,7,Health Insurance,17322988,0,1,6,Not Interested,High
+CUST100209,44,Female,Sumatera,Middle,13,Motor Insurance,5233755,0,8,3,Not Interested,Medium
+CUST100210,44,Female,Jawa Timur,Middle,14,Health Insurance,7261786,2,3,3,Not Interested,Medium
+CUST100211,57,Male,Jakarta,Middle,13,Property Insurance,13592412,0,4,2,Interested,Medium
+CUST100212,25,Male,Jawa Timur,Low,2,Life Insurance,23984113,2,4,3,Not Interested,High
+CUST100213,26,Male,Sumatera,Middle,4,Property Insurance,5833788,2,2,4,Not Interested,Medium
+CUST100214,69,Female,Jawa Barat,Middle,13,Motor Insurance,3200753,2,3,1,Not Interested,Low
+CUST100215,30,Female,Jakarta,Middle,8,Motor Insurance,24436690,1,5,2,Not Interested,High
+CUST100216,23,Male,Jakarta,Middle,4,Health Insurance,4276080,1,3,6,Not Interested,Low
+CUST100217,58,Female,Sumatera,Middle,6,Property Insurance,6505607,0,5,4,Not Interested,Medium
+CUST100218,54,Female,Jawa Timur,Middle,8,Life Insurance,15248063,2,8,0,Interested,High
+CUST100219,26,Male,Jawa Barat,Middle,12,Motor Insurance,24784515,2,8,6,Interested,High
+CUST100220,30,Male,Sumatera,High,2,Health Insurance,9863269,3,3,3,Not Interested,Medium
+CUST100221,36,Female,Jakarta,High,8,Property Insurance,24336181,0,5,7,Interested,High
+CUST100222,49,Female,Jakarta,Low,1,Life Insurance,8513711,0,1,5,Not Interested,Medium
+CUST100223,23,Female,Jakarta,High,4,Life Insurance,22210281,1,7,1,Interested,High
+CUST100224,31,Female,Jakarta,Low,13,Life Insurance,22723529,2,3,7,Not Interested,High
+CUST100225,57,Female,Jakarta,High,6,Health Insurance,816187,3,7,0,Interested,Low
+CUST100226,24,Male,Jawa Timur,Middle,2,Life Insurance,14689802,2,8,5,Not Interested,Medium
+CUST100227,69,Male,Jawa Barat,Middle,8,Property Insurance,11724775,1,7,0,Interested,Medium
+CUST100228,24,Female,Jawa Timur,Middle,10,Property Insurance,2816250,3,5,0,Not Interested,Low
+CUST100229,44,Male,Jawa Barat,Low,2,Property Insurance,17883780,3,9,0,Not Interested,High
+CUST100230,48,Male,Jawa Timur,High,5,Motor Insurance,10594953,2,1,0,Interested,Medium
+CUST100231,55,Male,Sumatera,Low,14,Health Insurance,18609738,2,6,0,Not Interested,High
+CUST100232,58,Female,Jakarta,Middle,11,Health Insurance,5149178,1,6,6,Not Interested,Medium
+CUST100233,44,Female,Sumatera,Middle,10,Health Insurance,4586033,0,7,0,Interested,Low
+CUST100234,42,Female,Jawa Barat,Middle,12,Health Insurance,6019938,2,7,3,Not Interested,Medium
+CUST100235,46,Male,Jawa Barat,Middle,10,Property Insurance,20068481,1,2,1,Not Interested,High
+CUST100236,38,Female,Kalimantan,Middle,14,Life Insurance,12942252,1,5,5,Not Interested,Medium
+CUST100237,23,Female,Jakarta,Middle,7,Property Insurance,23095230,2,6,6,Interested,High
+CUST100238,66,Male,Jakarta,High,14,Health Insurance,22463213,1,2,6,Interested,High
+CUST100239,31,Male,Jawa Barat,High,8,Motor Insurance,2902402,0,9,7,Interested,Low
+CUST100240,29,Male,Kalimantan,Low,3,Motor Insurance,12858002,1,6,5,Not Interested,Medium
+CUST100241,53,Male,Jakarta,Middle,4,Property Insurance,19830031,1,5,7,Not Interested,High
+CUST100242,46,Male,Jakarta,Middle,12,Motor Insurance,5071249,0,8,7,Interested,Medium
+CUST100243,56,Male,Sumatera,High,4,Motor Insurance,21410478,1,8,0,Interested,High
+CUST100244,24,Female,Jawa Timur,Middle,2,Property Insurance,22106685,2,1,0,Not Interested,High
+CUST100245,22,Male,Kalimantan,Middle,10,Motor Insurance,13407276,0,7,3,Interested,Medium
+CUST100246,28,Female,Jawa Barat,Low,12,Health Insurance,17403339,1,6,3,Interested,High
+CUST100247,27,Female,Jawa Timur,High,6,Life Insurance,17635627,0,3,6,Interested,High
+CUST100248,56,Female,Sumatera,Middle,11,Motor Insurance,18934261,2,1,7,Not Interested,High
+CUST100249,54,Female,Jawa Barat,Middle,1,Life Insurance,7797285,0,2,3,Not Interested,Medium
+CUST100250,60,Male,Jawa Barat,High,12,Motor Insurance,21333664,0,1,0,Interested,High
+CUST100251,39,Female,Sumatera,High,11,Motor Insurance,9613059,0,3,6,Interested,Medium
+CUST100252,49,Female,Jakarta,Middle,11,Motor Insurance,17177978,1,6,7,Not Interested,High
+CUST100253,59,Male,Jakarta,Middle,7,Life Insurance,3609873,0,2,1,Not Interested,Low
+CUST100254,26,Female,Jawa Timur,High,11,Health Insurance,18204422,0,6,3,Interested,High
+CUST100255,30,Male,Kalimantan,Middle,4,Motor Insurance,6872400,1,8,1,Not Interested,Medium
+CUST100256,61,Male,Jakarta,Middle,14,Health Insurance,18860587,1,3,3,Not Interested,High
+CUST100257,62,Female,Kalimantan,Middle,8,Motor Insurance,4169304,1,3,2,Not Interested,Low
+CUST100258,25,Male,Jawa Barat,Middle,4,Property Insurance,8677318,4,1,5,Not Interested,Medium
+CUST100259,44,Male,Sumatera,Middle,7,Health Insurance,9755877,0,3,1,Not Interested,Medium
+CUST100260,61,Male,Jawa Timur,Low,1,Health Insurance,3214430,1,7,0,Not Interested,Low
+CUST100261,42,Male,Jakarta,Middle,3,Motor Insurance,18492102,1,9,3,Not Interested,High
+CUST100262,46,Male,Jawa Timur,Middle,2,Health Insurance,10125623,1,8,2,Not Interested,Medium
+CUST100263,57,Female,Kalimantan,High,5,Life Insurance,12372887,0,3,3,Interested,Medium
+CUST100264,65,Female,Sumatera,Middle,5,Health Insurance,23529507,4,5,6,Interested,High
+CUST100265,49,Male,Kalimantan,High,3,Property Insurance,20080583,1,1,4,Interested,High
+CUST100266,56,Female,Jawa Timur,Low,13,Life Insurance,12599203,0,1,5,Not Interested,Medium
+CUST100267,40,Male,Jawa Barat,Low,13,Health Insurance,7296752,1,9,7,Interested,Medium
+CUST100268,38,Female,Jawa Barat,High,12,Life Insurance,15949045,2,7,2,Interested,High
+CUST100269,60,Female,Kalimantan,Middle,12,Motor Insurance,1915320,1,4,5,Not Interested,Low
+CUST100270,65,Female,Sumatera,High,9,Life Insurance,15622339,3,4,5,Interested,High
+CUST100271,61,Female,Kalimantan,Middle,11,Property Insurance,2697801,0,3,2,Not Interested,Low
+CUST100272,35,Female,Jakarta,Low,13,Life Insurance,5031773,3,5,5,Not Interested,Medium
+CUST100273,35,Male,Sumatera,Middle,12,Property Insurance,15908313,1,8,2,Interested,High
+CUST100274,44,Male,Sumatera,Middle,5,Health Insurance,13568497,2,3,4,Not Interested,Medium
+CUST100275,49,Female,Kalimantan,Middle,13,Health Insurance,21386643,1,6,2,Not Interested,High
+CUST100276,37,Male,Sumatera,Middle,10,Motor Insurance,22029034,0,4,6,Not Interested,High
+CUST100277,69,Male,Jawa Barat,High,6,Property Insurance,553283,1,3,3,Interested,Low
+CUST100278,67,Female,Jawa Timur,Low,3,Life Insurance,12579067,2,1,4,Not Interested,Medium
+CUST100279,45,Male,Jawa Barat,High,12,Health Insurance,2011653,2,8,7,Interested,Low
+CUST100280,36,Male,Sumatera,Middle,12,Health Insurance,23595281,1,7,5,Interested,High
+CUST100281,37,Female,Jawa Timur,High,2,Property Insurance,20903648,1,7,3,Interested,High
+CUST100282,67,Female,Jakarta,Low,7,Life Insurance,4672379,1,8,4,Not Interested,Low
+CUST100283,67,Female,Kalimantan,Middle,12,Life Insurance,7853092,2,9,2,Not Interested,Medium
+CUST100284,41,Male,Sumatera,High,10,Motor Insurance,11274412,1,3,4,Interested,Medium
+CUST100285,64,Male,Kalimantan,Middle,3,Health Insurance,21134731,0,2,7,Not Interested,High
+CUST100286,68,Female,Jawa Timur,Middle,9,Life Insurance,22557796,0,4,6,Interested,High
+CUST100287,47,Male,Kalimantan,High,5,Property Insurance,9391793,1,4,0,Interested,Medium
+CUST100288,25,Female,Sumatera,Low,1,Motor Insurance,15189952,2,8,2,Not Interested,High
+CUST100289,42,Male,Sumatera,High,2,Life Insurance,8275425,1,8,2,Interested,Medium
+CUST100290,53,Male,Jawa Barat,High,5,Property Insurance,5625200,0,7,3,Interested,Medium
+CUST100291,60,Male,Kalimantan,Middle,13,Property Insurance,24106718,0,5,0,Not Interested,High
+CUST100292,22,Female,Kalimantan,High,11,Life Insurance,7248894,3,1,5,Interested,Medium
+CUST100293,55,Female,Jawa Barat,Middle,5,Motor Insurance,6886632,1,6,1,Not Interested,Medium
+CUST100294,63,Female,Jawa Barat,Low,5,Life Insurance,16429673,1,1,2,Not Interested,High
+CUST100295,39,Female,Kalimantan,High,2,Property Insurance,3385789,0,2,2,Not Interested,Low
+CUST100296,60,Male,Jawa Timur,Middle,2,Health Insurance,7647475,1,6,0,Not Interested,Medium
+CUST100297,47,Female,Jawa Timur,High,10,Motor Insurance,6628885,3,1,1,Interested,Medium
+CUST100298,60,Male,Jakarta,Low,5,Motor Insurance,7944209,0,6,6,Not Interested,Medium
+CUST100299,56,Female,Jawa Barat,Low,11,Life Insurance,16012429,0,9,1,Interested,High
+CUST100300,59,Male,Jawa Timur,Middle,10,Motor Insurance,22694932,0,6,6,Interested,High

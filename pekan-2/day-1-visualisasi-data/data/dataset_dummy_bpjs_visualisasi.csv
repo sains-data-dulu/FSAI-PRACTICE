@@ -1,0 +1,401 @@
+id_peserta,usia,jenis_kelamin,wilayah,status_kepesertaan,status_pekerjaan,fasilitas_utama,penyakit_kronis,iuran_bulanan,kunjungan_12_bulan,status_klaim,biaya_klaim,waktu_tunggu_hari,kepuasan,bulan_kunjungan,tahun_bulan,tanggal_kunjungan,jenis_layanan
+BPJS0001,56,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,60000,5,Pernah klaim,1142000,5.7,2.8,2025-07-01,2025-07,2025-07-01,Pemeriksaan
+BPJS0002,69,Laki-laki,Jawa Barat,Non-PBI,Tidak bekerja,Klinik,Tidak ada,48000,6,Pernah klaim,322000,3.8,3.6,2025-04-01,2025-04,2025-04-09,Rawat Jalan
+BPJS0003,46,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Klinik,Tidak ada,0,5,Belum klaim,0,4.4,4.5,2025-11-01,2025-11,2025-11-11,Pemeriksaan
+BPJS0004,32,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,35000,2,Pernah klaim,2322000,5.3,3.7,2025-08-01,2025-08,2025-08-22,Rawat Inap
+BPJS0005,60,Laki-laki,Jawa Barat,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,2,Pernah klaim,1756000,0.5,4.7,2025-05-01,2025-05,2025-05-16,Rawat Jalan
+BPJS0006,25,Perempuan,Jawa Barat,Non-PBI,Bekerja,Klinik,Ada,35000,4,Belum klaim,0,4.6,4.0,2025-07-01,2025-07,2025-07-07,Rawat Jalan
+BPJS0007,38,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,0,Belum klaim,0,2.1,4.3,2025-10-01,2025-10,2025-10-10,Obat
+BPJS0008,56,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Ada,35000,8,Pernah klaim,1576000,2.4,3.9,2025-03-01,2025-03,2025-03-23,Rawat Inap
+BPJS0009,36,Perempuan,Jawa Timur,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,4,Belum klaim,0,4.9,3.7,2025-07-01,2025-07,2025-07-26,Pemeriksaan
+BPJS0010,40,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,RS Kelas B/A,Ada,42000,9,Belum klaim,0,3.9,3.6,2025-11-01,2025-11,2025-11-03,Rawat Jalan
+BPJS0011,28,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,0,Belum klaim,0,4.6,3.6,2025-11-01,2025-11,2025-11-18,Obat
+BPJS0012,28,Perempuan,Jawa Timur,Non-PBI,Pensiunan,RS Kelas C/D,Tidak ada,35000,2,Belum klaim,0,3.4,3.9,2025-08-01,2025-08,2025-08-25,Rawat Jalan
+BPJS0013,41,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Ada,35000,2,Pernah klaim,2040000,3.8,3.2,2025-05-01,2025-05,2025-05-24,Obat
+BPJS0014,70,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Ada,35000,9,Pernah klaim,226000,2.6,4.6,2025-04-01,2025-04,2025-04-13,Rawat Inap
+BPJS0015,53,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Tidak ada,42000,6,Belum klaim,0,1.6,3.1,2025-08-01,2025-08,2025-08-26,Rawat Jalan
+BPJS0016,57,Perempuan,Jabodetabek,PBI,Bekerja,Klinik,Tidak ada,0,2,Belum klaim,0,2.2,4.0,2025-08-01,2025-08,2025-08-07,Rawat Jalan
+BPJS0017,41,Perempuan,Jawa Tengah,PBI,Pensiunan,Klinik,Ada,0,3,Belum klaim,0,3.3,4.3,2025-03-01,2025-03,2025-03-25,Rawat Jalan
+BPJS0018,20,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,0,0,Belum klaim,0,6.8,3.2,2025-06-01,2025-06,2025-06-04,Rawat Jalan
+BPJS0019,39,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,RS Kelas C/D,Ada,35000,8,Pernah klaim,3601000,6.6,2.7,2025-05-01,2025-05,2025-05-13,Rawat Jalan
+BPJS0020,70,Perempuan,Luar Jawa,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,0,6,Pernah klaim,1110000,2.8,4.2,2025-02-01,2025-02,2025-02-20,Obat
+BPJS0021,19,Laki-laki,Jawa Tengah,Non-PBI,Pensiunan,Klinik,Tidak ada,35000,0,Belum klaim,0,3.6,3.6,2025-08-01,2025-08,2025-08-01,Rawat Inap
+BPJS0022,41,Perempuan,Jawa Barat,Non-PBI,Pensiunan,RS Kelas C/D,Tidak ada,42000,3,Belum klaim,0,3.0,4.0,2025-12-01,2025-12,2025-12-08,Obat
+BPJS0023,61,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,60000,4,Belum klaim,0,3.7,3.6,2025-06-01,2025-06,2025-06-14,Pemeriksaan
+BPJS0024,47,Laki-laki,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,35000,4,Belum klaim,0,4.5,4.5,2025-02-01,2025-02,2025-02-16,Rawat Inap
+BPJS0025,55,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,2,Belum klaim,0,4.9,2.2,2025-12-01,2025-12,2025-12-14,Obat
+BPJS0026,19,Perempuan,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Ada,35000,4,Belum klaim,0,0.5,4.0,2025-05-01,2025-05,2025-05-12,Obat
+BPJS0027,38,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,3,Belum klaim,0,4.2,4.3,2025-01-01,2025-01,2025-01-19,Rawat Jalan
+BPJS0028,50,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Ada,42000,9,Belum klaim,0,2.8,3.7,2025-12-01,2025-12,2025-12-23,Rawat Jalan
+BPJS0029,29,Perempuan,Jabodetabek,PBI,Bekerja,Puskesmas,Tidak ada,0,2,Pernah klaim,2488000,2.2,3.9,2025-10-01,2025-10,2025-10-15,Rawat Jalan
+BPJS0030,39,Laki-laki,Jabodetabek,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,3,Belum klaim,0,5.5,3.1,2025-06-01,2025-06,2025-06-02,Rawat Jalan
+BPJS0031,61,Laki-laki,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,5,Pernah klaim,2440000,6.1,3.3,2025-12-01,2025-12,2025-12-02,Rawat Jalan
+BPJS0032,42,Laki-laki,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,RS Kelas B/A,Tidak ada,48000,5,Belum klaim,0,5.8,2.4,2025-09-01,2025-09,2025-09-23,Rawat Jalan
+BPJS0033,66,Perempuan,Jawa Timur,PBI,Pensiunan,RS Kelas C/D,Tidak ada,0,5,Belum klaim,0,2.6,3.1,2025-01-01,2025-01,2025-01-22,Pemeriksaan
+BPJS0034,44,Perempuan,Jawa Barat,Non-PBI,Bekerja,Klinik,Tidak ada,42000,5,Belum klaim,0,1.6,3.2,2025-11-01,2025-11,2025-11-19,Obat
+BPJS0035,59,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Ada,35000,5,Belum klaim,0,0.5,4.2,2025-11-01,2025-11,2025-11-25,Rawat Jalan
+BPJS0036,45,Laki-laki,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,35000,5,Pernah klaim,2390000,4.3,3.1,2025-10-01,2025-10,2025-10-26,Rawat Jalan
+BPJS0037,33,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,2,Belum klaim,0,5.0,3.3,2025-12-01,2025-12,2025-12-22,Rawat Jalan
+BPJS0038,32,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,RS Kelas B/A,Tidak ada,42000,3,Belum klaim,0,3.9,3.3,2025-12-01,2025-12,2025-12-26,Rawat Inap
+BPJS0039,64,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,5,Belum klaim,0,5.2,3.0,2025-03-01,2025-03,2025-03-26,Rawat Jalan
+BPJS0040,68,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,5,Belum klaim,0,1.1,3.9,2025-12-01,2025-12,2025-12-22,Obat
+BPJS0041,61,Perempuan,Jawa Barat,Non-PBI,Pensiunan,RS Kelas B/A,Tidak ada,60000,5,Belum klaim,0,3.8,3.7,2025-07-01,2025-07,2025-07-17,Rawat Jalan
+BPJS0042,69,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,6,Belum klaim,0,3.0,4.0,2025-04-01,2025-04,2025-04-20,Obat
+BPJS0043,20,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,48000,1,Belum klaim,0,3.3,3.9,2025-09-01,2025-09,2025-09-10,Pemeriksaan
+BPJS0044,54,Laki-laki,Jawa Barat,PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,0,4,Belum klaim,0,5.6,3.8,2025-03-01,2025-03,2025-03-06,Rawat Jalan
+BPJS0045,68,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Ada,42000,6,Belum klaim,0,3.3,3.3,2025-05-01,2025-05,2025-05-15,Obat
+BPJS0046,24,Perempuan,Jawa Barat,PBI,Tidak bekerja,Klinik,Tidak ada,0,1,Belum klaim,0,3.0,3.3,2025-03-01,2025-03,2025-03-22,Rawat Inap
+BPJS0047,38,Laki-laki,Jawa Barat,PBI,Pensiunan,Puskesmas,Tidak ada,0,5,Belum klaim,0,1.8,3.3,2025-07-01,2025-07,2025-07-11,Rawat Inap
+BPJS0048,26,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,5.9,3.0,2025-05-01,2025-05,2025-05-05,Rawat Jalan
+BPJS0049,56,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,60000,3,Belum klaim,0,0.9,3.8,2025-09-01,2025-09,2025-09-01,Obat
+BPJS0050,35,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Ada,35000,4,Belum klaim,0,2.5,3.3,2025-07-01,2025-07,2025-07-08,Obat
+BPJS0051,21,Perempuan,Jawa Barat,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,2,Pernah klaim,219000,6.5,4.1,2025-02-01,2025-02,2025-02-21,Obat
+BPJS0052,42,Laki-laki,Jawa Barat,Non-PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,60000,2,Belum klaim,0,4.9,3.4,2025-04-01,2025-04,2025-04-12,Pemeriksaan
+BPJS0053,31,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,48000,2,Belum klaim,0,4.1,4.3,2025-09-01,2025-09,2025-09-12,Obat
+BPJS0054,67,Perempuan,Jawa Barat,Non-PBI,Pensiunan,Puskesmas,Tidak ada,42000,8,Pernah klaim,2804000,3.5,4.0,2025-12-01,2025-12,2025-12-05,Pemeriksaan
+BPJS0055,26,Perempuan,Jabodetabek,Non-PBI,Pensiunan,RS Kelas B/A,Tidak ada,48000,3,Belum klaim,0,2.4,3.1,2025-02-01,2025-02,2025-02-07,Obat
+BPJS0056,43,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,1,Belum klaim,0,3.4,3.6,2025-10-01,2025-10,2025-10-04,Obat
+BPJS0057,70,Perempuan,Luar Jawa,PBI,Pelajar/Mahasiswa,Puskesmas,Ada,0,10,Pernah klaim,1658000,3.4,2.7,2025-09-01,2025-09,2025-09-06,Rawat Inap
+BPJS0058,19,Perempuan,Jawa Barat,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,4,Belum klaim,0,3.8,3.6,2025-10-01,2025-10,2025-10-13,Rawat Jalan
+BPJS0059,37,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,48000,5,Pernah klaim,3723000,0.8,3.3,2025-05-01,2025-05,2025-05-20,Obat
+BPJS0060,45,Laki-laki,Luar Jawa,PBI,Tidak bekerja,Klinik,Tidak ada,0,7,Belum klaim,0,4.7,2.8,2025-02-01,2025-02,2025-02-15,Rawat Inap
+BPJS0061,64,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,5,Pernah klaim,3010000,5.3,4.2,2025-04-01,2025-04,2025-04-03,Rawat Jalan
+BPJS0062,24,Perempuan,Luar Jawa,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,2,Belum klaim,0,3.6,4.2,2025-12-01,2025-12,2025-12-23,Pemeriksaan
+BPJS0063,61,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Ada,60000,11,Pernah klaim,2285000,4.7,4.1,2025-12-01,2025-12,2025-12-08,Rawat Jalan
+BPJS0064,25,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Ada,42000,8,Pernah klaim,309000,4.1,3.9,2025-07-01,2025-07,2025-07-20,Rawat Inap
+BPJS0065,64,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,4,Belum klaim,0,2.4,2.9,2025-12-01,2025-12,2025-12-16,Obat
+BPJS0066,52,Laki-laki,Jawa Timur,PBI,Bekerja,RS Kelas C/D,Ada,0,6,Pernah klaim,913000,1.6,3.4,2025-08-01,2025-08,2025-08-13,Obat
+BPJS0067,31,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Ada,35000,1,Belum klaim,0,1.8,3.6,2025-03-01,2025-03,2025-03-18,Rawat Jalan
+BPJS0068,34,Perempuan,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Klinik,Ada,48000,10,Belum klaim,0,4.5,2.5,2025-01-01,2025-01,2025-01-10,Obat
+BPJS0069,53,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,9,Belum klaim,0,3.4,3.3,2025-04-01,2025-04,2025-04-19,Obat
+BPJS0070,67,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Ada,48000,7,Belum klaim,0,5.8,3.2,2025-02-01,2025-02,2025-02-17,Rawat Jalan
+BPJS0071,57,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,3,Belum klaim,0,4.9,3.5,2025-08-01,2025-08,2025-08-24,Rawat Jalan
+BPJS0072,21,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Ada,35000,7,Pernah klaim,1686000,5.4,4.9,2025-04-01,2025-04,2025-04-19,Obat
+BPJS0073,19,Perempuan,Jawa Tengah,PBI,Bekerja,Puskesmas,Tidak ada,0,0,Belum klaim,0,4.0,3.6,2025-02-01,2025-02,2025-02-26,Rawat Jalan
+BPJS0074,23,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,0,Belum klaim,0,1.8,3.7,2025-06-01,2025-06,2025-06-23,Rawat Jalan
+BPJS0075,59,Perempuan,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,35000,6,Belum klaim,0,4.1,3.3,2025-06-01,2025-06,2025-06-26,Rawat Inap
+BPJS0076,21,Perempuan,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,42000,5,Belum klaim,0,3.6,3.9,2025-10-01,2025-10,2025-10-05,Rawat Jalan
+BPJS0077,46,Perempuan,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Ada,42000,7,Pernah klaim,973000,1.5,3.2,2025-04-01,2025-04,2025-04-26,Rawat Inap
+BPJS0078,35,Perempuan,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Ada,48000,6,Pernah klaim,4001000,5.7,4.6,2025-06-01,2025-06,2025-06-21,Rawat Jalan
+BPJS0079,43,Laki-laki,Jawa Timur,PBI,Bekerja,Puskesmas,Tidak ada,0,7,Pernah klaim,1354000,5.5,3.5,2025-02-01,2025-02,2025-02-23,Rawat Inap
+BPJS0080,61,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,1.4,3.5,2025-10-01,2025-10,2025-10-09,Rawat Jalan
+BPJS0081,51,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,42000,5,Belum klaim,0,2.4,4.1,2025-12-01,2025-12,2025-12-12,Obat
+BPJS0082,27,Perempuan,Luar Jawa,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,1,Belum klaim,0,3.0,3.0,2025-02-01,2025-02,2025-02-21,Rawat Jalan
+BPJS0083,53,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,6,Belum klaim,0,4.6,3.8,2025-10-01,2025-10,2025-10-01,Obat
+BPJS0084,31,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Ada,35000,6,Belum klaim,0,4.4,4.2,2025-04-01,2025-04,2025-04-26,Rawat Jalan
+BPJS0085,48,Laki-laki,Jawa Timur,Non-PBI,Bekerja,Klinik,Tidak ada,60000,3,Belum klaim,0,3.6,3.4,2025-08-01,2025-08,2025-08-26,Pemeriksaan
+BPJS0086,65,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,0,Belum klaim,0,4.0,4.6,2025-07-01,2025-07,2025-07-01,Rawat Inap
+BPJS0087,32,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Klinik,Ada,48000,3,Pernah klaim,1218000,1.2,4.0,2025-12-01,2025-12,2025-12-15,Pemeriksaan
+BPJS0088,25,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,60000,3,Belum klaim,0,4.2,3.8,2025-09-01,2025-09,2025-09-02,Obat
+BPJS0089,31,Perempuan,Jawa Barat,Non-PBI,Bekerja,Klinik,Tidak ada,48000,5,Belum klaim,0,3.3,4.3,2025-08-01,2025-08,2025-08-22,Rawat Jalan
+BPJS0090,40,Laki-laki,Jawa Barat,PBI,Pelajar/Mahasiswa,Puskesmas,Ada,0,4,Belum klaim,0,2.3,4.6,2025-05-01,2025-05,2025-05-16,Obat
+BPJS0091,57,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,60000,4,Pernah klaim,1838000,0.7,3.8,2025-02-01,2025-02,2025-02-25,Rawat Jalan
+BPJS0092,38,Perempuan,Luar Jawa,Non-PBI,Pensiunan,RS Kelas B/A,Ada,35000,2,Belum klaim,0,4.6,3.9,2025-05-01,2025-05,2025-05-08,Rawat Jalan
+BPJS0093,33,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Ada,42000,7,Belum klaim,0,4.1,4.4,2025-08-01,2025-08,2025-08-13,Rawat Jalan
+BPJS0094,62,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,Puskesmas,Ada,0,7,Belum klaim,0,0.5,3.2,2025-10-01,2025-10,2025-10-21,Rawat Inap
+BPJS0095,35,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Klinik,Tidak ada,0,2,Belum klaim,0,3.5,2.5,2025-09-01,2025-09,2025-09-01,Rawat Inap
+BPJS0096,64,Perempuan,Jabodetabek,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,3,Belum klaim,0,3.7,3.4,2025-12-01,2025-12,2025-12-16,Rawat Jalan
+BPJS0097,70,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,1,Belum klaim,0,2.5,2.6,2025-12-01,2025-12,2025-12-07,Pemeriksaan
+BPJS0098,41,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Ada,42000,3,Belum klaim,0,4.2,3.3,2025-12-01,2025-12,2025-12-05,Rawat Jalan
+BPJS0099,43,Perempuan,Luar Jawa,PBI,Tidak bekerja,Puskesmas,Ada,0,8,Pernah klaim,1712000,3.8,3.8,2025-09-01,2025-09,2025-09-22,Rawat Jalan
+BPJS0100,42,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,0,Belum klaim,0,4.0,3.3,2025-01-01,2025-01,2025-01-23,Rawat Jalan
+BPJS0101,62,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,60000,5,Belum klaim,0,5.0,3.5,2025-09-01,2025-09,2025-09-03,Rawat Jalan
+BPJS0102,58,Laki-laki,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,6,Pernah klaim,1796000,5.0,2.8,2025-07-01,2025-07,2025-07-12,Rawat Inap
+BPJS0103,46,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,5,Belum klaim,0,5.3,3.8,2025-09-01,2025-09,2025-09-26,Obat
+BPJS0104,32,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,42000,6,Belum klaim,0,4.6,3.0,2025-08-01,2025-08,2025-08-16,Rawat Inap
+BPJS0105,62,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,5,Belum klaim,0,2.6,2.5,2025-01-01,2025-01,2025-01-19,Rawat Jalan
+BPJS0106,18,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Ada,60000,2,Belum klaim,0,2.3,3.6,2025-12-01,2025-12,2025-12-05,Rawat Jalan
+BPJS0107,42,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Ada,60000,2,Pernah klaim,2359000,1.6,4.1,2025-08-01,2025-08,2025-08-22,Rawat Jalan
+BPJS0108,24,Laki-laki,Luar Jawa,Non-PBI,Pensiunan,Puskesmas,Tidak ada,42000,4,Belum klaim,0,4.3,3.6,2025-08-01,2025-08,2025-08-25,Pemeriksaan
+BPJS0109,26,Perempuan,Jawa Timur,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,2,Belum klaim,0,5.9,2.7,2025-11-01,2025-11,2025-11-14,Rawat Jalan
+BPJS0110,41,Perempuan,Luar Jawa,PBI,Bekerja,Klinik,Tidak ada,0,2,Belum klaim,0,3.4,3.6,2025-03-01,2025-03,2025-03-05,Rawat Inap
+BPJS0111,18,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,1,Belum klaim,0,4.8,3.8,2025-01-01,2025-01,2025-01-15,Pemeriksaan
+BPJS0112,61,Perempuan,Jawa Timur,PBI,Bekerja,Puskesmas,Ada,0,11,Belum klaim,0,2.1,3.8,2025-08-01,2025-08,2025-08-17,Rawat Inap
+BPJS0113,25,Laki-laki,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Ada,48000,6,Belum klaim,0,4.4,3.4,2025-03-01,2025-03,2025-03-14,Pemeriksaan
+BPJS0114,41,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Ada,35000,4,Pernah klaim,2713000,6.4,3.6,2025-03-01,2025-03,2025-03-20,Rawat Jalan
+BPJS0115,28,Perempuan,Jawa Timur,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,35000,5,Belum klaim,0,4.7,2.6,2025-01-01,2025-01,2025-01-05,Obat
+BPJS0116,68,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,3,Pernah klaim,1152000,0.7,3.2,2025-11-01,2025-11,2025-11-12,Rawat Inap
+BPJS0117,34,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Ada,42000,5,Belum klaim,0,4.5,2.7,2025-05-01,2025-05,2025-05-16,Obat
+BPJS0118,25,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,3,Belum klaim,0,4.6,4.2,2025-10-01,2025-10,2025-10-26,Rawat Jalan
+BPJS0119,52,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,48000,4,Pernah klaim,640000,4.4,3.8,2025-07-01,2025-07,2025-07-26,Rawat Jalan
+BPJS0120,52,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,42000,1,Belum klaim,0,4.7,3.5,2025-10-01,2025-10,2025-10-16,Rawat Jalan
+BPJS0121,50,Perempuan,Luar Jawa,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,4,Belum klaim,0,3.1,2.7,2025-09-01,2025-09,2025-09-21,Obat
+BPJS0122,22,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,3.6,4.0,2025-12-01,2025-12,2025-12-07,Obat
+BPJS0123,59,Perempuan,Jawa Tengah,PBI,Bekerja,Puskesmas,Tidak ada,0,7,Belum klaim,0,5.5,4.3,2025-07-01,2025-07,2025-07-04,Obat
+BPJS0124,56,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Ada,42000,7,Pernah klaim,24000,5.3,3.7,2025-09-01,2025-09,2025-09-01,Rawat Jalan
+BPJS0125,58,Perempuan,Luar Jawa,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,8,Pernah klaim,5358000,5.6,3.3,2025-08-01,2025-08,2025-08-05,Pemeriksaan
+BPJS0126,45,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,4,Pernah klaim,566000,1.9,3.9,2025-12-01,2025-12,2025-12-23,Rawat Jalan
+BPJS0127,24,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,1,Belum klaim,0,2.1,3.9,2025-02-01,2025-02,2025-02-26,Rawat Jalan
+BPJS0128,26,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Ada,42000,1,Pernah klaim,294000,3.7,4.1,2025-01-01,2025-01,2025-01-10,Rawat Jalan
+BPJS0129,25,Perempuan,Jabodetabek,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,0,Belum klaim,0,4.4,3.9,2025-07-01,2025-07,2025-07-22,Obat
+BPJS0130,29,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,3,Belum klaim,0,3.3,3.5,2025-07-01,2025-07,2025-07-05,Rawat Jalan
+BPJS0131,51,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,5,Belum klaim,0,2.1,3.2,2025-08-01,2025-08,2025-08-04,Rawat Inap
+BPJS0132,50,Perempuan,Jawa Barat,PBI,Bekerja,RS Kelas C/D,Ada,0,7,Belum klaim,0,4.3,3.2,2025-05-01,2025-05,2025-05-02,Obat
+BPJS0133,65,Perempuan,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,35000,8,Pernah klaim,5395000,3.7,3.8,2025-03-01,2025-03,2025-03-20,Rawat Jalan
+BPJS0134,40,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Ada,60000,9,Belum klaim,0,4.0,3.3,2025-12-01,2025-12,2025-12-10,Rawat Inap
+BPJS0135,41,Laki-laki,Jawa Barat,Non-PBI,Tidak bekerja,Klinik,Ada,42000,7,Belum klaim,0,4.6,3.0,2025-08-01,2025-08,2025-08-26,Rawat Jalan
+BPJS0136,54,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,3.0,3.7,2025-06-01,2025-06,2025-06-19,Rawat Jalan
+BPJS0137,52,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Ada,48000,11,Pernah klaim,991000,3.2,4.1,2025-11-01,2025-11,2025-11-26,Rawat Jalan
+BPJS0138,61,Perempuan,Jawa Tengah,PBI,Bekerja,Klinik,Tidak ada,0,5,Pernah klaim,379000,5.5,3.4,2025-03-01,2025-03,2025-03-01,Rawat Jalan
+BPJS0139,57,Perempuan,Jawa Barat,PBI,Bekerja,RS Kelas B/A,Ada,0,8,Belum klaim,0,2.7,3.4,2025-01-01,2025-01,2025-01-24,Obat
+BPJS0140,39,Perempuan,Jawa Timur,PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,0,2,Belum klaim,0,2.7,3.9,2025-03-01,2025-03,2025-03-05,Rawat Jalan
+BPJS0141,44,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas B/A,Ada,42000,8,Belum klaim,0,6.3,3.4,2025-05-01,2025-05,2025-05-13,Rawat Inap
+BPJS0142,52,Perempuan,Jawa Timur,PBI,Bekerja,Klinik,Tidak ada,0,4,Belum klaim,0,2.5,2.5,2025-03-01,2025-03,2025-03-04,Obat
+BPJS0143,18,Laki-laki,Jawa Barat,PBI,Bekerja,Puskesmas,Tidak ada,0,3,Belum klaim,0,3.3,4.0,2025-01-01,2025-01,2025-01-16,Rawat Inap
+BPJS0144,52,Laki-laki,Luar Jawa,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,5,Belum klaim,0,3.3,3.9,2025-05-01,2025-05,2025-05-24,Rawat Inap
+BPJS0145,54,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,5,Belum klaim,0,0.5,3.7,2025-10-01,2025-10,2025-10-16,Rawat Inap
+BPJS0146,64,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,3,Pernah klaim,180000,3.8,4.1,2025-07-01,2025-07,2025-07-23,Rawat Jalan
+BPJS0147,31,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,35000,3,Belum klaim,0,1.7,4.3,2025-07-01,2025-07,2025-07-02,Rawat Jalan
+BPJS0148,20,Laki-laki,Jabodetabek,Non-PBI,Pensiunan,Puskesmas,Tidak ada,48000,5,Belum klaim,0,4.0,4.0,2025-11-01,2025-11,2025-11-17,Pemeriksaan
+BPJS0149,18,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,2,Belum klaim,0,6.0,3.0,2025-09-01,2025-09,2025-09-27,Obat
+BPJS0150,22,Laki-laki,Jawa Barat,PBI,Bekerja,Klinik,Ada,0,2,Belum klaim,0,0.5,3.2,2025-10-01,2025-10,2025-10-20,Rawat Jalan
+BPJS0151,43,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Klinik,Tidak ada,35000,7,Belum klaim,0,2.8,4.1,2025-10-01,2025-10,2025-10-24,Rawat Inap
+BPJS0152,31,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,Klinik,Tidak ada,48000,8,Belum klaim,0,4.3,2.4,2025-12-01,2025-12,2025-12-12,Rawat Jalan
+BPJS0153,56,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,48000,9,Pernah klaim,2650000,0.5,3.6,2025-03-01,2025-03,2025-03-18,Pemeriksaan
+BPJS0154,44,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,35000,2,Belum klaim,0,6.5,3.6,2025-07-01,2025-07,2025-07-03,Rawat Jalan
+BPJS0155,26,Laki-laki,Jawa Barat,Non-PBI,Pelajar/Mahasiswa,RS Kelas B/A,Ada,35000,4,Belum klaim,0,4.8,2.4,2025-01-01,2025-01,2025-01-01,Rawat Jalan
+BPJS0156,32,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,60000,2,Belum klaim,0,5.9,3.5,2025-04-01,2025-04,2025-04-01,Rawat Jalan
+BPJS0157,32,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,35000,1,Belum klaim,0,2.5,4.1,2025-04-01,2025-04,2025-04-19,Rawat Inap
+BPJS0158,43,Perempuan,Jawa Barat,Non-PBI,Pelajar/Mahasiswa,Klinik,Ada,60000,3,Belum klaim,0,2.7,2.7,2025-05-01,2025-05,2025-05-11,Pemeriksaan
+BPJS0159,59,Laki-laki,Jawa Barat,Non-PBI,Tidak bekerja,Klinik,Ada,35000,8,Pernah klaim,1283000,3.2,4.4,2025-07-01,2025-07,2025-07-05,Rawat Jalan
+BPJS0160,30,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,48000,1,Belum klaim,0,7.3,2.7,2025-07-01,2025-07,2025-07-12,Obat
+BPJS0161,68,Perempuan,Jawa Tengah,PBI,Bekerja,Puskesmas,Ada,0,6,Belum klaim,0,5.9,3.8,2025-11-01,2025-11,2025-11-03,Rawat Jalan
+BPJS0162,49,Laki-laki,Jawa Timur,Non-PBI,Pensiunan,Klinik,Ada,60000,7,Belum klaim,0,3.7,3.4,2025-04-01,2025-04,2025-04-01,Obat
+BPJS0163,56,Laki-laki,Jawa Tengah,PBI,Bekerja,Puskesmas,Tidak ada,0,2,Belum klaim,0,4.0,3.6,2025-07-01,2025-07,2025-07-01,Rawat Jalan
+BPJS0164,66,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,42000,5,Belum klaim,0,4.6,2.7,2025-11-01,2025-11,2025-11-08,Rawat Jalan
+BPJS0165,69,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,35000,5,Pernah klaim,3830000,8.4,3.9,2025-03-01,2025-03,2025-03-10,Obat
+BPJS0166,49,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,48000,3,Belum klaim,0,4.2,3.6,2025-06-01,2025-06,2025-06-11,Pemeriksaan
+BPJS0167,21,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,4,Belum klaim,0,4.1,4.5,2025-12-01,2025-12,2025-12-12,Pemeriksaan
+BPJS0168,47,Laki-laki,Jabodetabek,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,4,Belum klaim,0,3.5,2.8,2025-02-01,2025-02,2025-02-13,Rawat Inap
+BPJS0169,54,Perempuan,Jawa Tengah,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,7,Pernah klaim,632000,3.9,3.4,2025-10-01,2025-10,2025-10-12,Pemeriksaan
+BPJS0170,40,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,5,Belum klaim,0,2.9,3.8,2025-09-01,2025-09,2025-09-14,Rawat Jalan
+BPJS0171,56,Perempuan,Jawa Tengah,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,6,Belum klaim,0,4.4,3.6,2025-05-01,2025-05,2025-05-02,Pemeriksaan
+BPJS0172,62,Perempuan,Luar Jawa,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,5,Belum klaim,0,1.4,4.1,2025-06-01,2025-06,2025-06-19,Rawat Inap
+BPJS0173,32,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,5,Belum klaim,0,3.0,3.6,2025-12-01,2025-12,2025-12-18,Obat
+BPJS0174,60,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,60000,8,Belum klaim,0,5.4,4.5,2025-12-01,2025-12,2025-12-03,Obat
+BPJS0175,46,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Tidak ada,60000,4,Belum klaim,0,4.2,3.5,2025-12-01,2025-12,2025-12-23,Obat
+BPJS0176,53,Perempuan,Jawa Timur,PBI,Bekerja,RS Kelas B/A,Ada,0,10,Pernah klaim,1179000,3.3,1.9,2025-12-01,2025-12,2025-12-17,Rawat Inap
+BPJS0177,30,Perempuan,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,3,Belum klaim,0,3.1,3.7,2025-04-01,2025-04,2025-04-26,Rawat Jalan
+BPJS0178,49,Perempuan,Jabodetabek,Non-PBI,Pensiunan,Puskesmas,Tidak ada,60000,4,Belum klaim,0,5.4,4.2,2025-11-01,2025-11,2025-11-08,Obat
+BPJS0179,24,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,Klinik,Ada,35000,2,Belum klaim,0,1.3,3.1,2025-10-01,2025-10,2025-10-26,Rawat Jalan
+BPJS0180,68,Laki-laki,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,1.3,3.2,2025-07-01,2025-07,2025-07-10,Pemeriksaan
+BPJS0181,39,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,Klinik,Tidak ada,42000,2,Belum klaim,0,2.3,3.1,2025-12-01,2025-12,2025-12-26,Obat
+BPJS0182,45,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Ada,35000,5,Pernah klaim,1707000,4.1,2.9,2025-09-01,2025-09,2025-09-02,Rawat Jalan
+BPJS0183,19,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,Klinik,Ada,60000,6,Pernah klaim,3158000,1.1,3.4,2025-07-01,2025-07,2025-07-19,Obat
+BPJS0184,59,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,6,Belum klaim,0,5.7,3.9,2025-01-01,2025-01,2025-01-09,Rawat Inap
+BPJS0185,62,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,7,Pernah klaim,458000,1.8,4.6,2025-01-01,2025-01,2025-01-07,Obat
+BPJS0186,70,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Ada,48000,6,Pernah klaim,1717000,3.9,2.3,2025-09-01,2025-09,2025-09-04,Obat
+BPJS0187,23,Perempuan,Jabodetabek,Non-PBI,Pensiunan,Puskesmas,Tidak ada,48000,3,Belum klaim,0,2.5,3.5,2025-11-01,2025-11,2025-11-26,Rawat Jalan
+BPJS0188,45,Perempuan,Jawa Timur,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,35000,1,Pernah klaim,1536000,3.4,3.7,2025-09-01,2025-09,2025-09-21,Rawat Inap
+BPJS0189,45,Perempuan,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Ada,42000,4,Pernah klaim,1053000,0.6,3.9,2025-04-01,2025-04,2025-04-18,Pemeriksaan
+BPJS0190,61,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,48000,7,Belum klaim,0,5.3,4.4,2025-09-01,2025-09,2025-09-13,Rawat Jalan
+BPJS0191,61,Perempuan,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,35000,5,Pernah klaim,1151000,2.3,2.5,2025-03-01,2025-03,2025-03-11,Rawat Inap
+BPJS0192,37,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,42000,2,Belum klaim,0,1.6,2.2,2025-07-01,2025-07,2025-07-24,Rawat Jalan
+BPJS0193,47,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Ada,35000,9,Pernah klaim,1335000,7.8,4.5,2025-06-01,2025-06,2025-06-04,Rawat Jalan
+BPJS0194,28,Laki-laki,Jabodetabek,Non-PBI,Pensiunan,Puskesmas,Tidak ada,42000,3,Belum klaim,0,4.5,4.0,2025-08-01,2025-08,2025-08-25,Rawat Inap
+BPJS0195,45,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,60000,6,Belum klaim,0,5.8,3.0,2025-11-01,2025-11,2025-11-21,Rawat Inap
+BPJS0196,42,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,42000,4,Belum klaim,0,4.3,3.5,2025-09-01,2025-09,2025-09-25,Rawat Jalan
+BPJS0197,56,Laki-laki,Jawa Barat,Non-PBI,Pensiunan,Klinik,Tidak ada,42000,4,Belum klaim,0,2.7,3.7,2025-05-01,2025-05,2025-05-04,Obat
+BPJS0198,50,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,1.1,3.5,2025-01-01,2025-01,2025-01-10,Rawat Jalan
+BPJS0199,18,Perempuan,Jawa Tengah,PBI,Bekerja,RS Kelas B/A,Ada,0,4,Belum klaim,0,3.6,3.6,2025-03-01,2025-03,2025-03-05,Rawat Jalan
+BPJS0200,44,Laki-laki,Jawa Tengah,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,0,Belum klaim,0,1.7,3.8,2025-10-01,2025-10,2025-10-09,Rawat Jalan
+BPJS0201,69,Perempuan,Jawa Timur,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,35000,3,Belum klaim,0,1.8,4.9,2025-12-01,2025-12,2025-12-24,Rawat Jalan
+BPJS0202,30,Laki-laki,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,RS Kelas B/A,Ada,42000,2,Belum klaim,0,1.3,4.2,2025-08-01,2025-08,2025-08-03,Rawat Jalan
+BPJS0203,58,Laki-laki,Jawa Tengah,PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,0,5,Pernah klaim,3581000,3.7,4.6,2025-11-01,2025-11,2025-11-17,Obat
+BPJS0204,20,Perempuan,Jawa Tengah,PBI,Bekerja,Klinik,Ada,0,3,Belum klaim,0,6.3,2.6,2025-06-01,2025-06,2025-06-03,Obat
+BPJS0205,56,Perempuan,Jawa Barat,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,6,Pernah klaim,1396000,4.5,3.2,2025-08-01,2025-08,2025-08-16,Rawat Jalan
+BPJS0206,23,Perempuan,Jawa Barat,PBI,Pensiunan,Puskesmas,Tidak ada,0,1,Belum klaim,0,3.3,3.8,2025-09-01,2025-09,2025-09-04,Pemeriksaan
+BPJS0207,25,Perempuan,Luar Jawa,PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,0,2,Belum klaim,0,4.5,2.4,2025-04-01,2025-04,2025-04-18,Obat
+BPJS0208,44,Laki-laki,Jawa Timur,Non-PBI,Pensiunan,RS Kelas C/D,Ada,60000,6,Belum klaim,0,0.5,4.3,2025-01-01,2025-01,2025-01-17,Rawat Jalan
+BPJS0209,26,Perempuan,Jawa Barat,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,42000,3,Belum klaim,0,2.7,3.9,2025-01-01,2025-01,2025-01-07,Pemeriksaan
+BPJS0210,54,Laki-laki,Jawa Tengah,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,1,Belum klaim,0,0.9,3.6,2025-10-01,2025-10,2025-10-24,Pemeriksaan
+BPJS0211,50,Perempuan,Jawa Barat,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,35000,3,Belum klaim,0,3.7,3.5,2025-04-01,2025-04,2025-04-23,Rawat Jalan
+BPJS0212,68,Perempuan,Luar Jawa,PBI,Bekerja,Puskesmas,Tidak ada,0,6,Pernah klaim,1141000,3.5,4.3,2025-12-01,2025-12,2025-12-05,Rawat Jalan
+BPJS0213,59,Perempuan,Jabodetabek,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,5,Belum klaim,0,1.9,3.1,2025-07-01,2025-07,2025-07-12,Pemeriksaan
+BPJS0214,61,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Ada,48000,11,Pernah klaim,1122000,3.7,4.3,2025-02-01,2025-02,2025-02-17,Obat
+BPJS0215,41,Perempuan,Jawa Barat,Non-PBI,Bekerja,Klinik,Tidak ada,35000,4,Belum klaim,0,3.7,3.3,2025-03-01,2025-03,2025-03-23,Rawat Jalan
+BPJS0216,32,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,0,9,Belum klaim,0,6.2,3.7,2025-01-01,2025-01,2025-01-13,Obat
+BPJS0217,49,Perempuan,Luar Jawa,Non-PBI,Pensiunan,Puskesmas,Tidak ada,60000,4,Pernah klaim,1703000,5.2,3.6,2025-05-01,2025-05,2025-05-23,Obat
+BPJS0218,49,Perempuan,Jabodetabek,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,5,Belum klaim,0,3.9,4.7,2025-01-01,2025-01,2025-01-25,Obat
+BPJS0219,41,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,1,Belum klaim,0,2.3,3.2,2025-08-01,2025-08,2025-08-03,Obat
+BPJS0220,58,Perempuan,Jabodetabek,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,35000,3,Belum klaim,0,2.2,3.3,2025-01-01,2025-01,2025-01-09,Obat
+BPJS0221,69,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Klinik,Ada,42000,9,Belum klaim,0,5.1,2.6,2025-11-01,2025-11,2025-11-17,Rawat Jalan
+BPJS0222,66,Laki-laki,Jabodetabek,PBI,Tidak bekerja,Puskesmas,Ada,0,12,Belum klaim,0,3.1,3.1,2025-01-01,2025-01,2025-01-17,Rawat Jalan
+BPJS0223,66,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,35000,5,Belum klaim,0,3.9,3.9,2025-02-01,2025-02,2025-02-20,Obat
+BPJS0224,69,Laki-laki,Jawa Timur,PBI,Pensiunan,Klinik,Tidak ada,0,8,Belum klaim,0,5.3,4.3,2025-02-01,2025-02,2025-02-16,Pemeriksaan
+BPJS0225,29,Laki-laki,Luar Jawa,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,3,Belum klaim,0,1.3,4.1,2025-12-01,2025-12,2025-12-25,Rawat Jalan
+BPJS0226,56,Laki-laki,Luar Jawa,Non-PBI,Pensiunan,RS Kelas C/D,Ada,42000,6,Pernah klaim,2007000,6.5,3.3,2025-06-01,2025-06,2025-06-22,Rawat Inap
+BPJS0227,19,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,1,Belum klaim,0,5.2,2.9,2025-07-01,2025-07,2025-07-13,Obat
+BPJS0228,20,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,4,Belum klaim,0,0.5,4.3,2025-05-01,2025-05,2025-05-27,Rawat Jalan
+BPJS0229,66,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Ada,60000,6,Pernah klaim,773000,7.7,2.9,2025-01-01,2025-01,2025-01-19,Obat
+BPJS0230,54,Laki-laki,Luar Jawa,PBI,Bekerja,Puskesmas,Tidak ada,0,1,Pernah klaim,617000,4.6,2.8,2025-01-01,2025-01,2025-01-17,Pemeriksaan
+BPJS0231,66,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,5,Belum klaim,0,2.6,3.4,2025-03-01,2025-03,2025-03-04,Obat
+BPJS0232,34,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,42000,4,Belum klaim,0,5.0,2.3,2025-02-01,2025-02,2025-02-12,Rawat Inap
+BPJS0233,66,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Klinik,Ada,35000,7,Pernah klaim,1235000,2.2,2.8,2025-05-01,2025-05,2025-05-09,Rawat Jalan
+BPJS0234,19,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,35000,2,Belum klaim,0,4.5,4.6,2025-12-01,2025-12,2025-12-19,Rawat Inap
+BPJS0235,19,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Tidak ada,35000,5,Belum klaim,0,2.1,2.7,2025-10-01,2025-10,2025-10-12,Rawat Jalan
+BPJS0236,45,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,48000,2,Pernah klaim,687000,7.1,2.6,2025-06-01,2025-06,2025-06-09,Rawat Jalan
+BPJS0237,40,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,3,Belum klaim,0,4.1,3.5,2025-07-01,2025-07,2025-07-07,Rawat Inap
+BPJS0238,54,Laki-laki,Jabodetabek,PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,0,1,Belum klaim,0,5.3,3.5,2025-04-01,2025-04,2025-04-14,Rawat Jalan
+BPJS0239,49,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,60000,3,Belum klaim,0,2.6,3.6,2025-07-01,2025-07,2025-07-20,Rawat Jalan
+BPJS0240,50,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,35000,2,Belum klaim,0,5.0,2.4,2025-11-01,2025-11,2025-11-19,Rawat Inap
+BPJS0241,18,Laki-laki,Jabodetabek,PBI,Bekerja,RS Kelas B/A,Tidak ada,0,4,Pernah klaim,1156000,4.1,3.9,2025-08-01,2025-08,2025-08-26,Rawat Jalan
+BPJS0242,36,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,4,Belum klaim,0,1.0,3.4,2025-11-01,2025-11,2025-11-15,Rawat Jalan
+BPJS0243,19,Perempuan,Jawa Tengah,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,1,Belum klaim,0,3.1,4.3,2025-01-01,2025-01,2025-01-16,Obat
+BPJS0244,70,Laki-laki,Jawa Timur,PBI,Bekerja,RS Kelas C/D,Ada,0,11,Belum klaim,0,7.0,2.9,2025-06-01,2025-06,2025-06-21,Obat
+BPJS0245,61,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,42000,5,Belum klaim,0,5.0,3.9,2025-08-01,2025-08,2025-08-05,Rawat Jalan
+BPJS0246,43,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,0,1,Belum klaim,0,2.8,4.2,2025-05-01,2025-05,2025-05-03,Pemeriksaan
+BPJS0247,49,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Ada,42000,8,Belum klaim,0,0.5,3.4,2025-04-01,2025-04,2025-04-12,Rawat Inap
+BPJS0248,23,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,Klinik,Tidak ada,60000,2,Belum klaim,0,2.5,4.0,2025-02-01,2025-02,2025-02-25,Obat
+BPJS0249,49,Laki-laki,Jawa Barat,Non-PBI,Pensiunan,Klinik,Tidak ada,48000,2,Pernah klaim,179000,1.0,2.9,2025-06-01,2025-06,2025-06-20,Rawat Inap
+BPJS0250,21,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,35000,3,Belum klaim,0,0.5,3.8,2025-06-01,2025-06,2025-06-27,Pemeriksaan
+BPJS0251,28,Perempuan,Jawa Barat,PBI,Pensiunan,RS Kelas C/D,Tidak ada,0,4,Pernah klaim,262000,4.9,4.1,2025-11-01,2025-11,2025-11-21,Obat
+BPJS0252,34,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,48000,4,Belum klaim,0,3.6,3.8,2025-01-01,2025-01,2025-01-04,Obat
+BPJS0253,55,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,3,Belum klaim,0,6.7,4.6,2025-09-01,2025-09,2025-09-21,Obat
+BPJS0254,41,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,1,Belum klaim,0,1.7,4.1,2025-12-01,2025-12,2025-12-23,Rawat Jalan
+BPJS0255,22,Laki-laki,Jabodetabek,PBI,Tidak bekerja,RS Kelas C/D,Ada,0,2,Belum klaim,0,3.5,3.3,2025-11-01,2025-11,2025-11-16,Rawat Jalan
+BPJS0256,69,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,6,Belum klaim,0,1.0,5.0,2025-06-01,2025-06,2025-06-25,Obat
+BPJS0257,51,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Ada,35000,5,Belum klaim,0,2.4,4.5,2025-03-01,2025-03,2025-03-07,Rawat Inap
+BPJS0258,23,Perempuan,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,4,Belum klaim,0,3.1,2.6,2025-04-01,2025-04,2025-04-13,Obat
+BPJS0259,39,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Ada,35000,5,Belum klaim,0,2.8,3.1,2025-12-01,2025-12,2025-12-21,Rawat Jalan
+BPJS0260,28,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,48000,0,Belum klaim,0,3.6,2.9,2025-11-01,2025-11,2025-11-10,Rawat Inap
+BPJS0261,65,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Tidak ada,42000,5,Belum klaim,0,5.2,3.7,2025-04-01,2025-04,2025-04-26,Rawat Jalan
+BPJS0262,33,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,3,Belum klaim,0,5.1,3.9,2025-03-01,2025-03,2025-03-07,Rawat Jalan
+BPJS0263,50,Laki-laki,Luar Jawa,PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,0,4,Belum klaim,0,2.6,3.9,2025-10-01,2025-10,2025-10-14,Obat
+BPJS0264,26,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,1,Belum klaim,0,3.4,2.6,2025-03-01,2025-03,2025-03-26,Rawat Inap
+BPJS0265,23,Perempuan,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,48000,5,Pernah klaim,199000,5.4,3.0,2025-03-01,2025-03,2025-03-05,Rawat Inap
+BPJS0266,33,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,4,Pernah klaim,1491000,5.4,3.4,2025-04-01,2025-04,2025-04-03,Rawat Inap
+BPJS0267,46,Laki-laki,Jawa Barat,Non-PBI,Pensiunan,Puskesmas,Tidak ada,42000,4,Belum klaim,0,2.3,2.7,2025-07-01,2025-07,2025-07-23,Rawat Jalan
+BPJS0268,20,Laki-laki,Luar Jawa,PBI,Tidak bekerja,RS Kelas C/D,Ada,0,2,Pernah klaim,683000,5.3,2.9,2025-04-01,2025-04,2025-04-11,Obat
+BPJS0269,37,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Ada,48000,5,Belum klaim,0,4.6,4.3,2025-09-01,2025-09,2025-09-11,Rawat Jalan
+BPJS0270,53,Laki-laki,Jabodetabek,PBI,Bekerja,Puskesmas,Tidak ada,0,5,Belum klaim,0,1.6,2.9,2025-01-01,2025-01,2025-01-18,Rawat Inap
+BPJS0271,36,Perempuan,Jawa Barat,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,3,Belum klaim,0,4.9,4.4,2025-08-01,2025-08,2025-08-15,Rawat Inap
+BPJS0272,43,Perempuan,Luar Jawa,PBI,Bekerja,Puskesmas,Tidak ada,0,1,Belum klaim,0,4.3,4.2,2025-07-01,2025-07,2025-07-12,Obat
+BPJS0273,20,Laki-laki,Jawa Timur,PBI,Bekerja,Puskesmas,Tidak ada,0,0,Belum klaim,0,0.5,3.7,2025-02-01,2025-02,2025-02-09,Rawat Inap
+BPJS0274,36,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,Klinik,Tidak ada,35000,5,Belum klaim,0,3.0,3.2,2025-08-01,2025-08,2025-08-10,Obat
+BPJS0275,37,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,Klinik,Ada,60000,5,Pernah klaim,1174000,4.1,3.9,2025-01-01,2025-01,2025-01-26,Pemeriksaan
+BPJS0276,49,Perempuan,Luar Jawa,PBI,Tidak bekerja,RS Kelas B/A,Ada,0,8,Pernah klaim,923000,3.5,3.1,2025-11-01,2025-11,2025-11-12,Rawat Jalan
+BPJS0277,24,Laki-laki,Jawa Timur,PBI,Pensiunan,Klinik,Ada,0,4,Belum klaim,0,5.7,3.0,2025-12-01,2025-12,2025-12-17,Rawat Jalan
+BPJS0278,69,Laki-laki,Luar Jawa,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,5,Belum klaim,0,6.3,3.3,2025-09-01,2025-09,2025-09-06,Rawat Jalan
+BPJS0279,58,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,48000,5,Belum klaim,0,3.3,2.5,2025-09-01,2025-09,2025-09-07,Rawat Jalan
+BPJS0280,50,Perempuan,Jabodetabek,PBI,Bekerja,Puskesmas,Ada,0,5,Belum klaim,0,2.6,2.9,2025-02-01,2025-02,2025-02-14,Obat
+BPJS0281,57,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,42000,5,Belum klaim,0,3.3,3.3,2025-07-01,2025-07,2025-07-13,Pemeriksaan
+BPJS0282,56,Perempuan,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Ada,42000,4,Belum klaim,0,3.1,3.9,2025-10-01,2025-10,2025-10-08,Rawat Jalan
+BPJS0283,35,Laki-laki,Luar Jawa,PBI,Pensiunan,Klinik,Tidak ada,0,1,Belum klaim,0,2.9,3.1,2025-03-01,2025-03,2025-03-10,Rawat Jalan
+BPJS0284,57,Laki-laki,Jawa Barat,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,48000,4,Belum klaim,0,0.5,3.6,2025-07-01,2025-07,2025-07-09,Rawat Jalan
+BPJS0285,18,Perempuan,Jawa Tengah,Non-PBI,Tidak bekerja,RS Kelas C/D,Ada,48000,2,Belum klaim,0,6.7,2.4,2025-12-01,2025-12,2025-12-18,Obat
+BPJS0286,28,Perempuan,Jawa Timur,PBI,Bekerja,Puskesmas,Tidak ada,0,3,Belum klaim,0,3.5,4.2,2025-10-01,2025-10,2025-10-27,Rawat Inap
+BPJS0287,45,Laki-laki,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,42000,6,Belum klaim,0,3.2,3.8,2025-09-01,2025-09,2025-09-26,Rawat Jalan
+BPJS0288,42,Perempuan,Jawa Timur,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,35000,2,Belum klaim,0,4.1,3.6,2025-04-01,2025-04,2025-04-02,Pemeriksaan
+BPJS0289,67,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,4,Belum klaim,0,3.9,3.9,2025-12-01,2025-12,2025-12-05,Obat
+BPJS0290,40,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Ada,48000,3,Belum klaim,0,2.7,3.6,2025-01-01,2025-01,2025-01-05,Rawat Jalan
+BPJS0291,48,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,35000,2,Belum klaim,0,1.7,3.3,2025-02-01,2025-02,2025-02-06,Obat
+BPJS0292,47,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,35000,1,Belum klaim,0,0.8,4.3,2025-01-01,2025-01,2025-01-19,Obat
+BPJS0293,59,Laki-laki,Jawa Tengah,Non-PBI,Pensiunan,Puskesmas,Ada,48000,2,Belum klaim,0,1.1,3.9,2025-12-01,2025-12,2025-12-08,Rawat Jalan
+BPJS0294,52,Laki-laki,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,3,Pernah klaim,2515000,1.5,3.5,2025-05-01,2025-05,2025-05-16,Rawat Jalan
+BPJS0295,24,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Klinik,Tidak ada,42000,6,Belum klaim,0,4.7,3.4,2025-05-01,2025-05,2025-05-13,Rawat Jalan
+BPJS0296,33,Laki-laki,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,35000,1,Pernah klaim,1018000,4.8,3.4,2025-11-01,2025-11,2025-11-01,Rawat Jalan
+BPJS0297,43,Laki-laki,Jabodetabek,PBI,Bekerja,Puskesmas,Ada,0,6,Belum klaim,0,1.9,3.6,2025-07-01,2025-07,2025-07-22,Obat
+BPJS0298,65,Laki-laki,Jabodetabek,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,5,Pernah klaim,1973000,0.5,3.9,2025-09-01,2025-09,2025-09-20,Pemeriksaan
+BPJS0299,69,Perempuan,Jawa Tengah,PBI,Bekerja,Puskesmas,Tidak ada,0,4,Pernah klaim,7591000,3.5,3.1,2025-09-01,2025-09,2025-09-17,Rawat Jalan
+BPJS0300,66,Laki-laki,Jawa Tengah,PBI,Bekerja,Klinik,Tidak ada,0,4,Belum klaim,0,2.7,3.1,2025-03-01,2025-03,2025-03-07,Rawat Jalan
+BPJS0301,19,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,1,Belum klaim,0,2.7,4.0,2025-03-01,2025-03,2025-03-25,Rawat Jalan
+BPJS0302,18,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,0,Belum klaim,0,5.2,3.3,2025-03-01,2025-03,2025-03-13,Rawat Jalan
+BPJS0303,65,Perempuan,Jawa Timur,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,3,Belum klaim,0,3.7,4.0,2025-04-01,2025-04,2025-04-04,Obat
+BPJS0304,29,Perempuan,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,48000,1,Belum klaim,0,1.7,3.8,2025-08-01,2025-08,2025-08-04,Rawat Jalan
+BPJS0305,22,Laki-laki,Luar Jawa,PBI,Tidak bekerja,Puskesmas,Ada,0,3,Pernah klaim,6571000,1.8,3.4,2025-06-01,2025-06,2025-06-06,Rawat Jalan
+BPJS0306,54,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,7,Pernah klaim,1913000,3.0,4.0,2025-08-01,2025-08,2025-08-19,Rawat Jalan
+BPJS0307,49,Laki-laki,Jawa Timur,Non-PBI,Bekerja,RS Kelas C/D,Ada,48000,5,Belum klaim,0,1.9,4.2,2025-01-01,2025-01,2025-01-12,Obat
+BPJS0308,26,Laki-laki,Jawa Tengah,Non-PBI,Pensiunan,Klinik,Ada,35000,2,Belum klaim,0,3.4,3.7,2025-08-01,2025-08,2025-08-22,Rawat Jalan
+BPJS0309,58,Laki-laki,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Ada,60000,8,Pernah klaim,1237000,5.8,3.9,2025-04-01,2025-04,2025-04-07,Obat
+BPJS0310,52,Laki-laki,Jawa Timur,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,2,Belum klaim,0,1.0,3.5,2025-11-01,2025-11,2025-11-27,Rawat Jalan
+BPJS0311,36,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,35000,1,Belum klaim,0,4.3,4.0,2025-01-01,2025-01,2025-01-10,Obat
+BPJS0312,65,Perempuan,Jawa Timur,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,6,Belum klaim,0,5.1,3.1,2025-08-01,2025-08,2025-08-26,Obat
+BPJS0313,33,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,42000,0,Belum klaim,0,3.3,3.7,2025-04-01,2025-04,2025-04-19,Rawat Jalan
+BPJS0314,20,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,RS Kelas B/A,Tidak ada,0,1,Belum klaim,0,5.4,4.8,2025-06-01,2025-06,2025-06-07,Rawat Jalan
+BPJS0315,37,Laki-laki,Jawa Timur,Non-PBI,Tidak bekerja,Puskesmas,Ada,60000,3,Belum klaim,0,3.0,4.0,2025-08-01,2025-08,2025-08-03,Pemeriksaan
+BPJS0316,41,Perempuan,Jawa Tengah,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,48000,5,Belum klaim,0,3.8,3.2,2025-04-01,2025-04,2025-04-13,Pemeriksaan
+BPJS0317,50,Laki-laki,Jawa Timur,PBI,Pelajar/Mahasiswa,RS Kelas B/A,Tidak ada,0,3,Belum klaim,0,4.9,3.2,2025-03-01,2025-03,2025-03-13,Rawat Jalan
+BPJS0318,41,Laki-laki,Jabodetabek,PBI,Bekerja,Puskesmas,Tidak ada,0,2,Belum klaim,0,2.5,3.7,2025-09-01,2025-09,2025-09-18,Rawat Inap
+BPJS0319,69,Perempuan,Jawa Tengah,PBI,Bekerja,RS Kelas C/D,Ada,0,9,Belum klaim,0,7.1,3.7,2025-03-01,2025-03,2025-03-26,Pemeriksaan
+BPJS0320,28,Perempuan,Jawa Barat,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,4,Belum klaim,0,4.5,3.5,2025-09-01,2025-09,2025-09-20,Rawat Inap
+BPJS0321,66,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,1,Belum klaim,0,5.8,3.0,2025-02-01,2025-02,2025-02-08,Rawat Jalan
+BPJS0322,25,Perempuan,Jawa Timur,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,0,5,Belum klaim,0,5.4,3.0,2025-02-01,2025-02,2025-02-09,Pemeriksaan
+BPJS0323,53,Perempuan,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,42000,10,Belum klaim,0,4.7,3.5,2025-02-01,2025-02,2025-02-07,Rawat Jalan
+BPJS0324,55,Laki-laki,Jawa Tengah,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,4,Belum klaim,0,6.0,3.4,2025-06-01,2025-06,2025-06-01,Rawat Inap
+BPJS0325,57,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,2,Belum klaim,0,3.8,3.9,2025-03-01,2025-03,2025-03-03,Rawat Jalan
+BPJS0326,37,Laki-laki,Jawa Barat,PBI,Bekerja,RS Kelas B/A,Ada,0,6,Pernah klaim,1689000,2.8,4.0,2025-09-01,2025-09,2025-09-13,Rawat Jalan
+BPJS0327,52,Perempuan,Jawa Timur,PBI,Bekerja,Puskesmas,Tidak ada,0,5,Belum klaim,0,3.5,5.0,2025-04-01,2025-04,2025-04-25,Rawat Jalan
+BPJS0328,65,Laki-laki,Jabodetabek,PBI,Bekerja,Klinik,Tidak ada,0,2,Belum klaim,0,1.7,2.8,2025-01-01,2025-01,2025-01-17,Obat
+BPJS0329,42,Laki-laki,Jawa Tengah,Non-PBI,Tidak bekerja,Klinik,Tidak ada,60000,2,Belum klaim,0,0.5,4.0,2025-04-01,2025-04,2025-04-25,Rawat Jalan
+BPJS0330,52,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,35000,9,Pernah klaim,993000,2.0,3.6,2025-01-01,2025-01,2025-01-24,Rawat Jalan
+BPJS0331,42,Perempuan,Jawa Timur,Non-PBI,Tidak bekerja,Klinik,Tidak ada,48000,2,Belum klaim,0,3.6,2.5,2025-05-01,2025-05,2025-05-01,Rawat Jalan
+BPJS0332,46,Laki-laki,Jawa Tengah,PBI,Bekerja,RS Kelas B/A,Ada,0,4,Pernah klaim,1146000,6.0,4.0,2025-04-01,2025-04,2025-04-06,Rawat Inap
+BPJS0333,35,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,48000,2,Belum klaim,0,2.5,3.8,2025-08-01,2025-08,2025-08-21,Pemeriksaan
+BPJS0334,63,Laki-laki,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Ada,60000,10,Belum klaim,0,5.8,3.8,2025-08-01,2025-08,2025-08-06,Rawat Jalan
+BPJS0335,35,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,3,Belum klaim,0,1.3,2.8,2025-07-01,2025-07,2025-07-26,Rawat Inap
+BPJS0336,19,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,35000,1,Belum klaim,0,2.4,3.4,2025-03-01,2025-03,2025-03-12,Pemeriksaan
+BPJS0337,52,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,42000,6,Belum klaim,0,6.7,2.7,2025-01-01,2025-01,2025-01-13,Rawat Inap
+BPJS0338,33,Laki-laki,Jawa Barat,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,3,Belum klaim,0,3.6,4.7,2025-01-01,2025-01,2025-01-13,Rawat Jalan
+BPJS0339,58,Perempuan,Jawa Timur,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,48000,7,Belum klaim,0,3.2,4.3,2025-12-01,2025-12,2025-12-15,Rawat Jalan
+BPJS0340,53,Laki-laki,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,1,Belum klaim,0,4.4,3.2,2025-11-01,2025-11,2025-11-21,Rawat Jalan
+BPJS0341,50,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Tidak ada,60000,5,Belum klaim,0,1.3,2.9,2025-03-01,2025-03,2025-03-16,Rawat Jalan
+BPJS0342,21,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,0,2,Belum klaim,0,2.9,3.8,2025-06-01,2025-06,2025-06-22,Rawat Jalan
+BPJS0343,50,Laki-laki,Jawa Barat,PBI,Tidak bekerja,Klinik,Tidak ada,0,2,Belum klaim,0,3.5,4.1,2025-07-01,2025-07,2025-07-21,Obat
+BPJS0344,31,Perempuan,Jawa Timur,Non-PBI,Bekerja,RS Kelas B/A,Ada,35000,15,Pernah klaim,2994000,6.3,2.4,2025-06-01,2025-06,2025-06-11,Rawat Jalan
+BPJS0345,38,Perempuan,Jawa Tengah,Non-PBI,Pensiunan,Klinik,Ada,42000,6,Belum klaim,0,0.5,3.2,2025-06-01,2025-06,2025-06-05,Rawat Jalan
+BPJS0346,65,Laki-laki,Jabodetabek,Non-PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,42000,3,Belum klaim,0,6.7,2.8,2025-06-01,2025-06,2025-06-04,Obat
+BPJS0347,37,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,48000,1,Belum klaim,0,3.8,4.1,2025-03-01,2025-03,2025-03-03,Rawat Jalan
+BPJS0348,25,Laki-laki,Luar Jawa,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,42000,1,Belum klaim,0,2.0,3.5,2025-06-01,2025-06,2025-06-19,Obat
+BPJS0349,24,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,60000,4,Belum klaim,0,1.2,3.6,2025-08-01,2025-08,2025-08-20,Rawat Inap
+BPJS0350,20,Laki-laki,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,60000,3,Belum klaim,0,4.0,3.7,2025-11-01,2025-11,2025-11-25,Rawat Jalan
+BPJS0351,34,Laki-laki,Jawa Timur,PBI,Bekerja,Puskesmas,Ada,0,4,Belum klaim,0,1.1,3.3,2025-11-01,2025-11,2025-11-18,Obat
+BPJS0352,50,Laki-laki,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,3,Belum klaim,0,2.5,2.8,2025-02-01,2025-02,2025-02-15,Rawat Inap
+BPJS0353,65,Laki-laki,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,60000,4,Belum klaim,0,3.7,4.2,2025-05-01,2025-05,2025-05-09,Rawat Inap
+BPJS0354,29,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Klinik,Ada,48000,3,Belum klaim,0,5.6,4.2,2025-01-01,2025-01,2025-01-17,Rawat Inap
+BPJS0355,68,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,0,2,Belum klaim,0,5.3,3.5,2025-12-01,2025-12,2025-12-14,Rawat Inap
+BPJS0356,39,Perempuan,Luar Jawa,PBI,Tidak bekerja,RS Kelas C/D,Ada,0,5,Belum klaim,0,2.8,3.7,2025-01-01,2025-01,2025-01-15,Obat
+BPJS0357,39,Laki-laki,Luar Jawa,PBI,Bekerja,Puskesmas,Tidak ada,0,4,Belum klaim,0,3.6,4.3,2025-05-01,2025-05,2025-05-01,Rawat Jalan
+BPJS0358,63,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,Puskesmas,Tidak ada,35000,5,Belum klaim,0,0.6,3.9,2025-12-01,2025-12,2025-12-21,Rawat Jalan
+BPJS0359,47,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,42000,4,Belum klaim,0,0.5,3.4,2025-03-01,2025-03,2025-03-22,Rawat Jalan
+BPJS0360,55,Perempuan,Jabodetabek,PBI,Tidak bekerja,Puskesmas,Tidak ada,0,4,Belum klaim,0,1.3,3.8,2025-04-01,2025-04,2025-04-22,Obat
+BPJS0361,55,Perempuan,Jabodetabek,Non-PBI,Tidak bekerja,RS Kelas C/D,Ada,42000,6,Belum klaim,0,5.5,4.1,2025-03-01,2025-03,2025-03-03,Rawat Jalan
+BPJS0362,62,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,42000,6,Belum klaim,0,5.4,3.4,2025-01-01,2025-01,2025-01-16,Pemeriksaan
+BPJS0363,68,Laki-laki,Jawa Barat,Non-PBI,Bekerja,Klinik,Ada,60000,4,Pernah klaim,766000,4.2,3.1,2025-01-01,2025-01,2025-01-23,Rawat Inap
+BPJS0364,25,Laki-laki,Jawa Barat,PBI,Bekerja,Puskesmas,Tidak ada,0,1,Belum klaim,0,0.9,3.9,2025-12-01,2025-12,2025-12-25,Obat
+BPJS0365,44,Perempuan,Jabodetabek,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,5,Belum klaim,0,2.2,3.9,2025-12-01,2025-12,2025-12-11,Pemeriksaan
+BPJS0366,44,Laki-laki,Jawa Timur,Non-PBI,Bekerja,Puskesmas,Tidak ada,42000,2,Belum klaim,0,2.0,4.0,2025-05-01,2025-05,2025-05-12,Obat
+BPJS0367,51,Perempuan,Jawa Barat,PBI,Bekerja,Puskesmas,Tidak ada,0,2,Belum klaim,0,3.2,4.0,2025-06-01,2025-06,2025-06-10,Pemeriksaan
+BPJS0368,38,Laki-laki,Jawa Timur,PBI,Pensiunan,RS Kelas C/D,Ada,0,3,Belum klaim,0,3.1,3.1,2025-03-01,2025-03,2025-03-16,Rawat Jalan
+BPJS0369,47,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,42000,3,Belum klaim,0,1.7,4.0,2025-12-01,2025-12,2025-12-08,Rawat Inap
+BPJS0370,50,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,0,Belum klaim,0,4.6,3.6,2025-09-01,2025-09,2025-09-06,Rawat Jalan
+BPJS0371,45,Laki-laki,Jawa Timur,PBI,Tidak bekerja,RS Kelas B/A,Tidak ada,0,1,Belum klaim,0,4.5,3.0,2025-05-01,2025-05,2025-05-12,Rawat Jalan
+BPJS0372,64,Perempuan,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,35000,8,Belum klaim,0,2.2,4.0,2025-08-01,2025-08,2025-08-24,Rawat Inap
+BPJS0373,50,Laki-laki,Jawa Barat,Non-PBI,Pensiunan,RS Kelas C/D,Tidak ada,60000,3,Belum klaim,0,4.0,3.2,2025-01-01,2025-01,2025-01-21,Rawat Inap
+BPJS0374,22,Perempuan,Luar Jawa,Non-PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,42000,4,Belum klaim,0,6.0,2.5,2025-05-01,2025-05,2025-05-08,Rawat Jalan
+BPJS0375,65,Perempuan,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,RS Kelas C/D,Ada,35000,2,Belum klaim,0,6.6,2.8,2025-03-01,2025-03,2025-03-26,Rawat Inap
+BPJS0376,36,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,Klinik,Tidak ada,48000,0,Belum klaim,0,4.4,3.3,2025-12-01,2025-12,2025-12-04,Pemeriksaan
+BPJS0377,21,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,35000,3,Belum klaim,0,4.9,3.7,2025-01-01,2025-01,2025-01-26,Rawat Inap
+BPJS0378,52,Laki-laki,Luar Jawa,PBI,Bekerja,Puskesmas,Tidak ada,0,4,Belum klaim,0,3.6,3.2,2025-04-01,2025-04,2025-04-08,Obat
+BPJS0379,66,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,RS Kelas C/D,Tidak ada,0,6,Pernah klaim,2339000,5.4,3.2,2025-05-01,2025-05,2025-05-26,Obat
+BPJS0380,34,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Ada,48000,6,Belum klaim,0,1.6,3.1,2025-07-01,2025-07,2025-07-18,Pemeriksaan
+BPJS0381,61,Perempuan,Luar Jawa,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,4,Pernah klaim,226000,5.6,4.1,2025-01-01,2025-01,2025-01-05,Obat
+BPJS0382,45,Perempuan,Jawa Barat,PBI,Pensiunan,Puskesmas,Tidak ada,0,3,Belum klaim,0,3.0,4.6,2025-03-01,2025-03,2025-03-09,Obat
+BPJS0383,47,Laki-laki,Jawa Tengah,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,48000,5,Belum klaim,0,6.8,4.2,2025-02-01,2025-02,2025-02-04,Pemeriksaan
+BPJS0384,46,Laki-laki,Jabodetabek,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,48000,3,Belum klaim,0,5.2,3.9,2025-09-01,2025-09,2025-09-27,Pemeriksaan
+BPJS0385,63,Perempuan,Jabodetabek,Non-PBI,Bekerja,Puskesmas,Tidak ada,35000,3,Belum klaim,0,3.4,4.1,2025-10-01,2025-10,2025-10-22,Rawat Jalan
+BPJS0386,70,Perempuan,Jawa Barat,Non-PBI,Pensiunan,Puskesmas,Ada,42000,4,Pernah klaim,1703000,3.1,2.5,2025-06-01,2025-06,2025-06-17,Rawat Jalan
+BPJS0387,23,Laki-laki,Luar Jawa,Non-PBI,Bekerja,RS Kelas C/D,Ada,42000,7,Pernah klaim,1545000,4.9,3.5,2025-10-01,2025-10,2025-10-09,Rawat Jalan
+BPJS0388,52,Laki-laki,Jawa Barat,PBI,Pelajar/Mahasiswa,Klinik,Ada,0,6,Belum klaim,0,4.4,3.2,2025-03-01,2025-03,2025-03-01,Rawat Jalan
+BPJS0389,58,Laki-laki,Jabodetabek,PBI,Pelajar/Mahasiswa,Puskesmas,Tidak ada,0,4,Belum klaim,0,2.8,4.2,2025-08-01,2025-08,2025-08-21,Obat
+BPJS0390,54,Laki-laki,Jabodetabek,PBI,Bekerja,RS Kelas C/D,Tidak ada,0,2,Belum klaim,0,3.7,2.1,2025-08-01,2025-08,2025-08-20,Obat
+BPJS0391,41,Laki-laki,Jawa Tengah,PBI,Tidak bekerja,Klinik,Tidak ada,0,7,Belum klaim,0,5.1,3.5,2025-02-01,2025-02,2025-02-13,Obat
+BPJS0392,46,Perempuan,Luar Jawa,Non-PBI,Bekerja,RS Kelas B/A,Tidak ada,60000,3,Belum klaim,0,2.1,3.5,2025-06-01,2025-06,2025-06-16,Rawat Jalan
+BPJS0393,66,Perempuan,Jawa Tengah,Non-PBI,Bekerja,Puskesmas,Ada,48000,7,Pernah klaim,1232000,4.8,4.2,2025-07-01,2025-07,2025-07-13,Pemeriksaan
+BPJS0394,63,Perempuan,Jawa Tengah,PBI,Pelajar/Mahasiswa,Klinik,Tidak ada,0,6,Belum klaim,0,4.4,4.3,2025-02-01,2025-02,2025-02-14,Obat
+BPJS0395,70,Perempuan,Luar Jawa,Non-PBI,Pelajar/Mahasiswa,Klinik,Ada,35000,5,Belum klaim,0,6.1,2.8,2025-11-01,2025-11,2025-11-03,Obat
+BPJS0396,48,Laki-laki,Jawa Tengah,PBI,Tidak bekerja,RS Kelas C/D,Tidak ada,0,2,Belum klaim,0,2.2,3.1,2025-10-01,2025-10,2025-10-06,Pemeriksaan
+BPJS0397,52,Laki-laki,Jabodetabek,Non-PBI,Bekerja,Klinik,Tidak ada,60000,4,Pernah klaim,1245000,3.5,3.6,2025-02-01,2025-02,2025-02-18,Obat
+BPJS0398,50,Laki-laki,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,60000,3,Belum klaim,0,3.9,4.4,2025-10-01,2025-10,2025-10-19,Rawat Jalan
+BPJS0399,69,Perempuan,Jawa Barat,PBI,Bekerja,Puskesmas,Tidak ada,0,5,Belum klaim,0,4.8,3.6,2025-01-01,2025-01,2025-01-05,Obat
+BPJS0400,38,Perempuan,Jawa Barat,Non-PBI,Bekerja,RS Kelas C/D,Tidak ada,35000,1,Belum klaim,0,4.3,2.7,2025-08-01,2025-08,2025-08-15,Rawat Jalan
